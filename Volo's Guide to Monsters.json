@@ -1,0 +1,2235 @@
+[
+	{
+		"name": "Booyahg Booyahg Booyahg",
+		"shortName": "Goblin",
+		"source": "VGM",
+		"page": 43,
+		"hasFluff": true,
+		"size": [
+			"S"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"goblinoid"
+			]
+		},
+		"alignment": [
+			"A"
+		],
+		"ac": [
+			12,
+			{
+				"ac": 15,
+				"condition": "with {@spell mage armor}",
+				"braces": true
+			}
+		],
+		"hp": {
+			"average": 40,
+			"formula": "9d8"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 9,
+		"dex": 14,
+		"con": 11,
+		"int": 17,
+		"wis": 12,
+		"cha": 11,
+		"save": {
+			"int": "+6",
+			"wis": "+4"
+		},
+		"skill": {
+			"arcana": "+6",
+			"history": "+6"
+		},
+		"passive": 11,
+		"languages": [
+			"any four languages",
+			"Goblin"
+		],
+		"cr": "6",
+		"spellcasting": [
+			{
+				"name": "Spellcasting",
+				"headerEntries": [
+					"The goblin is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). The goblin has the following wizard spells prepared:"
+				],
+				"spells": {
+					"0": {
+						"spells": [
+							"{@spell fire bolt}",
+							"{@spell light}",
+							"{@spell mage hand}",
+							"{@spell prestidigitation}"
+						]
+					},
+					"1": {
+						"slots": 4,
+						"spells": [
+							"{@spell detect magic}",
+							"{@spell mage armor}",
+							"{@spell magic missile}",
+							"{@spell shield}"
+						]
+					},
+					"2": {
+						"slots": 3,
+						"spells": [
+							"{@spell misty step}",
+							"{@spell suggestion}"
+						]
+					},
+					"3": {
+						"slots": 3,
+						"spells": [
+							"{@spell counterspell}",
+							"{@spell fireball}",
+							"{@spell fly}"
+						]
+					},
+					"4": {
+						"slots": 3,
+						"spells": [
+							"{@spell greater invisibility}",
+							"{@spell ice storm}"
+						]
+					},
+					"5": {
+						"slots": 1,
+						"spells": [
+							"{@spell cone of cold}"
+						]
+					}
+				},
+				"ability": "int",
+				"type": "spellcasting"
+			}
+		],
+		"action": [
+			{
+				"name": "Dagger",
+				"entries": [
+					"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+				]
+			}
+		],
+		"languageTags": [
+			"X"
+		],
+		"damageTags": [
+			"P"
+		],
+		"spellcastingTags": [
+			"CW"
+		],
+		"miscTags": [
+			"MW",
+			"RW",
+			"THW"
+		],
+		"trait": [
+			{
+				"name": "Wild Magic",
+				"entries": [
+					"Each time the goblin casts a spell (including cantrips), there is an accompanying surge of wild magic; roll on the {@table Wild Magic Surge|PHB} table in the {@book Player's Handbook|PHB} to determine the wild magic effect."
+				]
+			},
+			{
+				"name": "Nimble Escape",
+				"entries": [
+					"The goblin can take the {@action Disengage} or {@action Hide} action as a bonus action on each of its turns."
+				]
+			}
+		],
+		"senses": [
+			"darkvision 60 ft."
+		]
+	},
+	{
+		"name": "Booyahg Caster",
+		"source": "VGM",
+		"page": 42,
+		"spellcasting": [
+			{
+				"name": "Spellcasting",
+				"headerEntries": [
+					"The goblin can cast a randomly determined {@filter 1st-level wizard spell|spells|level=1|class=wizard} once per day. Intelligence is its spellcasting ability (spell save {@dc 10}, {@hit 2} to hit with spell attacks)."
+				],
+				"ability": "int"
+			}
+		],
+		"spellcastingTags": [
+			"CW"
+		],
+		"hasFluff": true,
+		"size": [
+			"S"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"goblinoid"
+			]
+		},
+		"alignment": [
+			"N",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 15,
+				"from": [
+					"{@item leather armor|phb}",
+					"{@item shield|phb}"
+				]
+			}
+		],
+		"hp": {
+			"average": 7,
+			"formula": "2d6"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 8,
+		"dex": 14,
+		"con": 10,
+		"int": 10,
+		"wis": 8,
+		"cha": 8,
+		"skill": {
+			"stealth": "+6"
+		},
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 9,
+		"languages": [
+			"Common",
+			"Goblin"
+		],
+		"cr": "1/4",
+		"trait": [
+			{
+				"name": "Nimble Escape",
+				"entries": [
+					"The goblin can take the Disengage or Hide action as a bonus action on each of its turns."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Scimitar",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage."
+				]
+			},
+			{
+				"name": "Shortbow",
+				"entries": [
+					"{@atk rw} {@hit 4} to hit, range 80/320 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+				]
+			}
+		],
+		"senseTags": [
+			"D"
+		],
+		"languageTags": [
+			"C",
+			"GO"
+		],
+		"damageTags": [
+			"P",
+			"S"
+		],
+		"miscTags": [
+			"MW",
+			"RNG",
+			"RW"
+		]
+	},
+	{
+		"name": "Booyahg Whip",
+		"source": "VGM",
+		"page": 42,
+		"hasFluff": true,
+		"size": [
+			"S"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"goblinoid"
+			]
+		},
+		"alignment": [
+			"N",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 15,
+				"from": [
+					"{@item leather armor|phb}",
+					"{@item shield|phb}"
+				]
+			}
+		],
+		"hp": {
+			"average": 7,
+			"formula": "2d6"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 8,
+		"dex": 14,
+		"con": 10,
+		"int": 10,
+		"wis": 8,
+		"cha": 8,
+		"skill": {
+			"stealth": "+6"
+		},
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 9,
+		"languages": [
+			"Common",
+			"Goblin"
+		],
+		"cr": "1/4",
+		"trait": [
+			{
+				"name": "Nimble Escape",
+				"entries": [
+					"The goblin can take the Disengage or Hide action as a bonus action on each of its turns."
+				]
+			},
+			{
+				"name": "Khurgorbaeyag's Gift",
+				"entries": [
+					"Khurgorbaeyag saw fit to gift this goblin with powers that enable it to dominate others. The goblin has {@dice 1d3} other {@creature goblin||goblins} that slavishly obey its orders."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Scimitar",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage."
+				]
+			},
+			{
+				"name": "Shortbow",
+				"entries": [
+					"{@atk rw} {@hit 4} to hit, range 80/320 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+				]
+			}
+		],
+		"senseTags": [
+			"D"
+		],
+		"languageTags": [
+			"C",
+			"GO"
+		],
+		"damageTags": [
+			"P",
+			"S"
+		],
+		"miscTags": [
+			"MW",
+			"RNG",
+			"RW"
+		]
+	},
+	{
+		"name": "Booyahg Wielder",
+		"source": "VGM",
+		"page": 42,
+		"hasFluff": true,
+		"size": [
+			"S"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"goblinoid"
+			]
+		},
+		"alignment": [
+			"N",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 15,
+				"from": [
+					"{@item leather armor|phb}",
+					"{@item shield|phb}"
+				]
+			}
+		],
+		"hp": {
+			"average": 7,
+			"formula": "2d6"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 8,
+		"dex": 14,
+		"con": 10,
+		"int": 10,
+		"wis": 8,
+		"cha": 8,
+		"skill": {
+			"stealth": "+6"
+		},
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 9,
+		"languages": [
+			"Common",
+			"Goblin"
+		],
+		"cr": "1/4",
+		"trait": [
+			{
+				"name": "Nimble Escape",
+				"entries": [
+					"The goblin can take the Disengage or Hide action as a bonus action on each of its turns."
+				]
+			},
+			{
+				"name": "Special Equipment",
+				"entries": [
+					"The goblin found a magic item (a {@item necklace of fireballs}, a {@item circlet of blasting}, or the like) and learned how to use it."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Scimitar",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage."
+				]
+			},
+			{
+				"name": "Shortbow",
+				"entries": [
+					"{@atk rw} {@hit 4} to hit, range 80/320 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+				]
+			}
+		],
+		"senseTags": [
+			"D"
+		],
+		"languageTags": [
+			"C",
+			"GO"
+		],
+		"damageTags": [
+			"P",
+			"S"
+		],
+		"miscTags": [
+			"MW",
+			"RNG",
+			"RW"
+		]
+	},
+	{
+		"name": "Cow",
+		"source": "VGM",
+		"page": 207,
+		"otherSources": [
+			{
+				"source": "DIP"
+			}
+		],
+		"size": [
+			"L"
+		],
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			10
+		],
+		"hp": {
+			"average": 15,
+			"formula": "2d10 + 4"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 18,
+		"dex": 10,
+		"con": 14,
+		"int": 2,
+		"wis": 10,
+		"cha": 4,
+		"passive": 10,
+		"cr": "1/4",
+		"trait": [
+			{
+				"name": "Charge",
+				"entries": [
+					"If the cow moves at least 20 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 7 ({@damage 2d6}) piercing damage."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Gore",
+				"entries": [
+					"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
+				]
+			}
+		],
+		"environment": [
+			"grassland"
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/cow.mp3"
+		},
+		"traitTags": [
+			"Charge"
+		],
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true,
+		"hasFluff": true
+	},
+	{
+		"name": "Illithilich",
+		"alias": [
+			"Mind Flayer Lich"
+		],
+		"source": "VGM",
+		"page": 172,
+		"size": [
+			"M"
+		],
+		"type": "undead",
+		"alignment": [
+			"L",
+			"NX",
+			"C",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 17,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 135,
+			"formula": "18d8 + 54"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 11,
+		"dex": 16,
+		"con": 16,
+		"int": 20,
+		"wis": 14,
+		"cha": 16,
+		"save": {
+			"con": "+10",
+			"int": "+12",
+			"wis": "+9"
+		},
+		"skill": {
+			"arcana": "+19",
+			"history": "+12",
+			"insight": "+9",
+			"perception": "+9"
+		},
+		"senses": [
+			"truesight 120 ft."
+		],
+		"passive": 19,
+		"resist": [
+			"cold",
+			"lightning",
+			"necrotic"
+		],
+		"immune": [
+			"poison",
+			{
+				"immune": [
+					"bludgeoning",
+					"piercing",
+					"slashing"
+				],
+				"note": "from nonmagical attacks",
+				"cond": true
+			}
+		],
+		"conditionImmune": [
+			"charmed",
+			"exhaustion",
+			"frightened",
+			"paralyzed",
+			"poisoned"
+		],
+		"languages": [
+			"Deep Speech",
+			"Undercommon",
+			"telepathy 120 ft."
+		],
+		"cr": "22",
+		"spellcasting": [
+			{
+				"name": "Innate Spellcasting (Psionics)",
+				"headerEntries": [
+					"The illithilich's innate spellcasting ability is Intelligence (spell save {@dc 20}). It can innately cast the following spells, requiring no components."
+				],
+				"will": [
+					"{@spell detect thoughts}",
+					"{@spell levitate}"
+				],
+				"daily": {
+					"1e": [
+						"{@spell dominate monster}",
+						"{@spell plane shift} (self only)"
+					]
+				},
+				"ability": "int"
+			},
+			{
+				"name": "Spellcasting",
+				"headerEntries": [
+					"The illithilich is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 20}, {@hit 12} to hit with spell attacks). The lich has the following wizard spells prepared:"
+				],
+				"spells": {
+					"0": {
+						"spells": [
+							"{@spell mage hand}",
+							"{@spell prestidigitation}",
+							"{@spell ray of frost}"
+						]
+					},
+					"1": {
+						"slots": 4,
+						"spells": [
+							"{@spell detect magic}",
+							"{@spell magic missile}",
+							"{@spell shield}",
+							"{@spell thunderwave}"
+						]
+					},
+					"2": {
+						"slots": 3,
+						"spells": [
+							"{@spell detect thoughts}",
+							"{@spell invisibility}",
+							"{@spell Melf's acid arrow}",
+							"{@spell mirror image}"
+						]
+					},
+					"3": {
+						"slots": 3,
+						"spells": [
+							"{@spell animate dead}",
+							"{@spell counterspell}",
+							"{@spell dispel magic}",
+							"{@spell fireball}"
+						]
+					},
+					"4": {
+						"slots": 3,
+						"spells": [
+							"{@spell blight}",
+							"{@spell dimension door}"
+						]
+					},
+					"5": {
+						"slots": 3,
+						"spells": [
+							"{@spell cloudkill}",
+							"{@spell scrying}"
+						]
+					},
+					"6": {
+						"slots": 1,
+						"spells": [
+							"{@spell disintegrate}",
+							"{@spell globe of invulnerability}"
+						]
+					},
+					"7": {
+						"slots": 1,
+						"spells": [
+							"{@spell finger of death}",
+							"{@spell plane shift}"
+						]
+					},
+					"8": {
+						"slots": 1,
+						"spells": [
+							"{@spell dominate monster}",
+							"{@spell power word stun}"
+						]
+					},
+					"9": {
+						"slots": 1,
+						"spells": [
+							"{@spell power word kill}"
+						]
+					}
+				},
+				"ability": "int"
+			}
+		],
+		"trait": [
+			{
+				"name": "Legendary Resistance (3/Day)",
+				"entries": [
+					"If the illithilich fails a saving throw, it can choose to succeed instead."
+				]
+			},
+			{
+				"name": "Rejuvenation",
+				"entries": [
+					"If it has a phylactery, a destroyed illithilich gains a new body in {@dice 1d10} days, regaining all its hit points and becoming active again. The new body appears within 5 feet of the phylactery."
+				]
+			},
+			{
+				"name": "Turn Resistance",
+				"entries": [
+					"The illithilich has advantage on saving throws against any effect that turns undead."
+				]
+			},
+			{
+				"name": "Magic Resistance",
+				"entries": [
+					"The illithilich has advantage on saving throws against spells and other magical effects."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Paralyzing Touch",
+				"entries": [
+					"{@atk ms} {@hit 12} to hit, reach 5 ft., one creature. {@h}10 ({@damage 3d6}) cold damage. The target must succeed on a {@dc 18} Constitution saving throw or be {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+				]
+			},
+			{
+				"name": "Tentacles",
+				"entries": [
+					"{@atk mw} {@hit 12} to hit, reach 5 ft., one creature. {@h}21 ({@damage 3d10 + 5}) psychic damage. If the target is Large or smaller, it is {@condition grappled} (escape {@dc 15}) and must succeed on a {@dc 20} Intelligence saving throw or be {@condition stunned} until this grapple ends."
+				]
+			},
+			{
+				"name": "Extract Brain",
+				"entries": [
+					"{@atk mw} {@hit 12} to hit, reach 5 ft., one {@condition incapacitated} humanoid {@condition grappled} by the lich. {@h}55 ({@damage 10d10}) piercing damage. If this damage reduces the target to 0 hit points, the lich kills the target by extracting and devouring its brain."
+				]
+			},
+			{
+				"name": "Mind Blast {@recharge 5}",
+				"entries": [
+					"The illithilich magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a {@dc 18} Intelligence saving throw or take 27 ({@damage 5d8 + 5}) psychic damage and be {@condition stunned} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+				]
+			}
+		],
+		"legendary": [
+			{
+				"name": "Tentacles",
+				"entries": [
+					"The illithilich makes one attack with its tentacles."
+				]
+			},
+			{
+				"name": "Extract Brain (Costs 2 Actions)",
+				"entries": [
+					"The illithilich uses Extract Brain."
+				]
+			},
+			{
+				"name": "Mind Blast (Costs 3 Actions)",
+				"entries": [
+					"The illithilich recharges its Mind Blast and uses it."
+				]
+			},
+			{
+				"name": "Cast Spell (Costs 1–3 Actions)",
+				"entries": [
+					"The illithilich uses a spell slot to cast a 1st-, 2nd-, or 3rd-level spell that it has prepared. Doing so costs 1 legendary action per level of the spell."
+				]
+			}
+		],
+		"legendaryGroup": {
+			"name": "Illithilich",
+			"source": "VGM"
+		},
+		"environment": [
+			"underdark"
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/mind-flayer-lich-illithilich.mp3"
+		},
+		"traitTags": [
+			"Legendary Resistances",
+			"Magic Resistance",
+			"Rejuvenation",
+			"Turn Resistance"
+		],
+		"senseTags": [
+			"U"
+		],
+		"actionTags": [
+			"Tentacles"
+		],
+		"languageTags": [
+			"DS",
+			"TP",
+			"U"
+		],
+		"damageTags": [
+			"C",
+			"P",
+			"Y"
+		],
+		"spellcastingTags": [
+			"CW",
+			"I",
+			"P"
+		],
+		"miscTags": [
+			"AOE",
+			"MW"
+		],
+		"conditionInflict": [
+			"grappled",
+			"paralyzed",
+			"stunned"
+		],
+		"conditionInflictSpell": [
+			"charmed",
+			"invisible",
+			"stunned"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true
+	},
+	{
+		"name": "Mind Flayer Psion",
+		"alias": [
+			"Illithid Psion"
+		],
+		"source": "VGM",
+		"page": 71,
+		"size": [
+			"M"
+		],
+		"type": "aberration",
+		"alignment": [
+			"L",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 15,
+				"from": [
+					"{@item breastplate|phb}"
+				]
+			}
+		],
+		"hp": {
+			"average": 71,
+			"formula": "13d8 + 13"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 11,
+		"dex": 12,
+		"con": 12,
+		"int": 19,
+		"wis": 17,
+		"cha": 17,
+		"save": {
+			"int": "+7",
+			"wis": "+6",
+			"cha": "+6"
+		},
+		"skill": {
+			"arcana": "+7",
+			"deception": "+6",
+			"insight": "+6",
+			"perception": "+6",
+			"persuasion": "+6",
+			"stealth": "+4"
+		},
+		"senses": [
+			"darkvision 120 ft."
+		],
+		"passive": 16,
+		"languages": [
+			"Deep Speech",
+			"Undercommon",
+			"telepathy 120 ft."
+		],
+		"cr": "8",
+		"spellcasting": [
+			{
+				"name": "Innate Spellcasting (Psionics)",
+				"headerEntries": [
+					"The mind flayer is a 10th-level spellcaster. Its innate spellcasting ability is Intelligence (spell save {@dc 15}; {@hit 7} to hit with spell attacks). It can innately cast the following spells, requiring no components:"
+				],
+				"will": [
+					"{@spell guidance}",
+					"{@spell mage hand}",
+					"{@spell vicious mockery}",
+					"{@spell true strike}"
+				],
+				"spells": {
+					"1": {
+						"slots": 4,
+						"spells": [
+							"{@spell charm person}",
+							"{@spell command}",
+							"{@spell comprehend languages}",
+							"{@spell sanctuary}"
+						]
+					},
+					"2": {
+						"slots": 3,
+						"spells": [
+							"{@spell crown of madness}",
+							"{@spell phantasmal force}",
+							"{@spell see invisibility}"
+						]
+					},
+					"3": {
+						"slots": 3,
+						"spells": [
+							"{@spell clairvoyance}",
+							"{@spell fear}",
+							"{@spell meld into stone}"
+						]
+					},
+					"4": {
+						"slots": 3,
+						"spells": [
+							"{@spell confusion}",
+							"{@spell stone shape}"
+						]
+					},
+					"5": {
+						"slots": 2,
+						"spells": [
+							"{@spell scrying}",
+							"{@spell telekinesis}"
+						]
+					}
+				},
+				"ability": "int"
+			}
+		],
+		"trait": [
+			{
+				"name": "Magic Resistance",
+				"entries": [
+					"The mind flayer has advantage on saving throws against spells and other magical effects."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Tentacles",
+				"entries": [
+					"{@atk mw} {@hit 7} to hit, reach 5 ft., one creature. {@h}15 ({@damage 2d10 + 4}) psychic damage. If the target is Medium or smaller, it is {@condition grappled} (escape {@dc 15}) and must succeed on a {@dc 15} Intelligence saving throw or be {@condition stunned} until this grapple ends."
+				]
+			},
+			{
+				"name": "Extract Brain",
+				"entries": [
+					"{@atk mw} {@hit 7} to hit, reach 5 ft., one {@condition incapacitated} humanoid {@condition grappled} by the mind flayer. {@h}The target takes 55 ({@damage 10d10}) piercing damage. If this damage reduces the target to 0 hit points, the mind flayer kills the target by extracting and devouring its brain."
+				]
+			},
+			{
+				"name": "Mind Blast {@recharge 5}",
+				"entries": [
+					"The mind flayer magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a {@dc 15} Intelligence saving throw or take 22 ({@damage 4d8 + 4}) psychic damage and be {@condition stunned} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+				]
+			}
+		],
+		"environment": [
+			"underdark"
+		],
+		"traitTags": [
+			"Magic Resistance"
+		],
+		"senseTags": [
+			"SD"
+		],
+		"actionTags": [
+			"Tentacles"
+		],
+		"languageTags": [
+			"DS",
+			"TP",
+			"U"
+		],
+		"damageTags": [
+			"P",
+			"Y"
+		],
+		"spellcastingTags": [
+			"I",
+			"P"
+		],
+		"miscTags": [
+			"AOE",
+			"MW"
+		],
+		"conditionInflict": [
+			"grappled",
+			"stunned"
+		],
+		"conditionInflictSpell": [
+			"charmed",
+			"frightened",
+			"prone",
+			"restrained"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true
+	},
+	{
+		"name": "Orc Blade of Ilneval",
+		"source": "VGM",
+		"page": 183,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"orc"
+			]
+		},
+		"alignment": [
+			"C",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 18,
+				"from": [
+					"{@item chain mail|phb}",
+					"{@item shield|phb}"
+				]
+			}
+		],
+		"hp": {
+			"average": 60,
+			"formula": "8d8 + 24"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 17,
+		"dex": 11,
+		"con": 17,
+		"int": 10,
+		"wis": 12,
+		"cha": 14,
+		"save": {
+			"wis": "+3"
+		},
+		"skill": {
+			"insight": "+3",
+			"intimidation": "+4",
+			"perception": "+3"
+		},
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 13,
+		"languages": [
+			"Common",
+			"Orc"
+		],
+		"cr": "4",
+		"trait": [
+			{
+				"name": "Aggressive",
+				"entries": [
+					"As a bonus action, the orc can move up to its speed toward a hostile creature that it can see."
+				]
+			},
+			{
+				"name": "Foe Smiter of Ilneval",
+				"entries": [
+					"The orc deals an extra die of damage when it hits with a longsword attack (included in the attack)."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The orc makes two melee attacks with its longsword or two ranged attacks with its javelins. If Ilneval's Command is available to use, the orc can use it after these attacks."
+				]
+			},
+			{
+				"name": "Longsword",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d8 + 3}) slashing damage, or 14 ({@damage 2d10 + 3}) slashing damage when used with two hands."
+				]
+			},
+			{
+				"name": "Javelin",
+				"entries": [
+					"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+				]
+			},
+			{
+				"name": "Ilneval's Command (Recharges 4–6)",
+				"entries": [
+					"Up to three allied orcs within 120 feet of this orc that can hear it can use their reactions to each make one weapon attack."
+				]
+			}
+		],
+		"environment": [
+			"underdark",
+			"mountain",
+			"grassland",
+			"forest",
+			"hill"
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/orc-blade-of-ilneval.mp3"
+		},
+		"traitTags": [
+			"Aggressive"
+		],
+		"senseTags": [
+			"D"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"O"
+		],
+		"damageTags": [
+			"P",
+			"S"
+		],
+		"miscTags": [
+			"MW",
+			"RW",
+			"THW"
+		],
+		"hasToken": true,
+		"hasFluff": true
+	},
+	{
+		"name": "Orc Claw of Luthic",
+		"source": "VGM",
+		"page": 183,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"orc"
+			]
+		},
+		"alignment": [
+			"C",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 14,
+				"from": [
+					"{@item hide armor|phb}"
+				]
+			}
+		],
+		"hp": {
+			"average": 45,
+			"formula": "6d8 + 18"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 14,
+		"dex": 15,
+		"con": 16,
+		"int": 10,
+		"wis": 15,
+		"cha": 11,
+		"skill": {
+			"intimidation": "+2",
+			"medicine": "+4",
+			"survival": "+4"
+		},
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 12,
+		"languages": [
+			"Common",
+			"Orc"
+		],
+		"cr": "2",
+		"spellcasting": [
+			{
+				"name": "Spellcasting",
+				"headerEntries": [
+					"The orc is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). The orc has the following cleric spells prepared:"
+				],
+				"spells": {
+					"0": {
+						"spells": [
+							"{@spell guidance}",
+							"{@spell mending}",
+							"{@spell resistance}",
+							"{@spell thaumaturgy}"
+						]
+					},
+					"1": {
+						"slots": 4,
+						"spells": [
+							"{@spell bane}",
+							"{@spell cure wounds}",
+							"{@spell guiding bolt}"
+						]
+					},
+					"2": {
+						"slots": 3,
+						"spells": [
+							"{@spell augury}",
+							"{@spell warding bond}"
+						]
+					},
+					"3": {
+						"slots": 2,
+						"spells": [
+							"{@spell bestow curse}",
+							"{@spell create food and water}"
+						]
+					}
+				},
+				"ability": "wis"
+			}
+		],
+		"trait": [
+			{
+				"name": "Aggressive",
+				"entries": [
+					"As a bonus action, the orc can move up to its speed toward a hostile creature that it can see."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The orc makes two claw attacks, or four claw attacks if it has fewer than half of its hit points remaining."
+				]
+			},
+			{
+				"name": "Claw",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) slashing damage."
+				]
+			}
+		],
+		"environment": [
+			"underdark",
+			"mountain"
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/orc-claw-of-luthic.mp3"
+		},
+		"traitTags": [
+			"Aggressive"
+		],
+		"senseTags": [
+			"D"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"O"
+		],
+		"damageTags": [
+			"S"
+		],
+		"spellcastingTags": [
+			"CC"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true
+	},
+	{
+		"name": "Orc Hand of Yurtrus",
+		"source": "VGM",
+		"page": 184,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"orc"
+			]
+		},
+		"alignment": [
+			"C",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 12,
+				"from": [
+					"{@item hide armor|phb}"
+				]
+			}
+		],
+		"hp": {
+			"average": 30,
+			"formula": "4d8 + 12"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 12,
+		"dex": 11,
+		"con": 16,
+		"int": 11,
+		"wis": 14,
+		"cha": 9,
+		"skill": {
+			"arcana": "+2",
+			"intimidation": "+1",
+			"medicine": "+4",
+			"religion": "+2"
+		},
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 12,
+		"languages": [
+			"understands Common and Orc but can't speak"
+		],
+		"cr": "2",
+		"spellcasting": [
+			{
+				"name": "Spellcasting",
+				"headerEntries": [
+					"The orc is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). It requires no verbal components to cast its spells. The orc has the following cleric spells prepared:"
+				],
+				"spells": {
+					"0": {
+						"spells": [
+							"{@spell guidance}",
+							"{@spell mending}",
+							"{@spell resistance}",
+							"{@spell thaumaturgy}"
+						]
+					},
+					"1": {
+						"slots": 4,
+						"spells": [
+							"{@spell bane}",
+							"{@spell detect magic}",
+							"{@spell inflict wounds}",
+							"{@spell protection from evil and good}"
+						]
+					},
+					"2": {
+						"slots": 3,
+						"spells": [
+							"{@spell blindness/deafness}",
+							"{@spell silence}"
+						]
+					}
+				},
+				"ability": "wis"
+			}
+		],
+		"trait": [
+			{
+				"name": "Aggressive",
+				"entries": [
+					"As a bonus action, the orc can move up to its speed toward a hostile creature that it can see."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Touch of the White Hand",
+				"entries": [
+					"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d8}) necrotic damage."
+				]
+			}
+		],
+		"environment": [
+			"underdark",
+			"mountain",
+			"grassland",
+			"forest",
+			"hill"
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/orc-hand-of-yurtrus.mp3"
+		},
+		"traitTags": [
+			"Aggressive"
+		],
+		"senseTags": [
+			"D"
+		],
+		"languageTags": [
+			"C",
+			"CS",
+			"O"
+		],
+		"damageTags": [
+			"N"
+		],
+		"spellcastingTags": [
+			"CC"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true,
+		"hasFluff": true
+	},
+	{
+		"name": "Orc Nurtured One of Yurtrus",
+		"source": "VGM",
+		"page": 184,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"orc"
+			]
+		},
+		"alignment": [
+			"C",
+			"E"
+		],
+		"ac": [
+			9
+		],
+		"hp": {
+			"average": 30,
+			"formula": "4d8 + 12"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 15,
+		"dex": 8,
+		"con": 16,
+		"int": 7,
+		"wis": 11,
+		"cha": 7,
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 10,
+		"languages": [
+			"Common",
+			"Orc"
+		],
+		"cr": "1/2",
+		"trait": [
+			{
+				"name": "Aggressive",
+				"entries": [
+					"As a bonus action, the orc can move up to its speed toward a hostile creature that it can see."
+				]
+			},
+			{
+				"name": "Corrupted Carrier",
+				"entries": [
+					"When the orc is reduced to 0 hit points, it explodes, and any creature within 10 feet of it must make a {@dc 13} Constitution saving throw. On a failed save, the creature takes 14 ({@damage 4d6}) poison damage and becomes {@condition poisoned}. On a success, the creature takes half as much damage and isn't {@condition poisoned}. A creature {@condition poisoned} by this effect can repeat the save at the end of each of its turn, ending the effect on itself on a success. While {@condition poisoned} by this effect, a creature can't regain hit points."
+				]
+			},
+			{
+				"name": "Nurtured One of Yurtrus",
+				"entries": [
+					"The orc has advantage on saving throws against poison and disease."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Claws",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) slashing damage plus 2 ({@damage 1d4}) necrotic damage."
+				]
+			},
+			{
+				"name": "Corrupted Vengeance",
+				"entries": [
+					"The orc reduces itself to 0 hit points, triggering its Corrupted Carrier trait."
+				]
+			}
+		],
+		"environment": [
+			"underdark",
+			"mountain",
+			"grassland",
+			"forest",
+			"hill"
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/orc-nurtured-one-of-yurtrus.mp3"
+		},
+		"traitTags": [
+			"Aggressive"
+		],
+		"senseTags": [
+			"D"
+		],
+		"languageTags": [
+			"C",
+			"O"
+		],
+		"damageTags": [
+			"I",
+			"N",
+			"S"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"conditionInflict": [
+			"poisoned"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true
+	},
+	{
+		"name": "Orc Red Fang of Shargaas",
+		"source": "VGM",
+		"page": 185,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"orc"
+			]
+		},
+		"alignment": [
+			"C",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 15,
+				"from": [
+					"{@item studded leather armor|phb}"
+				]
+			}
+		],
+		"hp": {
+			"average": 52,
+			"formula": "8d8 + 16"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 11,
+		"dex": 16,
+		"con": 15,
+		"int": 9,
+		"wis": 11,
+		"cha": 9,
+		"skill": {
+			"intimidation": "+1",
+			"perception": "+2",
+			"stealth": "+5"
+		},
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 12,
+		"languages": [
+			"Common",
+			"Orc"
+		],
+		"cr": "3",
+		"trait": [
+			{
+				"name": "Cunning Action",
+				"entries": [
+					"On each of its turns, the orc can use a bonus action to take the Dash, Disengage, or Hide action."
+				]
+			},
+			{
+				"name": "Hand of Shargaas",
+				"entries": [
+					"The orc deals 2 extra dice of damage when it hits a target with a weapon attack (included in its attacks)."
+				]
+			},
+			{
+				"name": "Shargaas's Sight",
+				"entries": [
+					"Magical darkness doesn't impede the orc's darkvision."
+				]
+			},
+			{
+				"name": "Slayer",
+				"entries": [
+					"In the first round of a combat, the orc has advantage on attack rolls against any creature that hasn't taken a turn yet. If the orc hits a creature that round who was surprised, the hit is automatically a critical hit."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The orc makes two scimitar or dart attacks."
+				]
+			},
+			{
+				"name": "Scimitar",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}13 ({@damage 3d6 + 3}) slashing damage."
+				]
+			},
+			{
+				"name": "Dart",
+				"entries": [
+					"{@atk rw} {@hit 5} to hit, range 20/60 ft., one target. {@h}10 ({@damage 3d4 + 3}) piercing damage."
+				]
+			},
+			{
+				"name": "Veil of Shargaas (Recharges after a Short or Long Rest)",
+				"entries": [
+					"The orc casts {@spell darkness} without any components. Wisdom is its spellcasting ability."
+				]
+			}
+		],
+		"environment": [
+			"underdark",
+			"mountain",
+			"forest",
+			"hill",
+			"urban"
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/orc-red-fang.mp3"
+		},
+		"senseTags": [
+			"D"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"O"
+		],
+		"damageTags": [
+			"P",
+			"S"
+		],
+		"miscTags": [
+			"MW",
+			"RW",
+			"THW"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true
+	},
+	{
+		"name": "Rothé",
+		"source": "VGM",
+		"page": 208,
+		"size": [
+			"L"
+		],
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			10
+		],
+		"hp": {
+			"average": 15,
+			"formula": "2d10 + 4"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 18,
+		"dex": 10,
+		"con": 14,
+		"int": 2,
+		"wis": 10,
+		"cha": 4,
+		"senses": [
+			"darkvision 30 ft."
+		],
+		"passive": 10,
+		"cr": "1/4",
+		"trait": [
+			{
+				"name": "Charge",
+				"entries": [
+					"If the rothé moves at least 20 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 7 ({@damage 2d6}) piercing damage."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Gore",
+				"entries": [
+					"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
+				]
+			}
+		],
+		"environment": [
+			"grassland"
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/rothe.mp3"
+		},
+		"traitTags": [
+			"Charge"
+		],
+		"senseTags": [
+			"D"
+		],
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true,
+		"hasFluff": true
+	},
+	{
+		"name": "Xvart Speaker",
+		"source": "VGM",
+		"page": 200,
+		"size": [
+			"S"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"xvart"
+			]
+		},
+		"alignment": [
+			"C",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 13,
+				"from": [
+					"{@item leather armor|phb}"
+				]
+			}
+		],
+		"hp": {
+			"average": 7,
+			"formula": "2d6"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 8,
+		"dex": 14,
+		"con": 10,
+		"int": 13,
+		"wis": 7,
+		"cha": 7,
+		"skill": {
+			"stealth": "+4"
+		},
+		"senses": [
+			"darkvision 30 ft."
+		],
+		"passive": 8,
+		"languages": [
+			"Abyssal and one additional language (usually Common or Goblin)"
+		],
+		"cr": "1/8",
+		"trait": [
+			{
+				"name": "Low Cunning",
+				"entries": [
+					"The xvart can take the Disengage action as a bonus action on each of its turns."
+				]
+			},
+			{
+				"name": "Overbearing Pack",
+				"entries": [
+					"The xvart has advantage on Strength (Athletics) checks to shove a creature if at least one of the xvart's allies is within 5 feet of the target and the ally isn't {@condition incapacitated}."
+				]
+			},
+			{
+				"name": "Raxivort's Tongue",
+				"entries": [
+					"The xvart can communicate with ordinary bats and rats, as well as giant bats and giant rats."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Shortsword",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+				]
+			},
+			{
+				"name": "Sling",
+				"entries": [
+					"{@atk rw} {@hit 4} to hit, range 30/120 ft., one target. {@h}4 ({@damage 1d4 + 2}) bludgeoning damage."
+				]
+			}
+		],
+		"environment": [
+			"underdark",
+			"hill"
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/xvart-speaker.mp3"
+		},
+		"senseTags": [
+			"D"
+		],
+		"languageTags": [
+			"AB",
+			"C",
+			"GO",
+			"X"
+		],
+		"damageTags": [
+			"B",
+			"P"
+		],
+		"miscTags": [
+			"MW",
+			"RNG",
+			"RW"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true
+	},
+	{
+		"name": "Yuan-ti Malison (Type 4)",
+		"source": "VGM",
+		"page": 96,
+		"otherSources": [
+			{
+				"source": "ToA"
+			}
+		],
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "monstrosity",
+			"tags": [
+				"shapechanger",
+				"yuan-ti"
+			]
+		},
+		"alignment": [
+			"N",
+			"E"
+		],
+		"ac": [
+			12
+		],
+		"hp": {
+			"average": 66,
+			"formula": "12d8 + 12"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 16,
+		"dex": 14,
+		"con": 13,
+		"int": 14,
+		"wis": 12,
+		"cha": 16,
+		"skill": {
+			"deception": "+5",
+			"stealth": "+4"
+		},
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 11,
+		"immune": [
+			"poison"
+		],
+		"conditionImmune": [
+			"poisoned"
+		],
+		"languages": [
+			"Abyssal",
+			"Common",
+			"Draconic"
+		],
+		"cr": "3",
+		"spellcasting": [
+			{
+				"name": "Innate Spellcasting (Yuan-ti Form Only)",
+				"headerEntries": [
+					"The yuan-ti's innate spellcasting ability is Charisma (spell save {@dc 13}). The yuan-ti can innately cast the following spells, requiring no material components:"
+				],
+				"will": [
+					"{@spell animal friendship} (snakes only)"
+				],
+				"daily": {
+					"3": [
+						"{@spell suggestion}"
+					]
+				},
+				"ability": "cha"
+			}
+		],
+		"trait": [
+			{
+				"name": "Shapechanger",
+				"entries": [
+					"The yuan-ti can use its action to polymorph into a Medium snake, or back into its true form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It doesn't change form if it dies."
+				]
+			},
+			{
+				"name": "Magic Resistance",
+				"entries": [
+					"The yuan-ti has advantage on saving throws against spells and other magical effects."
+				]
+			},
+			{
+				"name": "Malison Type",
+				"entries": [
+					"The yuan-ti has one of the following types:",
+					{
+						"type": "list",
+						"style": "list-hang-notitle",
+						"items": [
+							{
+								"type": "item",
+								"name": "Type 4:",
+								"entry": "Human form with one or more serpentine tails"
+							},
+							{
+								"type": "item",
+								"name": "Type 5:",
+								"entry": "Human form covered in scales"
+							}
+						]
+					}
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack (Yuan-ti Form Only)",
+				"entries": [
+					"The yuan-ti makes two ranged attacks or two melee attacks."
+				]
+			},
+			{
+				"name": "Bite (Snake Form Only)",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}5 ({@damage 1d4 + 3}) piercing damage plus 7 ({@damage 2d6}) poison damage."
+				]
+			},
+			{
+				"name": "Scimitar (Yuan-ti Form Only)",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
+				]
+			},
+			{
+				"name": "Longbow (Yuan-ti Form Only)",
+				"entries": [
+					"{@atk rw} {@hit 4} to hit, range 150/600 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+				]
+			}
+		],
+		"environment": [
+			"forest",
+			"swamp",
+			"desert"
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/yuan-ti-malison.mp3"
+		},
+		"traitTags": [
+			"Magic Resistance",
+			"Shapechanger"
+		],
+		"senseTags": [
+			"D"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"AB",
+			"C",
+			"DR"
+		],
+		"damageTags": [
+			"I",
+			"P",
+			"S"
+		],
+		"spellcastingTags": [
+			"F",
+			"I"
+		],
+		"miscTags": [
+			"MW",
+			"RNG",
+			"RW"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true
+	},
+	{
+		"name": "Yuan-ti Malison (Type 5)",
+		"source": "VGM",
+		"page": 96,
+		"otherSources": [
+			{
+				"source": "ToA"
+			}
+		],
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "monstrosity",
+			"tags": [
+				"shapechanger",
+				"yuan-ti"
+			]
+		},
+		"alignment": [
+			"N",
+			"E"
+		],
+		"ac": [
+			12
+		],
+		"hp": {
+			"average": 66,
+			"formula": "12d8 + 12"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 16,
+		"dex": 14,
+		"con": 13,
+		"int": 14,
+		"wis": 12,
+		"cha": 16,
+		"skill": {
+			"deception": "+5",
+			"stealth": "+4"
+		},
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 11,
+		"immune": [
+			"poison"
+		],
+		"conditionImmune": [
+			"poisoned"
+		],
+		"languages": [
+			"Abyssal",
+			"Common",
+			"Draconic"
+		],
+		"cr": "3",
+		"spellcasting": [
+			{
+				"name": "Innate Spellcasting (Yuan-ti Form Only)",
+				"headerEntries": [
+					"The yuan-ti's innate spellcasting ability is Charisma (spell save {@dc 13}). The yuan-ti can innately cast the following spells, requiring no material components:"
+				],
+				"will": [
+					"{@spell animal friendship} (snakes only)"
+				],
+				"daily": {
+					"3": [
+						"{@spell suggestion}"
+					]
+				},
+				"ability": "cha"
+			}
+		],
+		"trait": [
+			{
+				"name": "Shapechanger",
+				"entries": [
+					"The yuan-ti can use its action to polymorph into a Medium snake, or back into its true form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It doesn't change form if it dies."
+				]
+			},
+			{
+				"name": "Magic Resistance",
+				"entries": [
+					"The yuan-ti has advantage on saving throws against spells and other magical effects."
+				]
+			},
+			{
+				"name": "Malison Type",
+				"entries": [
+					"The yuan-ti has one of the following types:",
+					{
+						"type": "list",
+						"style": "list-hang-notitle",
+						"items": [
+							{
+								"type": "item",
+								"name": "Type 4:",
+								"entry": "Human form with one or more serpentine tails"
+							},
+							{
+								"type": "item",
+								"name": "Type 5:",
+								"entry": "Human form covered in scales"
+							}
+						]
+					}
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack (Yuan-ti Form Only)",
+				"entries": [
+					"The yuan-ti makes two ranged attacks or two melee attacks."
+				]
+			},
+			{
+				"name": "Bite (Snake Form Only)",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}5 ({@damage 1d4 + 3}) piercing damage plus 7 ({@damage 2d6}) poison damage."
+				]
+			},
+			{
+				"name": "Scimitar (Yuan-ti Form Only)",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
+				]
+			},
+			{
+				"name": "Longbow (Yuan-ti Form Only)",
+				"entries": [
+					"{@atk rw} {@hit 4} to hit, range 150/600 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+				]
+			}
+		],
+		"environment": [
+			"forest",
+			"swamp",
+			"desert"
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/yuan-ti-malison.mp3"
+		},
+		"traitTags": [
+			"Magic Resistance",
+			"Shapechanger"
+		],
+		"senseTags": [
+			"D"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"AB",
+			"C",
+			"DR"
+		],
+		"damageTags": [
+			"I",
+			"P",
+			"S"
+		],
+		"spellcastingTags": [
+			"F",
+			"I"
+		],
+		"miscTags": [
+			"MW",
+			"RNG",
+			"RW"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true
+	}
+]

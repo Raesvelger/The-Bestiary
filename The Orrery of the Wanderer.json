@@ -1,0 +1,924 @@
+[
+	{
+		"name": "Clockwork Behir",
+		"source": "OoW",
+		"page": 173,
+		"type": "construct",
+		"immune": [
+			"poison",
+			"psychic"
+		],
+		"conditionImmune": [
+			"charmed",
+			"exhaustion",
+			"frightened",
+			"paralyzed",
+			"petrified",
+			"poisoned"
+		],
+		"size": [
+			"H"
+		],
+		"alignment": [
+			"N",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 17,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 168,
+			"formula": "16d12 + 64"
+		},
+		"speed": {
+			"walk": 50,
+			"climb": 40
+		},
+		"str": 23,
+		"dex": 16,
+		"con": 18,
+		"int": 7,
+		"wis": 14,
+		"cha": 12,
+		"skill": {
+			"perception": "+6",
+			"stealth": "+7"
+		},
+		"senses": [
+			"darkvision 90 ft."
+		],
+		"passive": 16,
+		"languages": [
+			"Draconic"
+		],
+		"cr": "11",
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The behir makes two attacks: one with its bite and one to constrict."
+				]
+			},
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}22 ({@damage 3d10 + 6}) piercing damage."
+				]
+			},
+			{
+				"name": "Constrict",
+				"entries": [
+					"{@atk mw} {@hit 10} to hit, reach 5 ft., one Large or smaller creature. {@h}17 ({@damage 2d10 + 6}) bludgeoning damage plus 17 ({@damage 2d10 + 6}) slashing damage. The target is {@condition grappled} (escape {@dc 16}) if the behir isn't already constricting a creature, and the target is {@condition restrained} until this grapple ends."
+				]
+			},
+			{
+				"name": "Lightning Breath {@recharge 5}",
+				"entries": [
+					"The behir exhales a line of lightning that is 20 feet long and 5 feet wide. Each creature in that line must make a {@dc 16} Dexterity saving throw, taking 66 ({@damage 12d10}) lightning damage on a failed save, or half as much damage on a successful one."
+				]
+			},
+			{
+				"name": "Swallow",
+				"entries": [
+					"The behir makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is also swallowed, and the grapple ends. While swallowed, the target is {@condition blinded} and {@condition restrained}, it has total cover against attacks and other effects outside the behir, and it takes 21 ({@damage 6d6}) acid damage at the start of each of the behir's turns. A behir can have only one creature swallowed at a time.",
+					"If the behir takes 30 damage or more on a single turn from the swallowed creature, the behir must succeed on a {@dc 14} Constitution saving throw at the end of that turn or regurgitate the creature, which falls {@condition prone} in a space within 10 feet of the behir. If the behir dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse by using 15 feet of movement, exiting {@condition prone}."
+				]
+			}
+		],
+		"senseTags": [
+			"D"
+		],
+		"actionTags": [
+			"Breath Weapon",
+			"Multiattack",
+			"Swallow"
+		],
+		"languageTags": [
+			"DR"
+		],
+		"damageTags": [
+			"A",
+			"B",
+			"L",
+			"P",
+			"S"
+		],
+		"miscTags": [
+			"MW",
+			"RCH"
+		],
+		"conditionInflict": [
+			"blinded",
+			"grappled",
+			"restrained"
+		]
+	},
+	{
+		"name": "Enormous Tentacle",
+		"source": "OoW",
+		"page": 94,
+		"trait": [
+			{
+				"name": "Reach",
+				"entries": [
+					"The tentacle can reach anywhere in the room."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Constrict",
+				"entries": [
+					"{@atk mw} {@hit 6} to hit, reach 35 ft., one creature. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 16}). Until this grapple ends, the creature is {@condition restrained}, and the tentacle can't constrict another target."
+				]
+			}
+		],
+		"damageTags": [
+			"B"
+		],
+		"conditionInflict": [
+			"grappled",
+			"restrained"
+		],
+		"hasToken": true,
+		"hasFluffImages": true,
+		"size": [
+			"H"
+		],
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			12
+		],
+		"hp": {
+			"average": 60,
+			"formula": "8d12 + 8"
+		},
+		"speed": {
+			"walk": 30,
+			"swim": 30
+		},
+		"str": 19,
+		"dex": 14,
+		"con": 12,
+		"int": 1,
+		"wis": 10,
+		"cha": 3,
+		"skill": {
+			"perception": "+2"
+		},
+		"senses": [
+			"blindsight 10 ft."
+		],
+		"passive": 12,
+		"cr": "2",
+		"senseTags": [
+			"B"
+		],
+		"miscTags": [
+			"MW",
+			"RCH"
+		]
+	},
+	{
+		"name": "Mechachimera",
+		"source": "OoW",
+		"page": 134,
+		"type": "construct",
+		"immune": [
+			"poison",
+			"psychic"
+		],
+		"size": [
+			"L"
+		],
+		"alignment": [
+			"C",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 14,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 114,
+			"formula": "12d10 + 48"
+		},
+		"speed": {
+			"walk": 30,
+			"fly": 60
+		},
+		"str": 19,
+		"dex": 11,
+		"con": 19,
+		"int": 3,
+		"wis": 14,
+		"cha": 10,
+		"skill": {
+			"perception": "+8"
+		},
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 18,
+		"languages": [
+			"understands Draconic but can't speak"
+		],
+		"cr": "6",
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The chimera makes three attacks: one with its bite, one with its horns, and one with its claws. When its fire breath is available, it can use the breath in place of its bite or horns."
+				]
+			},
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage."
+				]
+			},
+			{
+				"name": "Horns",
+				"entries": [
+					"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d12 + 4}) bludgeoning damage."
+				]
+			},
+			{
+				"name": "Claws",
+				"entries": [
+					"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+				]
+			},
+			{
+				"name": "Fire Breath {@recharge 5}",
+				"entries": [
+					"The dragon head exhales fire in a 15-foot cone. Each creature in that area must make a {@dc 15} Dexterity saving throw, taking 31 ({@damage 7d8}) fire damage on a failed save, or half as much damage on a successful one."
+				]
+			}
+		],
+		"senseTags": [
+			"D"
+		],
+		"actionTags": [
+			"Breath Weapon",
+			"Multiattack"
+		],
+		"languageTags": [
+			"CS",
+			"DR"
+		],
+		"damageTags": [
+			"B",
+			"F",
+			"P",
+			"S"
+		],
+		"miscTags": [
+			"AOE",
+			"MW"
+		]
+	},
+	{
+		"name": "Replica Duodrone",
+		"source": "OoW",
+		"page": 132,
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"languages": [
+			"Modron",
+			"can understand Common but speaks only preprogrammed responses"
+		],
+		"languageTags": [
+			"C",
+			"OTH"
+		],
+		"group": [
+			"Modrons"
+		],
+		"size": [
+			"M"
+		],
+		"type": "construct",
+		"alignment": [
+			"L",
+			"N"
+		],
+		"ac": [
+			{
+				"ac": 15,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 11,
+			"formula": "2d8 + 2"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 11,
+		"dex": 13,
+		"con": 12,
+		"int": 6,
+		"wis": 10,
+		"cha": 7,
+		"passive": 10,
+		"cr": "1/4",
+		"trait": [
+			{
+				"name": "Axiomatic Mind",
+				"entries": [
+					"The duodrone can't be compelled to act in a manner contrary to its nature or its instructions."
+				]
+			},
+			{
+				"name": "Dismantlable",
+				"entries": [
+					"If the replica duodrone dies, its body falls into a pile of parts (gears, plates, screws, and wires), leaving behind its weapons and anything else it was carrying."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The duodrone makes two fist attacks or two javelin attacks."
+				]
+			},
+			{
+				"name": "Fist",
+				"entries": [
+					"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) bludgeoning damage."
+				]
+			},
+			{
+				"name": "Javelin",
+				"entries": [
+					"{@atk mw,rw} {@hit 3} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage."
+				]
+			}
+		],
+		"senseTags": [
+			"U"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"damageTags": [
+			"B",
+			"P"
+		],
+		"miscTags": [
+			"MW",
+			"RW",
+			"THW"
+		]
+	},
+	{
+		"name": "Replica Monodrone",
+		"source": "OoW",
+		"page": 132,
+		"speed": {
+			"walk": 30
+		},
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"languages": [
+			"Modron",
+			"can understand Common but speaks only preprogrammed responses"
+		],
+		"languageTags": [
+			"C",
+			"OTH"
+		],
+		"group": [
+			"Modrons"
+		],
+		"size": [
+			"M"
+		],
+		"type": "construct",
+		"alignment": [
+			"L",
+			"N"
+		],
+		"ac": [
+			{
+				"ac": 15,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 5,
+			"formula": "1d8 + 1"
+		},
+		"str": 10,
+		"dex": 13,
+		"con": 12,
+		"int": 4,
+		"wis": 10,
+		"cha": 5,
+		"passive": 10,
+		"cr": "1/8",
+		"trait": [
+			{
+				"name": "Axiomatic Mind",
+				"entries": [
+					"The monodrone can't be compelled to act in a manner contrary to its nature or its instructions."
+				]
+			},
+			{
+				"name": "Dismantlable",
+				"entries": [
+					"If the replica monodrone dies, its body falls into a pile of parts (gears, plates, screws, and wires), leaving behind its weapons and anything else it was carrying."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Dagger",
+				"entries": [
+					"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage."
+				]
+			},
+			{
+				"name": "Javelin",
+				"entries": [
+					"{@atk mw,rw} {@hit 2} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}3 ({@damage 1d6}) piercing damage."
+				]
+			}
+		],
+		"senseTags": [
+			"U"
+		],
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MW",
+			"RW",
+			"THW"
+		]
+	},
+	{
+		"name": "Replica Pentadrone",
+		"source": "OoW",
+		"page": 132,
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"languages": [
+			"Modron",
+			"can understand Common but speaks only preprogrammed responses"
+		],
+		"languageTags": [
+			"C",
+			"OTH"
+		],
+		"group": [
+			"Modrons"
+		],
+		"size": [
+			"L"
+		],
+		"type": "construct",
+		"alignment": [
+			"L",
+			"N"
+		],
+		"ac": [
+			{
+				"ac": 16,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 32,
+			"formula": "5d10 + 5"
+		},
+		"speed": {
+			"walk": 40
+		},
+		"str": 15,
+		"dex": 14,
+		"con": 12,
+		"int": 10,
+		"wis": 10,
+		"cha": 13,
+		"skill": {
+			"perception": "+4"
+		},
+		"passive": 14,
+		"cr": "2",
+		"trait": [
+			{
+				"name": "Axiomatic Mind",
+				"entries": [
+					"The pentadrone can't be compelled to act in a manner contrary to its nature or its instructions."
+				]
+			},
+			{
+				"name": "Dismantlable",
+				"entries": [
+					"If the replica pentadrone dies, its body falls into a pile of parts (gears, plates, screws, and wires), leaving behind its weapons and anything else it was carrying."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The pentadrone makes five arm attacks."
+				]
+			},
+			{
+				"name": "Arm",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) bludgeoning damage."
+				]
+			},
+			{
+				"name": "Paralysis Gas {@recharge 5}",
+				"entries": [
+					"The pentadrone exhales a 30-foot cone of gas. Each creature in that area must succeed on a {@dc 11} Constitution saving throw or be {@condition paralyzed} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+				]
+			}
+		],
+		"senseTags": [
+			"U"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"damageTags": [
+			"B"
+		],
+		"miscTags": [
+			"AOE",
+			"MW"
+		],
+		"conditionInflict": [
+			"paralyzed"
+		]
+	},
+	{
+		"name": "Replica Quadrone",
+		"source": "OoW",
+		"page": 132,
+		"speed": {
+			"walk": 30
+		},
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"languages": [
+			"Modron",
+			"can understand Common but speaks only preprogrammed responses"
+		],
+		"languageTags": [
+			"C",
+			"OTH"
+		],
+		"group": [
+			"Modrons"
+		],
+		"size": [
+			"M"
+		],
+		"type": "construct",
+		"alignment": [
+			"L",
+			"N"
+		],
+		"ac": [
+			{
+				"ac": 16,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 22,
+			"formula": "4d8 + 4"
+		},
+		"str": 12,
+		"dex": 14,
+		"con": 12,
+		"int": 10,
+		"wis": 10,
+		"cha": 11,
+		"skill": {
+			"perception": "+2"
+		},
+		"passive": 12,
+		"cr": "1",
+		"trait": [
+			{
+				"name": "Axiomatic Mind",
+				"entries": [
+					"The quadrone can't be compelled to act in a manner contrary to its nature or its instructions."
+				]
+			},
+			{
+				"name": "Dismantlable",
+				"entries": [
+					"If the replica quadrone dies, its body falls into a pile of parts (gears, plates, screws, and wires), leaving behind its weapons and anything else it was carrying."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The quadrone makes two fist attacks or four shortbow attacks."
+				]
+			},
+			{
+				"name": "Fist",
+				"entries": [
+					"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) bludgeoning damage."
+				]
+			},
+			{
+				"name": "Shortbow",
+				"entries": [
+					"{@atk rw} {@hit 4} to hit, range 80/320 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+				]
+			}
+		],
+		"senseTags": [
+			"U"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"damageTags": [
+			"B",
+			"P"
+		],
+		"miscTags": [
+			"MW",
+			"RNG",
+			"RW"
+		]
+	},
+	{
+		"name": "Replica Tridrone",
+		"source": "OoW",
+		"page": 132,
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"languages": [
+			"Modron",
+			"can understand Common but speaks only preprogrammed responses"
+		],
+		"languageTags": [
+			"C",
+			"OTH"
+		],
+		"group": [
+			"Modrons"
+		],
+		"size": [
+			"M"
+		],
+		"type": "construct",
+		"alignment": [
+			"L",
+			"N"
+		],
+		"ac": [
+			{
+				"ac": 15,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 16,
+			"formula": "3d8 + 3"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 12,
+		"dex": 13,
+		"con": 12,
+		"int": 9,
+		"wis": 10,
+		"cha": 9,
+		"passive": 10,
+		"cr": "1/2",
+		"trait": [
+			{
+				"name": "Axiomatic Mind",
+				"entries": [
+					"The tridrone can't be compelled to act in a manner contrary to its nature or its instructions."
+				]
+			},
+			{
+				"name": "Dismantlable",
+				"entries": [
+					"If the replica tridrone dies, its body falls into a pile of parts (gears, plates, screws, and wires), leaving behind its weapons and anything else it was carrying."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The tridrone makes three fist attacks or three javelin attacks."
+				]
+			},
+			{
+				"name": "Fist",
+				"entries": [
+					"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) bludgeoning damage."
+				]
+			},
+			{
+				"name": "Javelin",
+				"entries": [
+					"{@atk mw,rw} {@hit 3} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage."
+				]
+			}
+		],
+		"senseTags": [
+			"U"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"damageTags": [
+			"B",
+			"P"
+		],
+		"miscTags": [
+			"MW",
+			"RW",
+			"THW"
+		]
+	},
+	{
+		"name": "Stomping Foot",
+		"source": "OoW",
+		"page": 92,
+		"speed": {
+			"walk": 30
+		},
+		"action": [
+			{
+				"name": "Stomp",
+				"entries": [
+					"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) bludgeoning damage."
+				]
+			}
+		],
+		"damageTags": [
+			"B"
+		],
+		"size": [
+			"T"
+		],
+		"type": "undead",
+		"alignment": [
+			"N",
+			"E"
+		],
+		"ac": [
+			12
+		],
+		"hp": {
+			"average": 2,
+			"formula": "1d4"
+		},
+		"str": 13,
+		"dex": 14,
+		"con": 11,
+		"int": 5,
+		"wis": 10,
+		"cha": 4,
+		"senses": [
+			"blindsight 30 ft. (blind beyond this radius)"
+		],
+		"passive": 10,
+		"immune": [
+			"poison"
+		],
+		"conditionImmune": [
+			"charmed",
+			"exhaustion",
+			"poisoned"
+		],
+		"languages": [
+			"understands Common but can't speak"
+		],
+		"cr": "0",
+		"trait": [
+			{
+				"name": "Turn Immunity",
+				"entries": [
+					"The foot is immune to effects that turn undead."
+				]
+			}
+		],
+		"traitTags": [
+			"Turn Immunity"
+		],
+		"senseTags": [
+			"B"
+		],
+		"languageTags": [
+			"C",
+			"CS"
+		],
+		"miscTags": [
+			"MW"
+		]
+	},
+	{
+		"name": "Undead Cockatrice",
+		"source": "OoW",
+		"page": 114,
+		"type": "undead",
+		"immune": [
+			"poison"
+		],
+		"conditionImmune": [
+			"poisoned"
+		],
+		"hasToken": true,
+		"size": [
+			"S"
+		],
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			11
+		],
+		"hp": {
+			"average": 27,
+			"formula": "6d6 + 6"
+		},
+		"speed": {
+			"walk": 20,
+			"fly": 40
+		},
+		"str": 6,
+		"dex": 12,
+		"con": 12,
+		"int": 2,
+		"wis": 13,
+		"cha": 5,
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 11,
+		"cr": "1/2",
+		"action": [
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 3} to hit, reach 5 ft., one creature. {@h}3 ({@damage 1d4 + 1}) piercing damage, and the target must succeed on a {@dc 11} Constitution saving throw against being magically {@condition petrified}. On a failed save, the creature begins to turn to stone and is {@condition restrained}. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is {@condition petrified} for 24 hours."
+				]
+			}
+		],
+		"senseTags": [
+			"D"
+		],
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"conditionInflict": [
+			"petrified",
+			"restrained"
+		]
+	}
+]

@@ -1,0 +1,2570 @@
+[
+	{
+		"name": "Amber Golem",
+		"source": "CoS",
+		"page": 186,
+		"hasToken": true,
+		"hasFluffImages": true,
+		"size": [
+			"L"
+		],
+		"type": "construct",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			{
+				"ac": 17,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 178,
+			"formula": "17d10 + 85"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 22,
+		"dex": 9,
+		"con": 20,
+		"int": 3,
+		"wis": 11,
+		"cha": 1,
+		"senses": [
+			"darkvision 120 ft."
+		],
+		"passive": 10,
+		"immune": [
+			"poison",
+			"psychic",
+			{
+				"immune": [
+					"bludgeoning",
+					"piercing",
+					"slashing"
+				],
+				"note": "from nonmagical attacks that aren't adamantine",
+				"cond": true
+			}
+		],
+		"conditionImmune": [
+			"charmed",
+			"exhaustion",
+			"frightened",
+			"paralyzed",
+			"petrified",
+			"poisoned"
+		],
+		"languages": [
+			"understands the languages of its creator but can't speak"
+		],
+		"cr": "10",
+		"trait": [
+			{
+				"name": "Immutable Form",
+				"entries": [
+					"The golem is immune to any spell or effect that would alter its form."
+				]
+			},
+			{
+				"name": "Magic Resistance",
+				"entries": [
+					"The golem has advantage on saving throws against spells and other magical effects."
+				]
+			},
+			{
+				"name": "Magic Weapons",
+				"entries": [
+					"The golem's weapon attacks are magical."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The golem makes two slam attacks."
+				]
+			},
+			{
+				"name": "Slam",
+				"entries": [
+					"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}19 ({@damage 3d8 + 6}) bludgeoning damage."
+				]
+			},
+			{
+				"name": "Slow {@recharge 5}",
+				"entries": [
+					"The golem targets one or more creatures it can see within 10 feet of it. Each target must make a {@dc 17} Wisdom saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+				]
+			}
+		],
+		"traitTags": [
+			"Immutable Form",
+			"Magic Resistance",
+			"Magic Weapons"
+		],
+		"senseTags": [
+			"SD"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"CS"
+		],
+		"damageTags": [
+			"B"
+		],
+		"miscTags": [
+			"MW"
+		]
+	},
+	{
+		"name": "Animated Halberd",
+		"source": "CoS",
+		"page": 59,
+		"ac": [
+			{
+				"ac": 15,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Halberd",
+				"entries": [
+					"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d10 + 1}) slashing damage."
+				]
+			}
+		],
+		"hasToken": true,
+		"group": [
+			"Animated Objects"
+		],
+		"size": [
+			"S"
+		],
+		"type": "construct",
+		"alignment": [
+			"U"
+		],
+		"hp": {
+			"average": 17,
+			"formula": "5d6"
+		},
+		"speed": {
+			"walk": 0,
+			"fly": {
+				"number": 50,
+				"condition": "(hover)"
+			},
+			"canHover": true
+		},
+		"str": 12,
+		"dex": 15,
+		"con": 11,
+		"int": 1,
+		"wis": 5,
+		"cha": 1,
+		"save": {
+			"dex": "+4"
+		},
+		"senses": [
+			"blindsight 60 ft. (blind beyond this radius)"
+		],
+		"passive": 7,
+		"immune": [
+			"poison",
+			"psychic"
+		],
+		"conditionImmune": [
+			"blinded",
+			"charmed",
+			"deafened",
+			"frightened",
+			"paralyzed",
+			"petrified",
+			"poisoned"
+		],
+		"cr": "1/4",
+		"trait": [
+			{
+				"name": "Antimagic Susceptibility",
+				"entries": [
+					"The sword is {@condition incapacitated} while in the area of an {@spell antimagic field}. If targeted by {@spell dispel magic}, the sword must succeed on a Constitution saving throw against the caster's spell save DC or fall {@condition unconscious} for 1 minute."
+				]
+			},
+			{
+				"name": "False Appearance",
+				"entries": [
+					"While the sword remains motionless and isn't flying, it is indistinguishable from a normal sword."
+				]
+			}
+		],
+		"traitTags": [
+			"Antimagic Susceptibility",
+			"False Appearance"
+		],
+		"senseTags": [
+			"B"
+		],
+		"damageTags": [
+			"S"
+		],
+		"miscTags": [
+			"MW"
+		]
+	},
+	{
+		"name": "Armored Saber-Toothed Tiger",
+		"source": "CoS",
+		"page": 115,
+		"ac": [
+			{
+				"ac": 17,
+				"from": [
+					"{@item half plate armor|phb}"
+				]
+			}
+		],
+		"hp": {
+			"average": 84,
+			"formula": "7d10 + 14"
+		},
+		"cr": "3",
+		"hasToken": true,
+		"size": [
+			"L"
+		],
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"speed": {
+			"walk": 40
+		},
+		"str": 18,
+		"dex": 14,
+		"con": 15,
+		"int": 3,
+		"wis": 12,
+		"cha": 8,
+		"skill": {
+			"perception": "+3",
+			"stealth": "+6"
+		},
+		"passive": 13,
+		"trait": [
+			{
+				"name": "Keen Smell",
+				"entries": [
+					"The tiger has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+				]
+			},
+			{
+				"name": "Pounce",
+				"entries": [
+					"If the tiger moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the tiger can make one bite attack against it as a bonus action."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d10 + 5}) piercing damage."
+				]
+			},
+			{
+				"name": "Claw",
+				"entries": [
+					"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage."
+				]
+			}
+		],
+		"traitTags": [
+			"Keen Senses",
+			"Pounce"
+		],
+		"damageTags": [
+			"P",
+			"S"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"conditionInflict": [
+			"prone"
+		]
+	},
+	{
+		"name": "Barovian Commoner",
+		"source": "CoS",
+		"page": 29,
+		"action": [
+			{
+				"name": "Pitchfork",
+				"entries": [
+					"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) piercing damage."
+				]
+			}
+		],
+		"damageTags": [
+			"P"
+		],
+		"hasToken": true,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"any race"
+			]
+		},
+		"alignment": [
+			"A"
+		],
+		"ac": [
+			10
+		],
+		"hp": {
+			"average": 4,
+			"formula": "1d8"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 10,
+		"dex": 10,
+		"con": 10,
+		"int": 10,
+		"wis": 10,
+		"cha": 10,
+		"passive": 10,
+		"languages": [
+			"any one language (usually Common)"
+		],
+		"cr": "0",
+		"languageTags": [
+			"C",
+			"X"
+		],
+		"miscTags": [
+			"MW"
+		]
+	},
+	{
+		"name": "Barovian Scout",
+		"source": "CoS",
+		"page": 29,
+		"miscTags": [
+			"MW",
+			"RW"
+		],
+		"hasToken": true,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"any race"
+			]
+		},
+		"alignment": [
+			"A"
+		],
+		"ac": [
+			{
+				"ac": 13,
+				"from": [
+					"{@item leather armor|phb}"
+				]
+			}
+		],
+		"hp": {
+			"average": 16,
+			"formula": "3d8 + 3"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 11,
+		"dex": 14,
+		"con": 12,
+		"int": 11,
+		"wis": 13,
+		"cha": 11,
+		"skill": {
+			"nature": "+4",
+			"perception": "+5",
+			"stealth": "+6",
+			"survival": "+5"
+		},
+		"passive": 15,
+		"languages": [
+			"any one language (usually Common)"
+		],
+		"cr": "1/2",
+		"trait": [
+			{
+				"name": "Keen Hearing and Sight",
+				"entries": [
+					"The scout has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or sight."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The scout makes two melee attacks or two ranged attacks."
+				]
+			},
+			{
+				"name": "Shortsword",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+				]
+			},
+			{
+				"name": "Light Crossbows",
+				"entries": [
+					"{@atk rw} {@hit 4} to hit, ranged 80/320 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+				]
+			}
+		],
+		"traitTags": [
+			"Keen Senses"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"X"
+		],
+		"damageTags": [
+			"P"
+		]
+	},
+	{
+		"name": "Barovian Witch",
+		"source": "CoS",
+		"page": 229,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"human"
+			]
+		},
+		"alignment": [
+			"C",
+			"E"
+		],
+		"ac": [
+			10
+		],
+		"hp": {
+			"average": 16,
+			"formula": "3d8 + 3"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 7,
+		"dex": 11,
+		"con": 13,
+		"int": 14,
+		"wis": 11,
+		"cha": 12,
+		"skill": {
+			"arcana": "+4",
+			"perception": "+2"
+		},
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 12,
+		"languages": [
+			"Common"
+		],
+		"cr": "1/2",
+		"spellcasting": [
+			{
+				"name": "Spellcasting",
+				"headerEntries": [
+					"The witch is a 3rd-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 12}, {@hit 4} to hit with spell attacks). The witch has the following wizard spells prepared:"
+				],
+				"spells": {
+					"0": {
+						"spells": [
+							"{@spell mage hand}",
+							"{@spell prestidigitation}",
+							"{@spell ray of frost}"
+						]
+					},
+					"1": {
+						"slots": 4,
+						"spells": [
+							"{@spell ray of sickness}",
+							"{@spell sleep}",
+							"{@spell Tasha's hideous laughter}"
+						]
+					},
+					"2": {
+						"slots": 2,
+						"spells": [
+							"{@spell alter self}",
+							"{@spell invisibility}"
+						]
+					}
+				},
+				"ability": "int"
+			}
+		],
+		"action": [
+			{
+				"name": "Claws (Requires Alter Self)",
+				"entries": [
+					"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) slashing damage. This attack is magical."
+				]
+			},
+			{
+				"name": "Dagger",
+				"entries": [
+					"{@atk mw,rw} {@hit 2} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}2 ({@damage 1d4}) piercing damage."
+				]
+			}
+		],
+		"senseTags": [
+			"D"
+		],
+		"languageTags": [
+			"C"
+		],
+		"damageTags": [
+			"P",
+			"S"
+		],
+		"spellcastingTags": [
+			"CW"
+		],
+		"miscTags": [
+			"MW",
+			"RW",
+			"THW"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true
+	},
+	{
+		"name": "Broom of Animated Attack",
+		"source": "CoS",
+		"page": 226,
+		"size": [
+			"S"
+		],
+		"type": "construct",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			{
+				"ac": 15,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 17,
+			"formula": "5d6"
+		},
+		"speed": {
+			"walk": 0,
+			"fly": {
+				"number": 50,
+				"condition": "(hover)"
+			},
+			"canHover": true
+		},
+		"str": 10,
+		"dex": 17,
+		"con": 10,
+		"int": 1,
+		"wis": 5,
+		"cha": 1,
+		"senses": [
+			"blindsight 30 ft. (blind beyond this radius)"
+		],
+		"passive": 7,
+		"immune": [
+			"poison",
+			"psychic"
+		],
+		"conditionImmune": [
+			"blinded",
+			"charmed",
+			"deafened",
+			"exhaustion",
+			"frightened",
+			"paralyzed",
+			"petrified",
+			"poisoned",
+			"prone"
+		],
+		"cr": "1/4",
+		"trait": [
+			{
+				"name": "Constructed Nature",
+				"entries": [
+					"An animated object doesn't require air, food, drink, or sleep.",
+					"The magic that animates an object is dispelled when the construct drops to 0 hit points. An animated object reduced to 0 hit points becomes inanimate and is too damaged to be of much use or value to anyone."
+				]
+			},
+			{
+				"name": "Antimagic Susceptibility",
+				"entries": [
+					"The broom is {@condition incapacitated} while in the area of an {@spell antimagic field}. If targeted by {@spell dispel magic}, the broom must succeed on a Constitution saving throw against the caster's spell save DC or fall {@condition unconscious} for 1 minute."
+				]
+			},
+			{
+				"name": "False Appearance",
+				"entries": [
+					"While the broom remains motionless and isn't flying, it is indistinguishable from a normal broom."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The broom makes two melee attacks."
+				]
+			},
+			{
+				"name": "Broomstick",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) bludgeoning damage."
+				]
+			}
+		],
+		"reaction": [
+			{
+				"name": "Animated Attack",
+				"entries": [
+					"If the broom is motionless and a creature grabs hold of it, the broom makes a Dexterity check contested by the creature's Strength check. If the broom wins the contest, it flies out of the creature's grasp and makes a melee attack against it with advantage on the attack roll."
+				]
+			}
+		],
+		"traitTags": [
+			"Antimagic Susceptibility",
+			"False Appearance"
+		],
+		"senseTags": [
+			"B"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"damageTags": [
+			"B"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true,
+		"hasFluff": true
+	},
+	{
+		"name": "Distended Corpse",
+		"source": "CoS",
+		"page": 165,
+		"speed": {
+			"walk": 20
+		},
+		"conditionImmune": [
+			"charmed",
+			"frightened"
+		],
+		"trait": [
+			{
+				"name": "Snake-Swollen",
+				"entries": [
+					"When a corpse is reduced to 0 hit points, it splits open, disgorging a {@creature swarm of poisonous snakes}. The snakes are hungry and fight until slain."
+				]
+			}
+		],
+		"hasToken": true,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"any race"
+			]
+		},
+		"alignment": [
+			"A"
+		],
+		"ac": [
+			10
+		],
+		"hp": {
+			"average": 4,
+			"formula": "1d8"
+		},
+		"str": 10,
+		"dex": 10,
+		"con": 10,
+		"int": 10,
+		"wis": 10,
+		"cha": 10,
+		"passive": 10,
+		"languages": [
+			"any one language (usually Common)"
+		],
+		"cr": "0",
+		"action": [
+			{
+				"name": "Club",
+				"entries": [
+					"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) bludgeoning damage."
+				]
+			}
+		],
+		"languageTags": [
+			"C",
+			"X"
+		],
+		"damageTags": [
+			"B"
+		],
+		"miscTags": [
+			"MW"
+		]
+	},
+	{
+		"name": "Guardian Portrait",
+		"source": "CoS",
+		"page": 227,
+		"size": [
+			"M"
+		],
+		"type": "construct",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			{
+				"ac": 5,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 22,
+			"formula": "5d8"
+		},
+		"speed": {
+			"walk": 0
+		},
+		"str": 1,
+		"dex": 1,
+		"con": 10,
+		"int": 14,
+		"wis": 10,
+		"cha": 10,
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 10,
+		"immune": [
+			"poison"
+		],
+		"conditionImmune": [
+			"charmed",
+			"exhaustion",
+			"frightened",
+			"grappled",
+			"paralyzed",
+			"petrified",
+			"poisoned",
+			"prone",
+			"restrained"
+		],
+		"languages": [
+			"Common",
+			"plus up to two other languages"
+		],
+		"cr": "1",
+		"spellcasting": [
+			{
+				"name": "Innate Spellcasting",
+				"headerEntries": [
+					"The portrait's innate spellcasting ability is Intelligence (spell save {@dc 12}). The portrait can innately cast the following spells, requiring no material components:"
+				],
+				"daily": {
+					"3e": [
+						"{@spell counterspell}",
+						"{@spell crown of madness}",
+						"{@spell hypnotic pattern}",
+						"{@spell telekinesis}"
+					]
+				},
+				"ability": "int"
+			}
+		],
+		"trait": [
+			{
+				"name": "Constructed Nature",
+				"entries": [
+					"An animated object doesn't require air, food, drink, or sleep.",
+					"The magic that animates an object is dispelled when the construct drops to 0 hit points. An animated object reduced to 0 hit points becomes inanimate and is too damaged to be of much use or value to anyone."
+				]
+			},
+			{
+				"name": "Antimagic Susceptibility",
+				"entries": [
+					"The portrait is {@condition incapacitated} while in the area of an {@spell antimagic field}. If targeted by {@spell dispel magic}, the portrait must succeed on a Constitution saving throw against the caster's spell save DC or become {@condition unconscious} for 1 minute."
+				]
+			},
+			{
+				"name": "False Appearance",
+				"entries": [
+					"While the figure in the portrait remains motionless, the portrait is indistinguishable from a normal painting."
+				]
+			}
+		],
+		"traitTags": [
+			"Antimagic Susceptibility",
+			"False Appearance"
+		],
+		"senseTags": [
+			"D"
+		],
+		"languageTags": [
+			"C",
+			"X"
+		],
+		"spellcastingTags": [
+			"I"
+		],
+		"conditionInflictSpell": [
+			"charmed",
+			"restrained"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true
+	},
+	{
+		"name": "Knight of the Order",
+		"source": "CoS",
+		"page": 139,
+		"alignment": [
+			"L",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 13,
+				"from": [
+					"broken chainmail"
+				]
+			}
+		],
+		"damageTags": [
+			"B",
+			"S"
+		],
+		"size": [
+			"M"
+		],
+		"type": "undead",
+		"hp": {
+			"average": 136,
+			"formula": "16d8 + 64"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 18,
+		"dex": 14,
+		"con": 18,
+		"int": 13,
+		"wis": 16,
+		"cha": 18,
+		"save": {
+			"str": "+7",
+			"con": "+7",
+			"wis": "+6",
+			"cha": "+7"
+		},
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 13,
+		"resist": [
+			"necrotic",
+			"psychic"
+		],
+		"immune": [
+			"poison"
+		],
+		"conditionImmune": [
+			"charmed",
+			"exhaustion",
+			"frightened",
+			"paralyzed",
+			"poisoned",
+			"stunned"
+		],
+		"languages": [
+			"the languages it knew in life"
+		],
+		"cr": "5",
+		"trait": [
+			{
+				"name": "Regeneration",
+				"entries": [
+					"The knight regains 10 hit points at the start of its turn. If the knight takes fire or radiant damage, this trait doesn't function at the start of the knight's next turn. The knight's body is destroyed only if it starts its turn with 0 hit points and doesn't regenerate."
+				]
+			},
+			{
+				"name": "Rejuvenation",
+				"entries": [
+					"When the knight's body is destroyed, its soul lingers. After 24 hours, the soul inhabits and animates another humanoid corpse on the same plane of existence and regains all its hit points. While the soul is bodiless, a {@spell wish} spell can be used to force the soul to go to the afterlife and not return."
+				]
+			},
+			{
+				"name": "Turn Immunity",
+				"entries": [
+					"The knight is immune to effects that turn undead."
+				]
+			},
+			{
+				"name": "Vengeful Tracker",
+				"entries": [
+					"The knight knows the distance to and direction of any creature against which it seeks revenge, even if the creature and the knight are on different planes of existence. If the creature being tracked by the knight dies, the knight knows."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The knight makes two longsword attacks or two fist attacks."
+				]
+			},
+			{
+				"name": "Longsword",
+				"entries": [
+					"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d10 + 4}) slashing damage. If the target is a creature against which the knight has sworn vengeance, the target takes an extra 14 ({@damage 4d6}) slashing damage."
+				]
+			},
+			{
+				"name": "Fist",
+				"entries": [
+					"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage. If the target is a creature against which the knight has sworn vengeance, the target takes an extra 14 ({@damage 4d6}) bludgeoning damage. Instead of dealing damage, the knight can grapple the target (escape {@dc 14}) provided the target is Large or smaller."
+				]
+			},
+			{
+				"name": "Vengeful Glare",
+				"entries": [
+					"The knight targets one creature it can see within 30 feet of it and against which it has sworn vengeance. The target must make a {@dc 15} Wisdom saving throw. On a failure, the target is {@condition paralyzed} until the knight deals damage to it, or until the end of the knight's next turn. When the paralysis ends, the target is {@condition frightened} of the knight for 1 minute. The {@condition frightened} target can repeat the saving throw at the end of each of its turns, with disadvantage if it can see the knight, ending the {@condition frightened} condition on itself on a success."
+				]
+			}
+		],
+		"traitTags": [
+			"Regeneration",
+			"Rejuvenation",
+			"Turn Immunity"
+		],
+		"senseTags": [
+			"D"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"LF"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"conditionInflict": [
+			"frightened",
+			"paralyzed"
+		]
+	},
+	{
+		"name": "Mongrelfolk",
+		"source": "CoS",
+		"page": 234,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"mongrelfolk"
+			]
+		},
+		"alignment": [
+			"A"
+		],
+		"ac": [
+			{
+				"ac": 11,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 26,
+			"formula": "4d8 + 8"
+		},
+		"speed": {
+			"walk": 20
+		},
+		"str": 12,
+		"dex": 9,
+		"con": 15,
+		"int": 9,
+		"wis": 10,
+		"cha": 6,
+		"skill": {
+			"deception": "+2",
+			"perception": "+2",
+			"stealth": "+3"
+		},
+		"passive": 12,
+		"languages": [
+			"Common"
+		],
+		"cr": "1/4",
+		"trait": [
+			{
+				"name": "Extraordinary Feature",
+				"entries": [
+					"The mongrelfolk has one of the following extraordinary features, determined randomly by rolling a {@dice d20} or chosen by the DM:",
+					"1–3: Amphibious. The mongrelfolk can breathe air and water.",
+					"4–9: Darkvision. The mongrelfolk has darkvision out to a range of 60 feet.",
+					"10: Flight. The mongrelfolk has leathery wings and a flying speed of 40 feet.",
+					"11–15: Keen Hearing and Smell. The mongrelfolk has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell.",
+					"16–17: Spider Climb. The mongrelfolk can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+					"18–19: Standing Leap. The mongrelfolk's long jump is up to 20 feet and its high jump up to 10 feet, with or without a running start.",
+					"20: Two-Headed. The mongrelfolk has advantage on Wisdom ({@skill Perception}) checks and on saving throws against being {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned}, or knocked {@condition unconscious}."
+				]
+			},
+			{
+				"name": "Mimicry",
+				"entries": [
+					"The mongrelfolk can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful {@dc 12} Wisdom (Insight) check."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The mongrelfolk makes two attacks: one with its bite and one with its claw or dagger."
+				]
+			},
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage."
+				]
+			},
+			{
+				"name": "Claw",
+				"entries": [
+					"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) slashing damage."
+				]
+			},
+			{
+				"name": "Dagger",
+				"entries": [
+					"{@atk mw,rw} {@hit 3} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage."
+				]
+			}
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"C"
+		],
+		"damageTags": [
+			"P",
+			"S"
+		],
+		"miscTags": [
+			"MW",
+			"RW",
+			"THW"
+		],
+		"hasToken": true,
+		"hasFluff": true
+	},
+	{
+		"name": "Phantom Warrior",
+		"source": "CoS",
+		"page": 235,
+		"size": [
+			"M"
+		],
+		"type": "undead",
+		"alignment": [
+			"A"
+		],
+		"ac": [
+			16
+		],
+		"hp": {
+			"average": 45,
+			"formula": "6d8 + 18"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 16,
+		"dex": 11,
+		"con": 16,
+		"int": 8,
+		"wis": 10,
+		"cha": 15,
+		"skill": {
+			"perception": "+2",
+			"stealth": "+4"
+		},
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 12,
+		"resist": [
+			{
+				"resist": [
+					"bludgeoning",
+					"piercing",
+					"slashing"
+				],
+				"note": "from nonmagical attacks",
+				"cond": true
+			}
+		],
+		"immune": [
+			"cold",
+			"necrotic",
+			"poison"
+		],
+		"conditionImmune": [
+			"charmed",
+			"exhaustion",
+			"frightened",
+			"grappled",
+			"paralyzed",
+			"petrified",
+			"poisoned",
+			"prone",
+			"restrained"
+		],
+		"languages": [
+			"any languages it knew in life"
+		],
+		"cr": "3",
+		"trait": [
+			{
+				"name": "Ethereal Sight",
+				"entries": [
+					"The phantom warrior can see 60 feet into the Ethereal Plane when it is on the Material Plane, and vice versa."
+				]
+			},
+			{
+				"name": "Incorporeal Movement",
+				"entries": [
+					"The phantom warrior can move through other creatures and objects as if they were difficult terrain. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object."
+				]
+			},
+			{
+				"name": "Spectral Armor and Shield",
+				"entries": [
+					"The phantom warrior's AC accounts for its spectral armor and shield."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The phantom warrior makes two attacks with its spectral longsword."
+				]
+			},
+			{
+				"name": "Spectral Longsword",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) force damage."
+				]
+			},
+			{
+				"name": "Etherealness",
+				"entries": [
+					"The phantom warrior enters the Ethereal Plane from the Material Plane, or vice versa. It is visible on the Material Plane while it is in the Border Ethereal, and vice versa, yet it can't affect or be affected by anything on the other plane."
+				]
+			}
+		],
+		"traitTags": [
+			"Incorporeal Movement"
+		],
+		"senseTags": [
+			"D"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"LF"
+		],
+		"damageTags": [
+			"O"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true
+	},
+	{
+		"name": "Snow Maiden",
+		"source": "CoS",
+		"page": 159,
+		"alignment": [
+			"N"
+		],
+		"immune": [
+			"cold",
+			"necrotic",
+			"poison"
+		],
+		"damageTags": [
+			"C",
+			"O"
+		],
+		"hasToken": true,
+		"size": [
+			"M"
+		],
+		"type": "undead",
+		"ac": [
+			12
+		],
+		"hp": {
+			"average": 22,
+			"formula": "5d8"
+		},
+		"speed": {
+			"walk": 0,
+			"fly": {
+				"number": 50,
+				"condition": "(hover)"
+			},
+			"canHover": true
+		},
+		"str": 1,
+		"dex": 14,
+		"con": 11,
+		"int": 10,
+		"wis": 10,
+		"cha": 11,
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 10,
+		"resist": [
+			"acid",
+			"fire",
+			"lightning",
+			"thunder",
+			{
+				"resist": [
+					"bludgeoning",
+					"piercing",
+					"slashing"
+				],
+				"note": "from nonmagical attacks",
+				"cond": true
+			}
+		],
+		"conditionImmune": [
+			"charmed",
+			"exhaustion",
+			"grappled",
+			"paralyzed",
+			"petrified",
+			"poisoned",
+			"prone",
+			"restrained",
+			"unconscious"
+		],
+		"languages": [
+			"understands all languages it knew in life but can't speak"
+		],
+		"cr": "1",
+		"trait": [
+			{
+				"name": "Incorporeal Movement",
+				"entries": [
+					"The specter can move through other creatures and objects as if they were difficult terrain. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object."
+				]
+			},
+			{
+				"name": "Sunlight Sensitivity",
+				"entries": [
+					"While in sunlight, the specter has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Life Drain",
+				"entries": [
+					"{@atk ms} {@hit 4} to hit, reach 5 ft., one creature. {@h}10 ({@damage 3d6}) cold damage. The target must succeed on a DC 10 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+				]
+			}
+		],
+		"traitTags": [
+			"Incorporeal Movement",
+			"Sunlight Sensitivity"
+		],
+		"senseTags": [
+			"D"
+		],
+		"languageTags": [
+			"CS",
+			"LF"
+		]
+	},
+	{
+		"name": "Strahd Zombie",
+		"source": "CoS",
+		"page": 241,
+		"size": [
+			"M"
+		],
+		"type": "undead",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			8
+		],
+		"hp": {
+			"average": 30,
+			"formula": "4d8 + 12"
+		},
+		"speed": {
+			"walk": 20
+		},
+		"str": 13,
+		"dex": 6,
+		"con": 16,
+		"int": 3,
+		"wis": 6,
+		"cha": 5,
+		"save": {
+			"wis": "+0"
+		},
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 8,
+		"immune": [
+			"poison"
+		],
+		"conditionImmune": [
+			"poisoned"
+		],
+		"languages": [
+			"understands the languages it knew in life but can't speak"
+		],
+		"cr": "1",
+		"trait": [
+			{
+				"name": "Loathsome Limbs",
+				"entries": [
+					"Whenever the zombie takes at least 5 bludgeoning or slashing damage at one time, roll a {@dice d20} to determine what else happens to it:",
+					"1–8: One leg is severed from the zombie if it has any legs left.",
+					"9–16: One arm is severed from the zombie if it has any arms left.",
+					"17–20: The zombie is decapitated.",
+					"If the zombie is reduced to 0 hit points, all parts of it die. Until then, a severed part acts on the zombie's initiative and has its own action and movement. A severed part has AC 8. Any damage it takes is subtracted from the zombie's hit points.",
+					"A severed leg is unable to attack and has a speed of 5 feet.",
+					"A severed arm has a speed of 5 feet and can make one claw attack on its turn, with disadvantage on the attack roll. Each time the zombie loses an arm, it loses a claw attack.",
+					"If its head is severed, the zombie loses its bite attack and its body is {@condition blinded} unless the head can see it. The severed head has a speed of 0 feet. It can make a bite attack, but only against a target in its space.",
+					"The zombie's speed is halved if it's missing a leg. If it loses both legs, it falls {@condition prone}. If it has both arms, it can crawl. With only one arm, it can still crawl, but its speed is halved. With no arms or legs, its speed is 0 feet, and it can't benefit from bonuses to speed."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The zombie makes three attacks: one with its bite and two with its claws."
+				]
+			},
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage."
+				]
+			},
+			{
+				"name": "Claw",
+				"entries": [
+					"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) slashing damage."
+				]
+			}
+		],
+		"senseTags": [
+			"D"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"CS",
+			"LF"
+		],
+		"damageTags": [
+			"P",
+			"S"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true,
+		"hasFluff": true
+	},
+	{
+		"name": "Tree Blight",
+		"source": "CoS",
+		"page": 230,
+		"otherSources": [
+			{
+				"source": "WBtW"
+			}
+		],
+		"size": [
+			"H"
+		],
+		"type": "plant",
+		"alignment": [
+			"N",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 15,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 149,
+			"formula": "13d12 + 65"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 23,
+		"dex": 10,
+		"con": 20,
+		"int": 6,
+		"wis": 10,
+		"cha": 3,
+		"senses": [
+			"blindsight 60 ft. (blind beyond this radius)"
+		],
+		"passive": 10,
+		"conditionImmune": [
+			"blinded",
+			"deafened"
+		],
+		"languages": [
+			"understands Common and Druidic but doesn't speak"
+		],
+		"cr": "7",
+		"trait": [
+			{
+				"name": "False Appearance",
+				"entries": [
+					"While the blight remains motionless, it is indistinguishable from a dead tree."
+				]
+			},
+			{
+				"name": "Siege Monster",
+				"entries": [
+					"The blight deals double damage to objects and structures."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The blight makes four attacks: two with its branches and two with its grasping roots. If it has a target {@condition grappled}, the blight can also make a bite attack against that target as a bonus action."
+				]
+			},
+			{
+				"name": "Branch",
+				"entries": [
+					"{@atk mw} {@hit 9} to hit, reach 15 ft., one target. {@h}16 ({@damage 3d6 + 6}) bludgeoning damage."
+				]
+			},
+			{
+				"name": "Grasping Root",
+				"entries": [
+					"{@atk mw} {@hit 9} to hit, reach 15 ft., one creature not {@condition grappled} by the blight. {@h}The target is {@condition grappled} (escape {@dc 15}). Until the grapple ends, the target takes 9 ({@damage 1d6 + 6}) bludgeoning damage at the start of each of its turns. The root has AC 15 and can be severed by dealing 6 slashing damage or more to it at once. Cutting the root doesn't hurt the blight, but ends the grapple."
+				]
+			}
+		],
+		"bonus": [
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 9} to hit, reach 5 ft., one creature {@condition grappled} by the blight. {@h}19 ({@damage 3d8 + 6}) piercing damage."
+				]
+			}
+		],
+		"traitTags": [
+			"False Appearance",
+			"Siege Monster"
+		],
+		"senseTags": [
+			"B"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"DU"
+		],
+		"damageTags": [
+			"B",
+			"P",
+			"S"
+		],
+		"miscTags": [
+			"MW",
+			"RCH"
+		],
+		"conditionInflict": [
+			"grappled"
+		],
+		"hasToken": true,
+		"hasFluff": true
+	},
+	{
+		"name": "Vistana Assassin",
+		"source": "CoS",
+		"page": 28,
+		"hasToken": true,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"any race"
+			]
+		},
+		"alignment": [
+			"L",
+			"NX",
+			"C",
+			"NY",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 15,
+				"from": [
+					"{@item studded leather armor|phb}"
+				]
+			}
+		],
+		"hp": {
+			"average": 78,
+			"formula": "12d8 + 24"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 11,
+		"dex": 16,
+		"con": 14,
+		"int": 13,
+		"wis": 11,
+		"cha": 10,
+		"save": {
+			"dex": "+6",
+			"int": "+4"
+		},
+		"skill": {
+			"acrobatics": "+6",
+			"deception": "+3",
+			"perception": "+3",
+			"stealth": "+9"
+		},
+		"passive": 13,
+		"resist": [
+			"poison"
+		],
+		"languages": [
+			"Thieves' cant plus any two languages"
+		],
+		"cr": "8",
+		"trait": [
+			{
+				"name": "Assassinate",
+				"entries": [
+					"During its first turn, the assassin has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the assassin scores against a surprised creature is a critical hit."
+				]
+			},
+			{
+				"name": "Evasion",
+				"entries": [
+					"If the assassin is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the assassin instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+				]
+			},
+			{
+				"name": "Sneak Attack (1/Turn)",
+				"entries": [
+					"The assassin deals an extra 14 ({@dice 4d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the assassin that isn't {@condition incapacitated} and the assassin doesn't have disadvantage on the attack roll."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The assassin makes two shortsword attacks."
+				]
+			},
+			{
+				"name": "Shortsword",
+				"entries": [
+					"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage, and the target must make a {@dc 15} Constitution saving throw, taking 24 ({@damage 7d6}) poison damage on a failed save, or half as much damage on a successful one."
+				]
+			},
+			{
+				"name": "Light Crossbow",
+				"entries": [
+					"{@atk rw} {@hit 6} to hit, range 80/320 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage, and the target must make a {@dc 15} Constitution saving throw, taking 24 ({@damage 7d6}) poison damage on a failed save, or half as much damage on a successful one."
+				]
+			},
+			{
+				"name": "Curse (Recharges After a Long Rest)",
+				"entries": [
+					"The Vistana targets one creature that it can see within 30 feet of it. The target must succeed on a {@dc 11} Wisdom saving throw or be cursed. The Vistana chooses the curse's effect from the options that follow; other Vistani curses are possible. All such effects deal psychic damage to the Vistani who uttered them when they end:",
+					{
+						"type": "list",
+						"items": [
+							"The target is unable to perform a certain kind of act involving fine motor control, such as tying knots, writing, playing an instrument, sewing, or casting spells that have somatic components. When this curse ends, the Vistana takes {@damage 1d6} psychic damage.",
+							"The target's appearance changes in a sinister yet purely cosmetic way. For example, the curse can place a scar on the target's face, turn the target's teeth into yellow fangs, or give the target bad breath. When this curse ends, the Vistana takes {@damage 1d6} psychic damage.",
+							"A nonmagical item in the target's possession (chosen by the DM) disappears and can't be found until the curse ends. The lost item can weigh no more than 1 pound. When this curse ends, the Vistana takes {@damage 1d6} psychic damage.",
+							"The target gains vulnerability to a damage type of the Vistana's choice. When this curse ends, the Vistana takes {@damage 3d6} psychic damage.",
+							"The target has disadvantage on ability checks and saving throws tied to one ability score of the Vistana's choice. When this curse ends, the Vistana takes {@damage 3d6} psychic damage.",
+							"The target's attunement to one magic item (chosen by the DM) ends, and the target can't attune to the chosen item until the curse ends. When this curse ends, the Vistana takes {@damage 5d6} psychic damage.",
+							"The target is {@condition blinded}, {@condition deafened}, or both. When this curse ends, the Vistana takes {@damage 5d6} psychic damage."
+						]
+					},
+					"The curse lasts until ended with a {@spell greater restoration} spell, a {@spell remove curse} spell, or similar magic. It doesn't end when the target dies. If a cursed target is returned to life, the curse remains in effect."
+				]
+			},
+			{
+				"name": "Evil Eye (Recharges after a Short or Long Rest)",
+				"entries": [
+					"As an action, a Vistana can target a creature within 10 feet that the Vistana can see. This magical ability, which the Vistani call the Evil Eye, duplicates the duration and effect of the {@spell animal friendship}, {@spell charm person}, or {@spell hold person} spell (Vistana's choice; spell {@dc 11}), but requires neither somatic nor material components. If the target succeeds on the save, the Vistana is {@condition blinded} until the end of the Vistana's next turn.",
+					"A Vistana who uses Evil Eye can't use it again before finishing a short or long rest. Once a target succeeds on a saving throw against a Vistana's Evil Eye, it is immune to the Evil Eye of all Vistani for 24 hours."
+				]
+			}
+		],
+		"traitTags": [
+			"Sneak Attack"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"TC",
+			"X"
+		],
+		"damageTags": [
+			"I",
+			"P"
+		],
+		"miscTags": [
+			"MW",
+			"RNG",
+			"RW"
+		]
+	},
+	{
+		"name": "Vistana Bandit",
+		"source": "CoS",
+		"page": 28,
+		"hasToken": true,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"any race"
+			]
+		},
+		"alignment": [
+			"NX",
+			"C",
+			"G",
+			"NY",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 12,
+				"from": [
+					"{@item leather armor|phb}"
+				]
+			}
+		],
+		"hp": {
+			"average": 11,
+			"formula": "2d8 + 2"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 11,
+		"dex": 12,
+		"con": 12,
+		"int": 10,
+		"wis": 10,
+		"cha": 10,
+		"passive": 10,
+		"languages": [
+			"any one language (usually Common)"
+		],
+		"cr": "1/8",
+		"action": [
+			{
+				"name": "Scimitar",
+				"entries": [
+					"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) slashing damage."
+				]
+			},
+			{
+				"name": "Light Crossbow",
+				"entries": [
+					"{@atk rw} {@hit 3} to hit, range 80/320 ft., one target. {@h}5 ({@damage 1d8 + 1}) piercing damage."
+				]
+			},
+			{
+				"name": "Curse (Recharges After a Long Rest)",
+				"entries": [
+					"The Vistana targets one creature that it can see within 30 feet of it. The target must succeed on a {@dc 10} Wisdom saving throw or be cursed. The Vistana chooses the curse's effect from the options that follow; other Vistani curses are possible. All such effects deal psychic damage to the Vistani who uttered them when they end:",
+					{
+						"type": "list",
+						"items": [
+							"The target is unable to perform a certain kind of act involving fine motor control, such as tying knots, writing, playing an instrument, sewing, or casting spells that have somatic components. When this curse ends, the Vistana takes {@damage 1d6} psychic damage.",
+							"The target's appearance changes in a sinister yet purely cosmetic way. For example, the curse can place a scar on the target's face, turn the target's teeth into yellow fangs, or give the target bad breath. When this curse ends, the Vistana takes {@damage 1d6} psychic damage.",
+							"A nonmagical item in the target's possession (chosen by the DM) disappears and can't be found until the curse ends. The lost item can weigh no more than 1 pound. When this curse ends, the Vistana takes {@damage 1d6} psychic damage.",
+							"The target gains vulnerability to a damage type of the Vistana's choice. When this curse ends, the Vistana takes {@damage 3d6} psychic damage.",
+							"The target has disadvantage on ability checks and saving throws tied to one ability score of the Vistana's choice. When this curse ends, the Vistana takes {@damage 3d6} psychic damage.",
+							"The target's attunement to one magic item (chosen by the DM) ends, and the target can't attune to the chosen item until the curse ends. When this curse ends, the Vistana takes {@damage 5d6} psychic damage.",
+							"The target is {@condition blinded}, {@condition deafened}, or both. When this curse ends, the Vistana takes {@damage 5d6} psychic damage."
+						]
+					},
+					"The curse lasts until ended with a {@spell greater restoration} spell, a {@spell remove curse} spell, or similar magic. It doesn't end when the target dies. If a cursed target is returned to life, the curse remains in effect."
+				]
+			},
+			{
+				"name": "Evil Eye (Recharges after a Short or Long Rest)",
+				"entries": [
+					"As an action, a Vistana can target a creature within 10 feet that the Vistana can see. This magical ability, which the Vistani call the Evil Eye, duplicates the duration and effect of the {@spell animal friendship}, {@spell charm person}, or {@spell hold person} spell (Vistana's choice; spell {@dc 10}), but requires neither somatic nor material components. If the target succeeds on the save, the Vistana is {@condition blinded} until the end of the Vistana's next turn.",
+					"A Vistana who uses Evil Eye can't use it again before finishing a short or long rest. Once a target succeeds on a saving throw against a Vistana's Evil Eye, it is immune to the Evil Eye of all Vistani for 24 hours."
+				]
+			}
+		],
+		"languageTags": [
+			"C",
+			"X"
+		],
+		"damageTags": [
+			"P",
+			"S"
+		],
+		"miscTags": [
+			"MW",
+			"RNG",
+			"RW"
+		]
+	},
+	{
+		"name": "Vistana Bandit Captain",
+		"source": "CoS",
+		"page": 28,
+		"hasToken": true,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"any race"
+			]
+		},
+		"alignment": [
+			"NX",
+			"C",
+			"G",
+			"NY",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 15,
+				"from": [
+					"{@item studded leather armor|phb}"
+				]
+			}
+		],
+		"hp": {
+			"average": 65,
+			"formula": "10d8 + 20"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 15,
+		"dex": 16,
+		"con": 14,
+		"int": 14,
+		"wis": 11,
+		"cha": 14,
+		"save": {
+			"str": "+4",
+			"dex": "+5",
+			"wis": "+2"
+		},
+		"skill": {
+			"athletics": "+4",
+			"deception": "+4"
+		},
+		"passive": 10,
+		"languages": [
+			"any two languages"
+		],
+		"cr": "2",
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The captain makes three melee attacks: two with its scimitar and one with its dagger. Or the captain makes two ranged attacks with its daggers."
+				]
+			},
+			{
+				"name": "Scimitar",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
+				]
+			},
+			{
+				"name": "Dagger",
+				"entries": [
+					"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage."
+				]
+			},
+			{
+				"name": "Curse (Recharges After a Long Rest)",
+				"entries": [
+					"The Vistana targets one creature that it can see within 30 feet of it. The target must succeed on a {@dc 12} Wisdom saving throw or be cursed. The Vistana chooses the curse's effect from the options that follow; other Vistani curses are possible. All such effects deal psychic damage to the Vistani who uttered them when they end:",
+					{
+						"type": "list",
+						"items": [
+							"The target is unable to perform a certain kind of act involving fine motor control, such as tying knots, writing, playing an instrument, sewing, or casting spells that have somatic components. When this curse ends, the Vistana takes {@damage 1d6} psychic damage.",
+							"The target's appearance changes in a sinister yet purely cosmetic way. For example, the curse can place a scar on the target's face, turn the target's teeth into yellow fangs, or give the target bad breath. When this curse ends, the Vistana takes {@damage 1d6} psychic damage.",
+							"A nonmagical item in the target's possession (chosen by the DM) disappears and can't be found until the curse ends. The lost item can weigh no more than 1 pound. When this curse ends, the Vistana takes {@damage 1d6} psychic damage.",
+							"The target gains vulnerability to a damage type of the Vistana's choice. When this curse ends, the Vistana takes {@damage 3d6} psychic damage.",
+							"The target has disadvantage on ability checks and saving throws tied to one ability score of the Vistana's choice. When this curse ends, the Vistana takes {@damage 3d6} psychic damage.",
+							"The target's attunement to one magic item (chosen by the DM) ends, and the target can't attune to the chosen item until the curse ends. When this curse ends, the Vistana takes {@damage 5d6} psychic damage.",
+							"The target is {@condition blinded}, {@condition deafened}, or both. When this curse ends, the Vistana takes {@damage 5d6} psychic damage."
+						]
+					},
+					"The curse lasts until ended with a {@spell greater restoration} spell, a {@spell remove curse} spell, or similar magic. It doesn't end when the target dies. If a cursed target is returned to life, the curse remains in effect."
+				]
+			},
+			{
+				"name": "Evil Eye (Recharges after a Short or Long Rest)",
+				"entries": [
+					"As an action, a Vistana can target a creature within 10 feet that the Vistana can see. This magical ability, which the Vistani call the Evil Eye, duplicates the duration and effect of the {@spell animal friendship}, {@spell charm person}, or {@spell hold person} spell (Vistana's choice; spell {@dc 12}), but requires neither somatic nor material components. If the target succeeds on the save, the Vistana is {@condition blinded} until the end of the Vistana's next turn.",
+					"A Vistana who uses Evil Eye can't use it again before finishing a short or long rest. Once a target succeeds on a saving throw against a Vistana's Evil Eye, it is immune to the Evil Eye of all Vistani for 24 hours."
+				]
+			}
+		],
+		"reaction": [
+			{
+				"name": "Parry",
+				"entries": [
+					"The captain adds 2 to its AC against one melee attack that would hit it. To do so, the captain must see the attacker and be wielding a melee weapon."
+				]
+			}
+		],
+		"actionTags": [
+			"Multiattack",
+			"Parry"
+		],
+		"languageTags": [
+			"X"
+		],
+		"damageTags": [
+			"P",
+			"S"
+		],
+		"miscTags": [
+			"MW",
+			"RW",
+			"THW"
+		]
+	},
+	{
+		"name": "Vistana Commoner",
+		"source": "CoS",
+		"page": 28,
+		"hasToken": true,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"any race"
+			]
+		},
+		"alignment": [
+			"A"
+		],
+		"ac": [
+			10
+		],
+		"hp": {
+			"average": 4,
+			"formula": "1d8"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 10,
+		"dex": 10,
+		"con": 10,
+		"int": 10,
+		"wis": 10,
+		"cha": 10,
+		"passive": 10,
+		"languages": [
+			"any one language (usually Common)"
+		],
+		"cr": "0",
+		"action": [
+			{
+				"name": "Club",
+				"entries": [
+					"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) bludgeoning damage."
+				]
+			},
+			{
+				"name": "Curse (Recharges After a Long Rest)",
+				"entries": [
+					"The Vistana targets one creature that it can see within 30 feet of it. The target must succeed on a {@dc 10} Wisdom saving throw or be cursed. The Vistana chooses the curse's effect from the options that follow; other Vistani curses are possible. All such effects deal psychic damage to the Vistani who uttered them when they end:",
+					{
+						"type": "list",
+						"items": [
+							"The target is unable to perform a certain kind of act involving fine motor control, such as tying knots, writing, playing an instrument, sewing, or casting spells that have somatic components. When this curse ends, the Vistana takes {@damage 1d6} psychic damage.",
+							"The target's appearance changes in a sinister yet purely cosmetic way. For example, the curse can place a scar on the target's face, turn the target's teeth into yellow fangs, or give the target bad breath. When this curse ends, the Vistana takes {@damage 1d6} psychic damage.",
+							"A nonmagical item in the target's possession (chosen by the DM) disappears and can't be found until the curse ends. The lost item can weigh no more than 1 pound. When this curse ends, the Vistana takes {@damage 1d6} psychic damage.",
+							"The target gains vulnerability to a damage type of the Vistana's choice. When this curse ends, the Vistana takes {@damage 3d6} psychic damage.",
+							"The target has disadvantage on ability checks and saving throws tied to one ability score of the Vistana's choice. When this curse ends, the Vistana takes {@damage 3d6} psychic damage.",
+							"The target's attunement to one magic item (chosen by the DM) ends, and the target can't attune to the chosen item until the curse ends. When this curse ends, the Vistana takes {@damage 5d6} psychic damage.",
+							"The target is {@condition blinded}, {@condition deafened}, or both. When this curse ends, the Vistana takes {@damage 5d6} psychic damage."
+						]
+					},
+					"The curse lasts until ended with a {@spell greater restoration} spell, a {@spell remove curse} spell, or similar magic. It doesn't end when the target dies. If a cursed target is returned to life, the curse remains in effect."
+				]
+			},
+			{
+				"name": "Evil Eye (Recharges after a Short or Long Rest)",
+				"entries": [
+					"As an action, a Vistana can target a creature within 10 feet that the Vistana can see. This magical ability, which the Vistani call the Evil Eye, duplicates the duration and effect of the {@spell animal friendship}, {@spell charm person}, or {@spell hold person} spell (Vistana's choice; spell {@dc 10}), but requires neither somatic nor material components. If the target succeeds on the save, the Vistana is {@condition blinded} until the end of the Vistana's next turn.",
+					"A Vistana who uses Evil Eye can't use it again before finishing a short or long rest. Once a target succeeds on a saving throw against a Vistana's Evil Eye, it is immune to the Evil Eye of all Vistani for 24 hours."
+				]
+			}
+		],
+		"languageTags": [
+			"C",
+			"X"
+		],
+		"damageTags": [
+			"B"
+		],
+		"miscTags": [
+			"MW"
+		]
+	},
+	{
+		"name": "Vistana Guard",
+		"source": "CoS",
+		"page": 28,
+		"hasToken": true,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"any race"
+			]
+		},
+		"alignment": [
+			"A"
+		],
+		"ac": [
+			{
+				"ac": 16,
+				"from": [
+					"{@item chain shirt|phb}",
+					"{@item shield|phb}"
+				]
+			}
+		],
+		"hp": {
+			"average": 11,
+			"formula": "2d8 + 2"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 13,
+		"dex": 12,
+		"con": 12,
+		"int": 10,
+		"wis": 11,
+		"cha": 10,
+		"skill": {
+			"perception": "+2"
+		},
+		"passive": 12,
+		"languages": [
+			"any one language (usually Common)"
+		],
+		"cr": "1/8",
+		"action": [
+			{
+				"name": "Spear",
+				"entries": [
+					"{@atk mw,rw} {@hit 3} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage, or 5 ({@damage 1d8 + 1}) piercing damage if used with two hands to make a melee attack."
+				]
+			},
+			{
+				"name": "Curse (Recharges After a Long Rest)",
+				"entries": [
+					"The Vistana targets one creature that it can see within 30 feet of it. The target must succeed on a {@dc 10} Wisdom saving throw or be cursed. The Vistana chooses the curse's effect from the options that follow; other Vistani curses are possible. All such effects deal psychic damage to the Vistani who uttered them when they end:",
+					{
+						"type": "list",
+						"items": [
+							"The target is unable to perform a certain kind of act involving fine motor control, such as tying knots, writing, playing an instrument, sewing, or casting spells that have somatic components. When this curse ends, the Vistana takes {@damage 1d6} psychic damage.",
+							"The target's appearance changes in a sinister yet purely cosmetic way. For example, the curse can place a scar on the target's face, turn the target's teeth into yellow fangs, or give the target bad breath. When this curse ends, the Vistana takes {@damage 1d6} psychic damage.",
+							"A nonmagical item in the target's possession (chosen by the DM) disappears and can't be found until the curse ends. The lost item can weigh no more than 1 pound. When this curse ends, the Vistana takes {@damage 1d6} psychic damage.",
+							"The target gains vulnerability to a damage type of the Vistana's choice. When this curse ends, the Vistana takes {@damage 3d6} psychic damage.",
+							"The target has disadvantage on ability checks and saving throws tied to one ability score of the Vistana's choice. When this curse ends, the Vistana takes {@damage 3d6} psychic damage.",
+							"The target's attunement to one magic item (chosen by the DM) ends, and the target can't attune to the chosen item until the curse ends. When this curse ends, the Vistana takes {@damage 5d6} psychic damage.",
+							"The target is {@condition blinded}, {@condition deafened}, or both. When this curse ends, the Vistana takes {@damage 5d6} psychic damage."
+						]
+					},
+					"The curse lasts until ended with a {@spell greater restoration} spell, a {@spell remove curse} spell, or similar magic. It doesn't end when the target dies. If a cursed target is returned to life, the curse remains in effect."
+				]
+			},
+			{
+				"name": "Evil Eye (Recharges after a Short or Long Rest)",
+				"entries": [
+					"As an action, a Vistana can target a creature within 10 feet that the Vistana can see. This magical ability, which the Vistani call the Evil Eye, duplicates the duration and effect of the {@spell animal friendship}, {@spell charm person}, or {@spell hold person} spell (Vistana's choice; spell {@dc 10}), but requires neither somatic nor material components. If the target succeeds on the save, the Vistana is {@condition blinded} until the end of the Vistana's next turn.",
+					"A Vistana who uses Evil Eye can't use it again before finishing a short or long rest. Once a target succeeds on a saving throw against a Vistana's Evil Eye, it is immune to the Evil Eye of all Vistani for 24 hours."
+				]
+			}
+		],
+		"languageTags": [
+			"C",
+			"X"
+		],
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MW",
+			"RW",
+			"THW"
+		]
+	},
+	{
+		"name": "Vistana Spy",
+		"source": "CoS",
+		"page": 28,
+		"hasToken": true,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"any race"
+			]
+		},
+		"alignment": [
+			"A"
+		],
+		"ac": [
+			12
+		],
+		"hp": {
+			"average": 27,
+			"formula": "6d8"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 10,
+		"dex": 15,
+		"con": 10,
+		"int": 12,
+		"wis": 14,
+		"cha": 16,
+		"skill": {
+			"deception": "+5",
+			"insight": "+4",
+			"investigation": "+5",
+			"perception": "+6",
+			"persuasion": "+5",
+			"sleight of hand": "+4",
+			"stealth": "+4"
+		},
+		"passive": 16,
+		"languages": [
+			"any two languages"
+		],
+		"cr": "1",
+		"trait": [
+			{
+				"name": "Cunning Action",
+				"entries": [
+					"On each of its turns, the spy can use a bonus action to take the Dash, Disengage, or Hide action."
+				]
+			},
+			{
+				"name": "Sneak Attack (1/Turn)",
+				"entries": [
+					"The spy deals an extra 7 ({@dice 2d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the spy that isn't {@condition incapacitated} and the spy doesn't have disadvantage on the attack roll."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The spy makes two melee attacks."
+				]
+			},
+			{
+				"name": "Shortsword",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+				]
+			},
+			{
+				"name": "Hand Crossbow",
+				"entries": [
+					"{@atk rw} {@hit 4} to hit, range 30/120 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+				]
+			},
+			{
+				"name": "Curse (Recharges After a Long Rest)",
+				"entries": [
+					"The Vistana targets one creature that it can see within 30 feet of it. The target must succeed on a {@dc 13} Wisdom saving throw or be cursed. The Vistana chooses the curse's effect from the options that follow; other Vistani curses are possible. All such effects deal psychic damage to the Vistani who uttered them when they end:",
+					{
+						"type": "list",
+						"items": [
+							"The target is unable to perform a certain kind of act involving fine motor control, such as tying knots, writing, playing an instrument, sewing, or casting spells that have somatic components. When this curse ends, the Vistana takes {@damage 1d6} psychic damage.",
+							"The target's appearance changes in a sinister yet purely cosmetic way. For example, the curse can place a scar on the target's face, turn the target's teeth into yellow fangs, or give the target bad breath. When this curse ends, the Vistana takes {@damage 1d6} psychic damage.",
+							"A nonmagical item in the target's possession (chosen by the DM) disappears and can't be found until the curse ends. The lost item can weigh no more than 1 pound. When this curse ends, the Vistana takes {@damage 1d6} psychic damage.",
+							"The target gains vulnerability to a damage type of the Vistana's choice. When this curse ends, the Vistana takes {@damage 3d6} psychic damage.",
+							"The target has disadvantage on ability checks and saving throws tied to one ability score of the Vistana's choice. When this curse ends, the Vistana takes {@damage 3d6} psychic damage.",
+							"The target's attunement to one magic item (chosen by the DM) ends, and the target can't attune to the chosen item until the curse ends. When this curse ends, the Vistana takes {@damage 5d6} psychic damage.",
+							"The target is {@condition blinded}, {@condition deafened}, or both. When this curse ends, the Vistana takes {@damage 5d6} psychic damage."
+						]
+					},
+					"The curse lasts until ended with a {@spell greater restoration} spell, a {@spell remove curse} spell, or similar magic. It doesn't end when the target dies. If a cursed target is returned to life, the curse remains in effect."
+				]
+			},
+			{
+				"name": "Evil Eye (Recharges after a Short or Long Rest)",
+				"entries": [
+					"As an action, a Vistana can target a creature within 10 feet that the Vistana can see. This magical ability, which the Vistani call the Evil Eye, duplicates the duration and effect of the {@spell animal friendship}, {@spell charm person}, or {@spell hold person} spell (Vistana's choice; spell {@dc 13}), but requires neither somatic nor material components. If the target succeeds on the save, the Vistana is {@condition blinded} until the end of the Vistana's next turn.",
+					"A Vistana who uses Evil Eye can't use it again before finishing a short or long rest. Once a target succeeds on a saving throw against a Vistana's Evil Eye, it is immune to the Evil Eye of all Vistani for 24 hours."
+				]
+			}
+		],
+		"traitTags": [
+			"Sneak Attack"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"X"
+		],
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MW",
+			"RNG",
+			"RW"
+		]
+	},
+	{
+		"name": "Vistana Thug",
+		"source": "CoS",
+		"page": 28,
+		"hasToken": true,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"any race"
+			]
+		},
+		"alignment": [
+			"L",
+			"NX",
+			"C",
+			"NY",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 11,
+				"from": [
+					"{@item leather armor|phb}"
+				]
+			}
+		],
+		"hp": {
+			"average": 32,
+			"formula": "5d8 + 10"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 15,
+		"dex": 11,
+		"con": 14,
+		"int": 10,
+		"wis": 10,
+		"cha": 11,
+		"skill": {
+			"intimidation": "+2"
+		},
+		"passive": 10,
+		"languages": [
+			"any one language (usually Common)"
+		],
+		"cr": "1/2",
+		"trait": [
+			{
+				"name": "Pack Tactics",
+				"entries": [
+					"The thug has advantage on an attack roll against a creature if at least one of the thug's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The thug makes two melee attacks."
+				]
+			},
+			{
+				"name": "Mace",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}5 ({@damage 1d6 + 2}) bludgeoning damage."
+				]
+			},
+			{
+				"name": "Heavy Crossbow",
+				"entries": [
+					"{@atk rw} {@hit 2} to hit, range 100/400 ft., one target. {@h}5 ({@damage 1d10}) piercing damage."
+				]
+			},
+			{
+				"name": "Curse (Recharges After a Long Rest)",
+				"entries": [
+					"The Vistana targets one creature that it can see within 30 feet of it. The target must succeed on a {@dc 10} Wisdom saving throw or be cursed. The Vistana chooses the curse's effect from the options that follow; other Vistani curses are possible. All such effects deal psychic damage to the Vistani who uttered them when they end:",
+					{
+						"type": "list",
+						"items": [
+							"The target is unable to perform a certain kind of act involving fine motor control, such as tying knots, writing, playing an instrument, sewing, or casting spells that have somatic components. When this curse ends, the Vistana takes {@damage 1d6} psychic damage.",
+							"The target's appearance changes in a sinister yet purely cosmetic way. For example, the curse can place a scar on the target's face, turn the target's teeth into yellow fangs, or give the target bad breath. When this curse ends, the Vistana takes {@damage 1d6} psychic damage.",
+							"A nonmagical item in the target's possession (chosen by the DM) disappears and can't be found until the curse ends. The lost item can weigh no more than 1 pound. When this curse ends, the Vistana takes {@damage 1d6} psychic damage.",
+							"The target gains vulnerability to a damage type of the Vistana's choice. When this curse ends, the Vistana takes {@damage 3d6} psychic damage.",
+							"The target has disadvantage on ability checks and saving throws tied to one ability score of the Vistana's choice. When this curse ends, the Vistana takes {@damage 3d6} psychic damage.",
+							"The target's attunement to one magic item (chosen by the DM) ends, and the target can't attune to the chosen item until the curse ends. When this curse ends, the Vistana takes {@damage 5d6} psychic damage.",
+							"The target is {@condition blinded}, {@condition deafened}, or both. When this curse ends, the Vistana takes {@damage 5d6} psychic damage."
+						]
+					},
+					"The curse lasts until ended with a {@spell greater restoration} spell, a {@spell remove curse} spell, or similar magic. It doesn't end when the target dies. If a cursed target is returned to life, the curse remains in effect."
+				]
+			},
+			{
+				"name": "Evil Eye (Recharges after a Short or Long Rest)",
+				"entries": [
+					"As an action, a Vistana can target a creature within 10 feet that the Vistana can see. This magical ability, which the Vistani call the Evil Eye, duplicates the duration and effect of the {@spell animal friendship}, {@spell charm person}, or {@spell hold person} spell (Vistana's choice; spell {@dc 10}), but requires neither somatic nor material components. If the target succeeds on the save, the Vistana is {@condition blinded} until the end of the Vistana's next turn.",
+					"A Vistana who uses Evil Eye can't use it again before finishing a short or long rest. Once a target succeeds on a saving throw against a Vistana's Evil Eye, it is immune to the Evil Eye of all Vistani for 24 hours."
+				]
+			}
+		],
+		"traitTags": [
+			"Pack Tactics"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"X"
+		],
+		"damageTags": [
+			"B",
+			"P"
+		],
+		"miscTags": [
+			"MW",
+			"RNG",
+			"RW"
+		]
+	},
+	{
+		"name": "Walking Corpse",
+		"source": "CoS",
+		"page": 165,
+		"speed": {
+			"walk": 20
+		},
+		"conditionImmune": [
+			"charmed",
+			"frightened"
+		],
+		"hasToken": true,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"any race"
+			]
+		},
+		"alignment": [
+			"A"
+		],
+		"ac": [
+			10
+		],
+		"hp": {
+			"average": 4,
+			"formula": "1d8"
+		},
+		"str": 10,
+		"dex": 10,
+		"con": 10,
+		"int": 10,
+		"wis": 10,
+		"cha": 10,
+		"passive": 10,
+		"languages": [
+			"any one language (usually Common)"
+		],
+		"cr": "0",
+		"action": [
+			{
+				"name": "Club",
+				"entries": [
+					"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) bludgeoning damage."
+				]
+			}
+		],
+		"languageTags": [
+			"C",
+			"X"
+		],
+		"damageTags": [
+			"B"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"trait": [
+			{
+				"name": "Violent Death",
+				"entries": [
+					"When a corpse is reduced to 0 hit points, it splits open, disgorging a {@creature swarm of poisonous snakes}. The snakes are hungry and fight until slain."
+				]
+			}
+		]
+	},
+	{
+		"name": "Young Wereraven",
+		"source": "CoS",
+		"page": 98,
+		"size": [
+			"S"
+		],
+		"alignment": [
+			"L",
+			"G"
+		],
+		"hp": {
+			"average": 7,
+			"formula": "2d6"
+		},
+		"group": [
+			"Lycanthropes"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"human",
+				"shapechanger"
+			]
+		},
+		"ac": [
+			12
+		],
+		"speed": {
+			"walk": {
+				"number": 30,
+				"condition": "(fly 50 ft. in raven and hybrid forms)"
+			}
+		},
+		"str": 10,
+		"dex": 15,
+		"con": 11,
+		"int": 13,
+		"wis": 15,
+		"cha": 14,
+		"skill": {
+			"insight": "+4",
+			"perception": "+6"
+		},
+		"passive": 16,
+		"languages": [
+			"Common (can't speak in raven form)"
+		],
+		"cr": "2",
+		"trait": [
+			{
+				"name": "Shapechanger",
+				"entries": [
+					"The wereraven can use its action to polymorph into a raven-humanoid hybrid or into a raven, or back into its human form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its human form if it dies."
+				]
+			},
+			{
+				"name": "Mimicry",
+				"entries": [
+					"The wereraven can mimic simple sounds it has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful {@dc 10} Wisdom (Insight) check."
+				]
+			},
+			{
+				"name": "Regeneration",
+				"entries": [
+					"The wereraven regains 10 hit points at the start of its turn. If the wereraven takes damage from a silvered weapon or a spell, this trait doesn't function at the start of the wereraven's next turn. The wereraven dies only if it starts its turn with 0 hit points and doesn't regenerate."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack (Human or Hybrid Form Only)",
+				"entries": [
+					"The wereraven makes two weapon attacks, one of which can be with its hand crossbow."
+				]
+			},
+			{
+				"name": "Beak (Raven or Hybrid Form Only)",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}1 piercing damage in raven form, or 4 ({@damage 1d4 + 2}) piercing damage in hybrid form. If the target is humanoid, it must succeed on a {@dc 10} Constitution saving throw or be cursed with wereraven lycanthropy."
+				]
+			},
+			{
+				"name": "Shortsword (Human or Hybrid Form Only)",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+				]
+			},
+			{
+				"name": "Hand Crossbow (Human or Hybrid Form Only)",
+				"entries": [
+					"{@atk rw} {@hit 4} to hit, range 30/120 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+				]
+			}
+		],
+		"traitTags": [
+			"Regeneration",
+			"Shapechanger"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"CS"
+		],
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MW",
+			"RNG",
+			"RW"
+		]
+	}
+]

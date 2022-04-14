@@ -1,0 +1,2362 @@
+[
+	{
+		"name": "Abyssal Chicken",
+		"source": "BGDIA",
+		"page": 97,
+		"size": [
+			"T"
+		],
+		"type": {
+			"type": "fiend",
+			"tags": [
+				"demon"
+			]
+		},
+		"alignment": [
+			"C",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 13,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 10,
+			"formula": "3d4 + 3"
+		},
+		"speed": {
+			"walk": 30,
+			"fly": {
+				"number": 30,
+				"condition": "(see bad flier below)"
+			}
+		},
+		"str": 6,
+		"dex": 14,
+		"con": 13,
+		"int": 4,
+		"wis": 9,
+		"cha": 5,
+		"senses": [
+			"blindsight 30ft. (blind beyond this radius)"
+		],
+		"passive": 9,
+		"resist": [
+			"cold",
+			"fire",
+			"lightning"
+		],
+		"immune": [
+			"poison"
+		],
+		"conditionImmune": [
+			"blinded",
+			"poisoned"
+		],
+		"languages": [
+			"understands Abyssal but can't speak"
+		],
+		"cr": "1/4",
+		"trait": [
+			{
+				"name": "Bad Flier",
+				"entries": [
+					"The abyssal chicken falls at the end of a turn if it's airborne and the only thing holding it aloft is its flying speed."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The abyssal chicken makes two attacks: one with its bite and one with its claws."
+				]
+			},
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+				]
+			},
+			{
+				"name": "Claws",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage."
+				]
+			}
+		],
+		"familiar": true,
+		"senseTags": [
+			"B"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"AB",
+			"CS"
+		],
+		"damageTags": [
+			"P",
+			"S"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true
+	},
+	{
+		"name": "Black Gauntlet of Bane",
+		"source": "BGDIA",
+		"page": 235,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"human"
+			]
+		},
+		"alignment": [
+			"L",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 16,
+				"from": [
+					"{@item chain mail|phb}"
+				]
+			}
+		],
+		"hp": {
+			"average": 51,
+			"formula": "6d8 + 24"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 18,
+		"dex": 11,
+		"con": 18,
+		"int": 12,
+		"wis": 15,
+		"cha": 18,
+		"save": {
+			"wis": "+5"
+		},
+		"skill": {
+			"intimidation": "+7",
+			"perception": "+5"
+		},
+		"passive": 15,
+		"conditionImmune": [
+			"frightened"
+		],
+		"languages": [
+			"Common"
+		],
+		"cr": "6",
+		"spellcasting": [
+			{
+				"name": "Spellcasting",
+				"headerEntries": [
+					"The black gauntlet is a 5th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 15}, {@hit 7} to hit with spell attacks). It has the following cleric spells prepared:"
+				],
+				"spells": {
+					"0": {
+						"spells": [
+							"{@spell guidance}",
+							"{@spell sacred flame}",
+							"{@spell thaumaturgy}"
+						]
+					},
+					"1": {
+						"slots": 4,
+						"spells": [
+							"{@spell bane}",
+							"{@spell bless}",
+							"{@spell cure wounds}",
+							"{@spell guiding bolt} (see \"Actions\" below)"
+						]
+					},
+					"2": {
+						"slots": 3,
+						"spells": [
+							"{@spell blindness/deafness}",
+							"{@spell hold person}",
+							"{@spell silence}"
+						]
+					},
+					"3": {
+						"slots": 2,
+						"spells": [
+							"{@spell sending}",
+							"{@spell spirit guardians}"
+						]
+					}
+				},
+				"ability": "cha"
+			}
+		],
+		"trait": [
+			{
+				"name": "Aura of Terror",
+				"entries": [
+					"When a hostile creature within 5 feet of the black gauntlet makes an attack roll or a saving throw, it has disadvantage on the roll. Creatures that are immune to the {@condition frightened} condition are immune to this trait."
+				]
+			},
+			{
+				"name": "Tactical Discipline",
+				"entries": [
+					"The black gauntlet has advantage on all ability checks and saving throws made during combat."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The black gauntlet makes two attacks with its mace."
+				]
+			},
+			{
+				"name": "Mace",
+				"entries": [
+					"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) bludgeoning damage plus 13 ({@damage 3d8}) necrotic damage."
+				]
+			},
+			{
+				"name": "Guiding Bolt (1st-Level Spell; Requires a Spell Slot)",
+				"entries": [
+					"{@atk rs} {@hit 7} to hit, range 120 ft., one creature. {@h}14 ({@damage 4d6}) radiant damage, and the next attack roll made against the target before the end of the black gauntlet's next turn has advantage. If the black gauntlet casts this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d6} for each slot level above 1st."
+				]
+			}
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"C"
+		],
+		"damageTags": [
+			"B",
+			"N",
+			"R"
+		],
+		"spellcastingTags": [
+			"CC"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"conditionInflictSpell": [
+			"blinded",
+			"deafened",
+			"paralyzed"
+		],
+		"hasToken": true,
+		"hasFluff": true
+	},
+	{
+		"name": "Bone Whelk",
+		"source": "BGDIA",
+		"page": 119,
+		"size": [
+			"L"
+		],
+		"type": "monstrosity",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			{
+				"ac": 12,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 27,
+			"formula": "5d10"
+		},
+		"speed": {
+			"walk": 15,
+			"climb": 15
+		},
+		"str": 10,
+		"dex": 5,
+		"con": 11,
+		"int": 6,
+		"wis": 9,
+		"cha": 3,
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 9,
+		"cr": "1/4",
+		"trait": [
+			{
+				"name": "Adhesive",
+				"entries": [
+					"The bone whelk can cause Medium or smaller objects to adhere to it. A Medium or smaller creature that touches the bone whelk is {@condition grappled} by it (escape {@dc 10})."
+				]
+			},
+			{
+				"name": "Death Scream",
+				"entries": [
+					"When the bone whelk dies, it emits a blood-curdling shriek than can be heard out to a range of 120 feet. This shriek causes nonmagical, organic material within 10 feet of the bone whelk to rot. Each creature within 10 feet of the bone whelk when it dies takes 9 ({@damage 2d8}) necrotic damage."
+				]
+			},
+			{
+				"name": "Spider Climb",
+				"entries": [
+					"The bone whelk can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 2} to hit, reach 5 ft., one creature. {@h}4 ({@damage 1d8}) piercing damage."
+				]
+			}
+		],
+		"traitTags": [
+			"Spider Climb"
+		],
+		"senseTags": [
+			"D"
+		],
+		"damageTags": [
+			"N",
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true
+	},
+	{
+		"name": "Death's Head of Bhaal",
+		"source": "BGDIA",
+		"page": 233,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"human"
+			]
+		},
+		"alignment": [
+			"C",
+			"E"
+		],
+		"ac": [
+			15
+		],
+		"hp": {
+			"average": 76,
+			"formula": "8d8 + 40"
+		},
+		"speed": {
+			"walk": 50
+		},
+		"str": 20,
+		"dex": 20,
+		"con": 20,
+		"int": 14,
+		"wis": 13,
+		"cha": 16,
+		"skill": {
+			"intimidation": "+6",
+			"perception": "+4",
+			"persuasion": "+6",
+			"stealth": "+11"
+		},
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 14,
+		"languages": [
+			"Common"
+		],
+		"cr": "5",
+		"trait": [
+			{
+				"name": "Aura of Murder",
+				"entries": [
+					"As long as the death's head is not {@condition incapacitated}, hostile creatures within 5 feet of it gain vulnerability to piercing damage unless they have resistance or immunity to such damage."
+				]
+			},
+			{
+				"name": "Magic Resistance",
+				"entries": [
+					"The death's head has advantage on saving throws against spells and other magical effects."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The death's head uses Stunning Gaze and makes two dagger attacks."
+				]
+			},
+			{
+				"name": "Dagger",
+				"entries": [
+					"{@atk mw,rw} {@hit 7} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}7 ({@damage 1d4 + 5}) piercing damage."
+				]
+			},
+			{
+				"name": "Stunning Gaze",
+				"entries": [
+					"The death's head targets one creature it can see within 30 feet of it. The target must succeed on a {@dc 14} Wisdom saving throw or be {@condition stunned} until the end of its next turn."
+				]
+			}
+		],
+		"reaction": [
+			{
+				"name": "Unstoppable (3/Day)",
+				"entries": [
+					"The death's head reduces the damage it takes from an attack to 0."
+				]
+			}
+		],
+		"traitTags": [
+			"Magic Resistance"
+		],
+		"senseTags": [
+			"D"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"C"
+		],
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MW",
+			"RW",
+			"THW"
+		],
+		"conditionInflict": [
+			"stunned"
+		],
+		"hasToken": true,
+		"hasFluff": true
+	},
+	{
+		"name": "Dryad Spirit",
+		"source": "BGDIA",
+		"page": 108,
+		"hasToken": true,
+		"size": [
+			"M"
+		],
+		"type": "undead",
+		"alignment": [
+			"C",
+			"E"
+		],
+		"ac": [
+			12
+		],
+		"hp": {
+			"average": 58,
+			"formula": "13d8"
+		},
+		"speed": {
+			"walk": 0,
+			"fly": {
+				"number": 40,
+				"condition": "(hover)"
+			},
+			"canHover": true
+		},
+		"str": 1,
+		"dex": 14,
+		"con": 10,
+		"int": 12,
+		"wis": 11,
+		"cha": 17,
+		"save": {
+			"wis": "+2",
+			"cha": "+5"
+		},
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 10,
+		"resist": [
+			"acid",
+			"fire",
+			"lightning",
+			"thunder",
+			{
+				"resist": [
+					"bludgeoning",
+					"piercing",
+					"slashing"
+				],
+				"note": "from nonmagical attacks",
+				"cond": true
+			}
+		],
+		"immune": [
+			"cold",
+			"necrotic",
+			"poison"
+		],
+		"conditionImmune": [
+			"charmed",
+			"exhaustion",
+			"frightened",
+			"grappled",
+			"paralyzed",
+			"petrified",
+			"poisoned",
+			"prone",
+			"restrained"
+		],
+		"languages": [
+			"Common",
+			"Elvish"
+		],
+		"cr": "4",
+		"trait": [
+			{
+				"name": "Detect Life",
+				"entries": [
+					"The dryad can magically sense the presence of living creatures up to 5 miles away that aren't undead or constructs. She knows the general direction they're in but not their exact locations."
+				]
+			},
+			{
+				"name": "Incorporeal Movement",
+				"entries": [
+					"The dryad can move through other creatures and objects as if they were difficult terrain. She takes 5 ({@damage 1d10}) force damage if she ends her turn inside an object."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Corrupting Touch",
+				"entries": [
+					"{@atk ms} {@hit 4} to hit, reach 5 ft., one target. {@h}12 ({@damage 3d6 + 2}) necrotic damage."
+				]
+			},
+			{
+				"name": "Horrifying Visage",
+				"entries": [
+					"Each non-undead creature within 60 feet of the dryad that can see her must succeed on a {@dc 13} Wisdom saving throw or be {@condition frightened} for 1 minute. A {@condition frightened} target can repeat the saving throw at the end of each of its turns, with disadvantage if the dryad is within line of sight, ending the effect on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to the dryad's Horrifying Visage for the next 24 hours."
+				]
+			},
+			{
+				"name": "Wail (1/Day)",
+				"entries": [
+					"The dryad releases a mournful wail, provided that she isn't in sunlight. This wail has no effect on constructs and undead. All other creatures within 30 feet of her that can hear her must make a {@dc 13} Constitution saving throw. On a failure, a creature drops to 0 hit points. On a success, a creature takes 10 ({@damage 3d6}) psychic damage."
+				]
+			}
+		],
+		"traitTags": [
+			"Incorporeal Movement"
+		],
+		"senseTags": [
+			"D"
+		],
+		"languageTags": [
+			"C",
+			"E"
+		],
+		"damageTags": [
+			"N",
+			"O",
+			"Y"
+		],
+		"conditionInflict": [
+			"frightened"
+		]
+	},
+	{
+		"name": "Fiendish Flesh Golem",
+		"source": "BGDIA",
+		"page": 236,
+		"size": [
+			"L"
+		],
+		"type": "construct",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			{
+				"ac": 12,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 210,
+			"formula": "20d10 + 100"
+		},
+		"speed": {
+			"walk": 30,
+			"fly": {
+				"number": 30,
+				"condition": "(hover)"
+			},
+			"canHover": true
+		},
+		"str": 20,
+		"dex": 9,
+		"con": 20,
+		"int": 7,
+		"wis": 10,
+		"cha": 5,
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 10,
+		"resist": [
+			"cold",
+			"fire"
+		],
+		"immune": [
+			"lightning",
+			"poison",
+			{
+				"immune": [
+					"bludgeoning",
+					"piercing",
+					"slashing"
+				],
+				"note": "from nonmagical attacks that aren't adamantine or silvered",
+				"cond": true
+			}
+		],
+		"conditionImmune": [
+			"charmed",
+			"exhaustion",
+			"frightened",
+			"paralyzed",
+			"petrified",
+			"poisoned"
+		],
+		"languages": [
+			"understands the languages of its creator but can't speak"
+		],
+		"cr": "8",
+		"trait": [
+			{
+				"name": "Berserk",
+				"entries": [
+					"Whenever the golem starts its turn with 100 hit points or fewer, roll a {@dice d6}. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object, with preference for an object smaller than itself. Once the golem goes berserk, it continues to do so until it is destroyed or regains all its hit points. If the golem's creator is within 60 feet of the berserk golem, the creator can try to calm it by speaking firmly and persuasively. The golem must be able to hear its creator, who must take an action to make a {@dc 15} Charisma (Persuasion) check. If the check succeeds, the golem ceases being berserk. If it takes damage while still at 100 hit points or fewer, the golem might go berserk again."
+				]
+			},
+			{
+				"name": "Immutable Form",
+				"entries": [
+					"The golem is immune to any spell or effect that would alter its form."
+				]
+			},
+			{
+				"name": "Lightning Absorption",
+				"entries": [
+					"Whenever the golem is subjected to lightning damage, it takes no damage and instead regains a number of hit points equal to the lightning damage dealt."
+				]
+			},
+			{
+				"name": "Magic Resistance",
+				"entries": [
+					"The golem has advantage on saving throws against spells and other magical effects."
+				]
+			},
+			{
+				"name": "Magic Weapons",
+				"entries": [
+					"The golem's weapon attacks are magical."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The golem makes two slam attacks."
+				]
+			},
+			{
+				"name": "Slam",
+				"entries": [
+					"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d10 + 5}) bludgeoning damage."
+				]
+			}
+		],
+		"traitTags": [
+			"Damage Absorption",
+			"Immutable Form",
+			"Magic Resistance",
+			"Magic Weapons"
+		],
+		"senseTags": [
+			"D"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"CS"
+		],
+		"damageTags": [
+			"B"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true,
+		"hasFluff": true
+	},
+	{
+		"name": "Fist of Bane",
+		"source": "BGDIA",
+		"page": 232,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"human"
+			]
+		},
+		"alignment": [
+			"L",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 18,
+				"from": [
+					"{@item chain mail|phb}",
+					"{@item shield|phb}"
+				]
+			}
+		],
+		"hp": {
+			"average": 22,
+			"formula": "4d8 + 4"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 16,
+		"dex": 11,
+		"con": 13,
+		"int": 10,
+		"wis": 12,
+		"cha": 11,
+		"passive": 11,
+		"conditionImmune": [
+			"frightened"
+		],
+		"languages": [
+			"Common"
+		],
+		"cr": "1/2",
+		"trait": [
+			{
+				"name": "Tactical Discipline",
+				"entries": [
+					"The fist of Bane has advantage on all ability checks and saving throws made during combat."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Mace",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) bludgeoning damage."
+				]
+			},
+			{
+				"name": "Longbow",
+				"entries": [
+					"{@atk rw} {@hit 2} to hit, range 150/600 ft., one target. {@h}4 ({@damage 1d8}) piercing damage."
+				]
+			}
+		],
+		"languageTags": [
+			"C"
+		],
+		"damageTags": [
+			"B",
+			"P"
+		],
+		"miscTags": [
+			"MW",
+			"RNG",
+			"RW"
+		],
+		"hasToken": true,
+		"hasFluff": true
+	},
+	{
+		"name": "Flying Dagger",
+		"source": "BGDIA",
+		"page": 30,
+		"size": [
+			"T"
+		],
+		"hp": {
+			"average": 7,
+			"formula": "3d4"
+		},
+		"damageTags": [
+			"P"
+		],
+		"hasToken": true,
+		"group": [
+			"Animated Objects"
+		],
+		"type": "construct",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			{
+				"ac": 17,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"speed": {
+			"walk": 0,
+			"fly": {
+				"number": 50,
+				"condition": "(hover)"
+			},
+			"canHover": true
+		},
+		"str": 12,
+		"dex": 15,
+		"con": 11,
+		"int": 1,
+		"wis": 5,
+		"cha": 1,
+		"save": {
+			"dex": "+4"
+		},
+		"senses": [
+			"blindsight 60 ft. (blind beyond this radius)"
+		],
+		"passive": 7,
+		"immune": [
+			"poison",
+			"psychic"
+		],
+		"conditionImmune": [
+			"blinded",
+			"charmed",
+			"deafened",
+			"frightened",
+			"paralyzed",
+			"petrified",
+			"poisoned"
+		],
+		"cr": "1/4",
+		"trait": [
+			{
+				"name": "Antimagic Susceptibility",
+				"entries": [
+					"The dagger is {@condition incapacitated} while in the area of an {@spell antimagic field}. If targeted by {@spell dispel magic}, the dagger must succeed on a Constitution saving throw against the caster's spell save DC or fall {@condition unconscious} for 1 minute."
+				]
+			},
+			{
+				"name": "False Appearance",
+				"entries": [
+					"While the dagger remains motionless and isn't flying, it is indistinguishable from a normal dagger."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Dagger",
+				"entries": [
+					"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage."
+				]
+			}
+		],
+		"traitTags": [
+			"Antimagic Susceptibility",
+			"False Appearance"
+		],
+		"senseTags": [
+			"B"
+		],
+		"miscTags": [
+			"MW"
+		]
+	},
+	{
+		"name": "Hellwasp",
+		"source": "BGDIA",
+		"page": 236,
+		"size": [
+			"L"
+		],
+		"type": "fiend",
+		"alignment": [
+			"L",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 19,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 52,
+			"formula": "8d10 + 8"
+		},
+		"speed": {
+			"walk": 10,
+			"fly": {
+				"number": 60,
+				"condition": "(hover)"
+			},
+			"canHover": true
+		},
+		"str": 18,
+		"dex": 15,
+		"con": 12,
+		"int": 10,
+		"wis": 10,
+		"cha": 7,
+		"save": {
+			"dex": "+5",
+			"wis": "+3"
+		},
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 10,
+		"immune": [
+			"fire"
+		],
+		"vulnerable": [
+			"cold"
+		],
+		"languages": [
+			"Infernal",
+			"telepathy 300 ft. (with other hellwasps only)"
+		],
+		"cr": "5",
+		"trait": [
+			{
+				"name": "Magic Weapons",
+				"entries": [
+					"The hellwasp's weapon attacks are magical."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The hellwasp makes two attacks: one with its sting and one with its sword talons."
+				]
+			},
+			{
+				"name": "Sting",
+				"entries": [
+					"{@atk mw} {@hit 7} to hit, reach 5 ft., one creature. {@h}8 ({@damage 1d8 + 4}) piercing damage plus 7 ({@damage 2d6}) fire damage, and the target must succeed on a {@dc 12} Constitution saving throw or be {@condition poisoned} for 1 minute. While {@condition poisoned} in this way, the target is also {@condition paralyzed}. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+				]
+			},
+			{
+				"name": "Sword Talons",
+				"entries": [
+					"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage."
+				]
+			}
+		],
+		"traitTags": [
+			"Magic Weapons"
+		],
+		"senseTags": [
+			"D"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"I",
+			"TP"
+		],
+		"damageTags": [
+			"F",
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"conditionInflict": [
+			"paralyzed",
+			"poisoned"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true
+	},
+	{
+		"name": "Hellwasp Grub",
+		"source": "BGDIA",
+		"page": 95,
+		"hasToken": true,
+		"size": [
+			"S"
+		],
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			{
+				"ac": 13,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 4,
+			"formula": "1d6 + 1"
+		},
+		"speed": {
+			"walk": 30,
+			"climb": 30
+		},
+		"str": 5,
+		"dex": 14,
+		"con": 12,
+		"int": 1,
+		"wis": 7,
+		"cha": 3,
+		"senses": [
+			"blindsight 30 ft."
+		],
+		"passive": 8,
+		"cr": "1/4",
+		"action": [
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}4 ({@damage 1d4 + 2}) piercing damage, and the target must succeed on a {@dc 11} Constitution saving throw or take 10 ({@damage 3d6}) poison damage. If the poison damage reduces the target to 0 hit points, the target is stable but {@condition poisoned} for 1 hour, even after regaining hit points, and is {@condition paralyzed} while {@condition poisoned} in this way."
+				]
+			}
+		],
+		"senseTags": [
+			"B"
+		],
+		"damageTags": [
+			"I",
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"conditionInflict": [
+			"paralyzed",
+			"poisoned"
+		]
+	},
+	{
+		"name": "Hollyphant",
+		"source": "BGDIA",
+		"page": 237,
+		"size": [
+			"S"
+		],
+		"type": "celestial",
+		"alignment": [
+			"L",
+			"G"
+		],
+		"ac": [
+			{
+				"ac": 18,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 36,
+			"formula": "8d6 + 8"
+		},
+		"speed": {
+			"walk": 20,
+			"fly": 120
+		},
+		"str": 10,
+		"dex": 11,
+		"con": 12,
+		"int": 16,
+		"wis": 19,
+		"cha": 16,
+		"save": {
+			"dex": "+3",
+			"con": "+4",
+			"cha": "+6"
+		},
+		"passive": 14,
+		"resist": [
+			{
+				"resist": [
+					"bludgeoning",
+					"piercing",
+					"slashing"
+				],
+				"note": "from nonmagical attacks",
+				"cond": true
+			}
+		],
+		"immune": [
+			"poison"
+		],
+		"conditionImmune": [
+			"poisoned"
+		],
+		"languages": [
+			"Celestial",
+			"telepathy 120 ft."
+		],
+		"cr": "5",
+		"spellcasting": [
+			{
+				"name": "Innate Spellcasting",
+				"headerEntries": [
+					"The hollyphant's innate spellcasting ability is Wisdom (spell save {@dc 15}). It can innately cast the following spells, requiring no material components:"
+				],
+				"will": [
+					"{@spell light}"
+				],
+				"daily": {
+					"2e": [
+						"{@spell bless}",
+						"{@spell cure wounds}",
+						"{@spell protection from evil and good}"
+					],
+					"1e": [
+						"{@spell banishment}",
+						"{@spell heal}",
+						"{@spell raise dead}",
+						"{@spell shapechange} (into a golden-furred {@creature mammoth} with feathered wings and a flying speed of 120 ft.)",
+						"{@spell teleport} (with no chance of error)"
+					]
+				},
+				"ability": "wis"
+			}
+		],
+		"trait": [
+			{
+				"name": "Aura of Invulnerability",
+				"entries": [
+					"An {@condition invisible} aura forms a 10-foot-radius sphere around the hollyphant for as long as it lives. Any spell of 5th level or lower cast from outside the barrier can't affect creatures or objects within it, even if the spell is cast using a higher level spell slot. Such a spell can target creatures and objects within the barrier, but the spell has no effect on them. Similarly, the area within the barrier is excluded from the areas affected by such spells. The hollyphant can use an action to suppress this trait until its concentration ends (as if concentrating on a spell)."
+				]
+			},
+			{
+				"name": "Magic Weapons",
+				"entries": [
+					"The hollyphant's weapon attacks are magical."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Tusks",
+				"entries": [
+					"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) piercing damage."
+				]
+			},
+			{
+				"name": "Trumpet (3/Day)",
+				"entries": [
+					"The hollyphant blows air through its trunk, creating a trumpet sound that can be heard out to a range of 600 feet. The trumpet also creates a 30-foot cone of energy that has one of the following effects, chosen by the hollyphant:"
+				]
+			},
+			{
+				"name": "Trumpet of Blasting",
+				"entries": [
+					"Each creature in the cone must make a {@dc 14} Constitution saving throw. On a failed save, a creature takes 17 ({@damage 5d6}) thunder damage and is {@condition deafened} for 1 minute. On a successful save, a creature takes half as much damage and isn't {@condition deafened}. Nonmagical objects in the cone that aren't being held or worn take 35 ({@damage 10d6}) thunder damage."
+				]
+			},
+			{
+				"name": "Trumpet of Sparkles",
+				"entries": [
+					"Creatures in the cone must make a {@dc 14} Constitution saving throw, taking 22 ({@damage 4d8 + 4}) radiant damage on a failed save, or half as much damage on a successful one. Evil creatures have disadvantage on the saving throw. Good creatures in the cone take no damage."
+				]
+			}
+		],
+		"traitTags": [
+			"Magic Weapons"
+		],
+		"languageTags": [
+			"CE",
+			"TP"
+		],
+		"damageTags": [
+			"P",
+			"R",
+			"T"
+		],
+		"spellcastingTags": [
+			"I"
+		],
+		"miscTags": [
+			"AOE",
+			"MW"
+		],
+		"conditionInflict": [
+			"deafened"
+		],
+		"conditionInflictSpell": [
+			"incapacitated"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true
+	},
+	{
+		"name": "Iron Consul",
+		"source": "BGDIA",
+		"page": 232,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"human"
+			]
+		},
+		"alignment": [
+			"L",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 16,
+				"from": [
+					"{@item chain mail|phb}"
+				]
+			}
+		],
+		"hp": {
+			"average": 45,
+			"formula": "6d8 + 18"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 17,
+		"dex": 11,
+		"con": 16,
+		"int": 12,
+		"wis": 15,
+		"cha": 16,
+		"save": {
+			"wis": "+4"
+		},
+		"skill": {
+			"intimidation": "+5",
+			"perception": "+4"
+		},
+		"passive": 14,
+		"conditionImmune": [
+			"frightened"
+		],
+		"languages": [
+			"Common"
+		],
+		"cr": "2",
+		"trait": [
+			{
+				"name": "Tactical Discipline",
+				"entries": [
+					"The iron consul has advantage on all ability checks and saving throws made during combat."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The iron consul makes one attack with its spear and can use its Voice of Command ability."
+				]
+			},
+			{
+				"name": "Spear",
+				"entries": [
+					"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage, or 7 ({@damage 1d8 + 3}) piercing damage when used with two hands to make a melee attack."
+				]
+			},
+			{
+				"name": "Voice of Command",
+				"entries": [
+					"The iron consul selects up to two allies within 90 feet of it that can hear its commands. Each ally can immediately use its reaction to make one melee attack."
+				]
+			}
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"C"
+		],
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MW",
+			"RW",
+			"THW"
+		],
+		"hasToken": true,
+		"hasFluff": true
+	},
+	{
+		"name": "Master of Souls",
+		"source": "BGDIA",
+		"page": 234,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"human"
+			]
+		},
+		"alignment": [
+			"N",
+			"E"
+		],
+		"ac": [
+			12
+		],
+		"hp": {
+			"average": 45,
+			"formula": "6d8 + 18"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 10,
+		"dex": 14,
+		"con": 17,
+		"int": 19,
+		"wis": 14,
+		"cha": 13,
+		"save": {
+			"wis": "+4"
+		},
+		"skill": {
+			"arcana": "+6",
+			"religion": "+6"
+		},
+		"passive": 12,
+		"languages": [
+			"Abyssal",
+			"Common",
+			"Infernal"
+		],
+		"cr": "4",
+		"spellcasting": [
+			{
+				"name": "Spellcasting",
+				"headerEntries": [
+					"The master of souls is a 5th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). It has the following wizard spells prepared:"
+				],
+				"spells": {
+					"0": {
+						"spells": [
+							"{@spell chill touch} (see \"Actions\" below)",
+							"{@spell mage hand}",
+							"{@spell message}",
+							"{@spell prestidigitation}"
+						]
+					},
+					"1": {
+						"slots": 4,
+						"spells": [
+							"{@spell burning hands}",
+							"{@spell detect magic}",
+							"{@spell ray of sickness} (see \"Actions\" below)",
+							"{@spell shield}"
+						]
+					},
+					"2": {
+						"slots": 3,
+						"spells": [
+							"{@spell darkness}",
+							"{@spell misty step}",
+							"{@spell scorching ray} (see \"Actions\" below)"
+						]
+					},
+					"3": {
+						"slots": 2,
+						"spells": [
+							"{@spell animate dead}",
+							"{@spell fireball}"
+						]
+					}
+				},
+				"ability": "int"
+			}
+		],
+		"trait": [
+			{
+				"name": "Grave Magic",
+				"entries": [
+					"When the master of souls cast a spell that deals damage, it can change the spell's damage type to necrotic."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The master of souls attacks twice with its flail."
+				]
+			},
+			{
+				"name": "Silvered Skull Flail",
+				"entries": [
+					"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d8}) bludgeoning damage plus 14 ({@damage 4d6}) necrotic damage, and the target has disadvantage on all saving throws until the end of the master of souls' next turn."
+				]
+			},
+			{
+				"name": "Chill Touch (Cantrip)",
+				"entries": [
+					"{@atk rs} {@hit 6} to hit, range 120 ft., one creature. {@h}13 ({@damage 2d8}) necrotic damage, and the target can't regain hit points until the start of the master of souls' next turn. If the target is undead, it has disadvantage on attack rolls against the master of souls for the same duration."
+				]
+			},
+			{
+				"name": "Ray of Sickness (1st-Level Spell; Requires a Spell Slot)",
+				"entries": [
+					"{@atk rs} {@hit 6} to hit, range 60 ft., one creature. {@h}9 ({@damage 2d8}) poison damage, and the target must succeed on a {@dc 14} Constitution saving throw or be {@condition poisoned} until the end of the master of souls' next turn. If the master of souls casts this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d8} for each slot level above 1st."
+				]
+			},
+			{
+				"name": "Scorching Ray (2nd-Level Spell; Requires a Spell Slot)",
+				"entries": [
+					"{@atk rs} {@hit 6} to hit, range 120 ft., one target per ray (3 rays if a 2nd-level spell slot is used, 4 rays if a 3rd-level spell slot is used). {@h}7 ({@damage 2d6}) fire damage per ray."
+				]
+			}
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"AB",
+			"C",
+			"I"
+		],
+		"damageTags": [
+			"B",
+			"F",
+			"I",
+			"N"
+		],
+		"spellcastingTags": [
+			"CW"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"conditionInflict": [
+			"poisoned"
+		],
+		"conditionInflictSpell": [
+			"poisoned"
+		],
+		"hasToken": true,
+		"hasFluff": true
+	},
+	{
+		"name": "Necromite of Myrkul",
+		"source": "BGDIA",
+		"page": 234,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"human"
+			]
+		},
+		"alignment": [
+			"N",
+			"E"
+		],
+		"ac": [
+			11
+		],
+		"hp": {
+			"average": 13,
+			"formula": "2d8 + 4"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 10,
+		"dex": 13,
+		"con": 15,
+		"int": 16,
+		"wis": 11,
+		"cha": 10,
+		"skill": {
+			"arcana": "+5",
+			"religion": "+5"
+		},
+		"passive": 10,
+		"languages": [
+			"Abyssal",
+			"Common",
+			"Infernal"
+		],
+		"cr": "1/2",
+		"action": [
+			{
+				"name": "Skull Flail",
+				"entries": [
+					"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d8}) bludgeoning damage."
+				]
+			},
+			{
+				"name": "Claws of the Grave",
+				"entries": [
+					"{@atk rs} {@hit 5} to hit, range 90 ft., one target. {@h}8 ({@damage 2d4 + 3}) necrotic damage."
+				]
+			}
+		],
+		"languageTags": [
+			"AB",
+			"C",
+			"I"
+		],
+		"damageTags": [
+			"B",
+			"N"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true
+	},
+	{
+		"name": "Necrotic Centipede",
+		"source": "BGDIA",
+		"page": 119,
+		"immune": [
+			"necrotic",
+			"fire"
+		],
+		"trait": [
+			{
+				"name": "Necrotic Body",
+				"entries": [
+					"A creature that touches the centipede or hits it with a melee attack while within 5 feet of it takes 10 ({@damage 3d6}) necrotic damage."
+				]
+			}
+		],
+		"damageTags": [
+			"A",
+			"N",
+			"P"
+		],
+		"hasToken": true,
+		"size": [
+			"H"
+		],
+		"type": "monstrosity",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			{
+				"ac": 17,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 195,
+			"formula": "17d12 + 85"
+		},
+		"speed": {
+			"walk": 30,
+			"burrow": 20
+		},
+		"str": 24,
+		"dex": 13,
+		"con": 21,
+		"int": 4,
+		"wis": 10,
+		"cha": 5,
+		"senses": [
+			"darkvision 60 ft.",
+			"tremorsense 60 ft."
+		],
+		"passive": 10,
+		"cr": "11",
+		"action": [
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}40 ({@damage 6d10 + 7}) piercing damage plus 10 ({@damage 3d6}) necrotic damage. If the target is a creature, it is {@condition grappled} (escape {@dc 17}). Until this grapple ends, the target is {@condition restrained}, and the centipede can't bite another target."
+				]
+			},
+			{
+				"name": "Swallow",
+				"entries": [
+					"The centipede makes one bite attack against a Medium or smaller creature it is grappling. If the attack hits, that creature takes the bite's damage and is swallowed, and the grapple ends. While swallowed, the creature is {@condition blinded} and {@condition restrained}, it has total cover against attacks and other effects outside the centipede, and it takes 21 ({@damage 6d6}) acid damage at the start of each of the centipede's turns.",
+					"If the centipede takes 30 damage or more on a single turn from a creature inside it, the centipede must succeed on a {@dc 15} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall {@condition prone} in a space within 10 feet oft he centipede. If the centipede dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse using 15 feet of movement, exiting {@condition prone}."
+				]
+			}
+		],
+		"senseTags": [
+			"D",
+			"T"
+		],
+		"actionTags": [
+			"Swallow"
+		],
+		"miscTags": [
+			"MW",
+			"RCH"
+		],
+		"conditionInflict": [
+			"blinded",
+			"grappled",
+			"restrained"
+		]
+	},
+	{
+		"name": "Night Blade",
+		"source": "BGDIA",
+		"page": 233,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"human"
+			]
+		},
+		"alignment": [
+			"C",
+			"E"
+		],
+		"ac": [
+			12
+		],
+		"hp": {
+			"average": 11,
+			"formula": "2d8 + 2"
+		},
+		"speed": {
+			"walk": 40
+		},
+		"str": 11,
+		"dex": 15,
+		"con": 12,
+		"int": 10,
+		"wis": 11,
+		"cha": 14,
+		"skill": {
+			"intimidation": "+4",
+			"stealth": "+6"
+		},
+		"senses": [
+			"darkvision 60"
+		],
+		"passive": 10,
+		"languages": [
+			"Common"
+		],
+		"cr": "1/4",
+		"trait": [
+			{
+				"name": "Aura of Murder",
+				"entries": [
+					"As long as the night blade is not {@condition incapacitated}, hostile creatures within 5 feet of it gain vulnerability to piercing damage unless they have resistance or immunity to such damage."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Dagger",
+				"entries": [
+					"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+				]
+			}
+		],
+		"senseTags": [
+			"D"
+		],
+		"languageTags": [
+			"C"
+		],
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MW",
+			"RW",
+			"THW"
+		],
+		"hasToken": true,
+		"hasFluff": true
+	},
+	{
+		"name": "Peacock",
+		"source": "BGDIA",
+		"page": 195,
+		"hasToken": true,
+		"size": [
+			"M"
+		],
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			10
+		],
+		"hp": {
+			"average": 5,
+			"formula": "1d8 + 1"
+		},
+		"speed": {
+			"walk": 10,
+			"fly": 50
+		},
+		"str": 7,
+		"dex": 10,
+		"con": 13,
+		"int": 2,
+		"wis": 12,
+		"cha": 4,
+		"skill": {
+			"perception": "+3"
+		},
+		"passive": 13,
+		"cr": "0",
+		"trait": [
+			{
+				"name": "Keen Sight and Smell",
+				"entries": [
+					"The peacock has advantage on Wisdom ({@skill Perception}) checks that rely on sight or smell."
+				]
+			},
+			{
+				"name": "Pack Tactics",
+				"entries": [
+					"The peacock has advantage on an attack roll against a creature if at least one of the peacock's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Beak",
+				"entries": [
+					"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) piercing damage."
+				]
+			}
+		],
+		"traitTags": [
+			"Keen Senses",
+			"Pack Tactics"
+		],
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		]
+	},
+	{
+		"name": "Reaper of Bhaal",
+		"source": "BGDIA",
+		"page": 233,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"human"
+			]
+		},
+		"alignment": [
+			"C",
+			"E"
+		],
+		"ac": [
+			15
+		],
+		"hp": {
+			"average": 27,
+			"formula": "5d8 + 5"
+		},
+		"speed": {
+			"walk": 40
+		},
+		"str": 11,
+		"dex": 20,
+		"con": 13,
+		"int": 15,
+		"wis": 12,
+		"cha": 16,
+		"skill": {
+			"intimidation": "+5",
+			"perception": "+3",
+			"persuasion": "+5",
+			"stealth": "+9"
+		},
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 13,
+		"languages": [
+			"Common"
+		],
+		"cr": "2",
+		"spellcasting": [
+			{
+				"name": "Innate Spellcasting",
+				"headerEntries": [
+					"The reaper's innate spellcasting ability is Charisma (spell save {@dc 13}). It can innately cast the following spells, requiring no material components:"
+				],
+				"daily": {
+					"1e": [
+						"{@spell charm person}",
+						"{@spell disguise self}",
+						"{@spell sanctuary}"
+					]
+				},
+				"ability": "cha"
+			}
+		],
+		"trait": [
+			{
+				"name": "Aura of Murder",
+				"entries": [
+					"As long as the reaper is not {@condition incapacitated}, hostile creatures within 5 feet of it gain vulnerability to piercing damage unless they have resistance or immunity to such damage."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The reaper makes two dagger attacks and uses Shroud Self."
+				]
+			},
+			{
+				"name": "Dagger",
+				"entries": [
+					"{@atk mw,rw} {@hit 7} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}7 ({@damage 1d4 + 5}) piercing damage."
+				]
+			},
+			{
+				"name": "Shroud Self",
+				"entries": [
+					"The reaper magically turns {@condition invisible} until the start of its next turn. This invisibility ends if the reaper makes an attack roll, makes a damage roll, or casts a spell."
+				]
+			}
+		],
+		"senseTags": [
+			"D"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"C"
+		],
+		"damageTags": [
+			"P"
+		],
+		"spellcastingTags": [
+			"I"
+		],
+		"miscTags": [
+			"MW",
+			"RW",
+			"THW"
+		],
+		"conditionInflict": [
+			"invisible"
+		],
+		"conditionInflictSpell": [
+			"charmed"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true
+	},
+	{
+		"name": "Skeletal Rats",
+		"source": "BGDIA",
+		"page": 23,
+		"type": {
+			"type": "undead",
+			"swarmSize": "T"
+		},
+		"hasToken": true,
+		"size": [
+			"M"
+		],
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			10
+		],
+		"hp": {
+			"average": 24,
+			"formula": "7d8 - 7"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 9,
+		"dex": 11,
+		"con": 9,
+		"int": 2,
+		"wis": 10,
+		"cha": 3,
+		"senses": [
+			"darkvision 30 ft."
+		],
+		"passive": 10,
+		"resist": [
+			"bludgeoning",
+			"piercing",
+			"slashing"
+		],
+		"conditionImmune": [
+			"charmed",
+			"frightened",
+			"grappled",
+			"paralyzed",
+			"petrified",
+			"prone",
+			"restrained",
+			"stunned"
+		],
+		"cr": "1/4",
+		"trait": [
+			{
+				"name": "Keen Smell",
+				"entries": [
+					"The swarm has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+				]
+			},
+			{
+				"name": "Swarm",
+				"entries": [
+					"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny rat. The swarm can't regain hit points or gain temporary hit points."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Bites",
+				"entries": [
+					"{@atk mw} {@hit 2} to hit, reach 0 ft., one target in the swarm's space. {@h}7 ({@damage 2d6}) piercing damage, or 3 ({@damage 1d6}) piercing damage if the swarm has half of its hit points or fewer."
+				]
+			}
+		],
+		"traitTags": [
+			"Keen Senses"
+		],
+		"senseTags": [
+			"D"
+		],
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		]
+	},
+	{
+		"name": "Skull Lasher of Myrkul",
+		"source": "BGDIA",
+		"page": 234,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"human"
+			]
+		},
+		"alignment": [
+			"N",
+			"E"
+		],
+		"ac": [
+			12
+		],
+		"hp": {
+			"average": 32,
+			"formula": "5d8 + 10"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 10,
+		"dex": 14,
+		"con": 15,
+		"int": 16,
+		"wis": 13,
+		"cha": 10,
+		"save": {
+			"wis": "+3"
+		},
+		"skill": {
+			"arcana": "+5",
+			"religion": "+5"
+		},
+		"passive": 11,
+		"languages": [
+			"Abyssal",
+			"Common",
+			"Infernal"
+		],
+		"cr": "1",
+		"spellcasting": [
+			{
+				"name": "Spellcasting",
+				"headerEntries": [
+					"The skull lasher is a 3rd-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 13}, {@hit 5} to hit with spell attacks). It has the following wizard spells prepared:"
+				],
+				"spells": {
+					"0": {
+						"spells": [
+							"{@spell mage hand}",
+							"{@spell message}",
+							"{@spell prestidigitation}"
+						]
+					},
+					"1": {
+						"slots": 4,
+						"spells": [
+							"{@spell detect magic}",
+							"{@spell protection from evil and good}",
+							"{@spell ray of sickness} (see \"Actions\" below)",
+							"{@spell shield}"
+						]
+					},
+					"2": {
+						"slots": 2,
+						"spells": [
+							"{@spell darkness}",
+							"{@spell misty step}"
+						]
+					}
+				},
+				"ability": "wis"
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The skull lasher makes two attacks with its flail."
+				]
+			},
+			{
+				"name": "Iron Skull Flail",
+				"entries": [
+					"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d8}) bludgeoning damage plus 7 ({@damage 2d6}) necrotic damage, and the target has disadvantage on all saving throws until the end of the skull lasher's next turn."
+				]
+			},
+			{
+				"name": "Ray of Sickness (1st-Level Spell; Requires a Spell Slot)",
+				"entries": [
+					"{@atk rs} {@hit 5} to hit, range 60 ft., one creature. {@h}9 ({@damage 2d8}) poison damage, and the target must succeed on a {@dc 13} Constitution saving throw or be {@condition poisoned} until the end of the skull lasher's next turn. If the skull lasher casts this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d8} for each slot level above 1st."
+				]
+			}
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"AB",
+			"C",
+			"I"
+		],
+		"damageTags": [
+			"B",
+			"I",
+			"N"
+		],
+		"spellcastingTags": [
+			"CW"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"conditionInflict": [
+			"poisoned"
+		],
+		"conditionInflictSpell": [
+			"poisoned"
+		],
+		"hasToken": true,
+		"hasFluff": true
+	},
+	{
+		"name": "Tressym",
+		"source": "BGDIA",
+		"page": 241,
+		"hasToken": true,
+		"hasFluffImages": true,
+		"size": [
+			"T"
+		],
+		"type": "monstrosity",
+		"alignment": [
+			"A"
+		],
+		"ac": [
+			12
+		],
+		"hp": {
+			"average": 5,
+			"formula": "2d4"
+		},
+		"speed": {
+			"walk": 40,
+			"climb": 30,
+			"fly": 40
+		},
+		"str": 3,
+		"dex": 15,
+		"con": 10,
+		"int": 11,
+		"wis": 12,
+		"cha": 12,
+		"skill": {
+			"perception": "+5",
+			"stealth": "+4"
+		},
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 15,
+		"immune": [
+			"poison"
+		],
+		"conditionImmune": [
+			"poisoned"
+		],
+		"languages": [
+			"understands Common but can't speak"
+		],
+		"cr": "0",
+		"trait": [
+			{
+				"name": "Detect Invisibility",
+				"entries": [
+					"Within 60 feet of the tressym, magical invisibility fails to conceal anything from the tressym's sight."
+				]
+			},
+			{
+				"name": "Keen Smell",
+				"entries": [
+					"The tressym has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+				]
+			},
+			{
+				"name": "Poison Sense",
+				"entries": [
+					"The tressym can detect whether a substance is poisonous by taste, touch, or smell."
+				]
+			},
+			{
+				"name": "Familiar",
+				"entries": [
+					"With the DM's permission, a person who casts the {@spell find familiar} spell can choose to conjure a tressym in stead of a normal cat."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Claws",
+				"entries": [
+					"{@atk mw} {@hit 0} to hit, reach 5 ft., one target. {@h}1 slashing damage."
+				]
+			}
+		],
+		"familiar": true,
+		"traitTags": [
+			"Keen Senses"
+		],
+		"senseTags": [
+			"D"
+		],
+		"languageTags": [
+			"C",
+			"CS"
+		],
+		"damageTags": [
+			"S"
+		],
+		"miscTags": [
+			"MW"
+		]
+	},
+	{
+		"name": "Undead Tree",
+		"source": "BGDIA",
+		"page": 109,
+		"type": "undead",
+		"resist": [
+			"necrotic"
+		],
+		"hasToken": true,
+		"size": [
+			"H"
+		],
+		"alignment": [
+			"C",
+			"G"
+		],
+		"ac": [
+			{
+				"ac": 16,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 138,
+			"formula": "12d12 + 60"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 23,
+		"dex": 8,
+		"con": 21,
+		"int": 12,
+		"wis": 16,
+		"cha": 12,
+		"passive": 13,
+		"vulnerable": [
+			"fire"
+		],
+		"languages": [
+			"Common",
+			"Druidic",
+			"Elvish",
+			"Sylvan"
+		],
+		"cr": "9",
+		"trait": [
+			{
+				"name": "False Appearance",
+				"entries": [
+					"While the tree remains motionless, it is indistinguishable from a normal tree."
+				]
+			},
+			{
+				"name": "Siege Monster",
+				"entries": [
+					"The tree deals double damage to objects and structures."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The tree makes two slam attacks."
+				]
+			},
+			{
+				"name": "Slam",
+				"entries": [
+					"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}16 ({@damage 3d6 + 6}) bludgeoning damage."
+				]
+			},
+			{
+				"name": "Rock",
+				"entries": [
+					"{@atk rw} {@hit 10} to hit, range 60/180 ft., one target. {@h}28 ({@damage 4d10 + 6}) bludgeoning damage."
+				]
+			},
+			{
+				"name": "Animate Trees (1/Day)",
+				"entries": [
+					"The tree magically animates one or two trees it can see within 60 feet of it. These trees have the same statistics as a {@creature treant}, except they have Intelligence and Charisma scores of 1, they can't speak, and they have only the Slam action option. An animated tree acts as an ally of the tree. The tree remains animate for 1 day or until it dies; until the tree dies or is more than 120 feet from the tree; or until the tree takes a bonus action to turn it back into an inanimate tree. The tree then takes root if possible."
+				]
+			}
+		],
+		"traitTags": [
+			"False Appearance",
+			"Siege Monster"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"DU",
+			"E",
+			"S"
+		],
+		"damageTags": [
+			"B"
+		],
+		"miscTags": [
+			"MW",
+			"RW"
+		]
+	}
+]

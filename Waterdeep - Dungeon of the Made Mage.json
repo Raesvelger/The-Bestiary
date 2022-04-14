@@ -1,0 +1,4486 @@
+[
+	{
+		"name": "Animated Ballista",
+		"source": "WDMM",
+		"page": 39,
+		"size": [
+			"L"
+		],
+		"type": "construct",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			15
+		],
+		"hp": {
+			"average": 50,
+			"formula": "50d1"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 14,
+		"dex": 10,
+		"con": 10,
+		"int": 3,
+		"wis": 3,
+		"cha": 1,
+		"senses": [
+			"blindsight 120 ft. (blind beyond this radius)"
+		],
+		"passive": 6,
+		"immune": [
+			"poison"
+		],
+		"conditionImmune": [
+			"blinded",
+			"charmed",
+			"deafened",
+			"frightened",
+			"paralyzed",
+			"petrified",
+			"poisoned"
+		],
+		"cr": "2",
+		"action": [
+			{
+				"name": "Magic Bolt",
+				"entries": [
+					"{@atk rw} {@hit 6} to hit, range 120 ft., one target. {@h}16 ({@damage 3d10}) fire damage"
+				]
+			}
+		],
+		"senseTags": [
+			"B"
+		],
+		"damageTags": [
+			"F"
+		],
+		"miscTags": [
+			"RW"
+		],
+		"hasToken": true,
+		"hasFluff": true
+	},
+	{
+		"name": "Animated Jade Serpent",
+		"source": "WDMM",
+		"page": 92,
+		"type": "construct",
+		"immune": [
+			"poison"
+		],
+		"conditionImmune": [
+			"poisoned"
+		],
+		"hasToken": true,
+		"size": [
+			"M"
+		],
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			14
+		],
+		"hp": {
+			"average": 11,
+			"formula": "2d8 + 2"
+		},
+		"speed": {
+			"walk": 30,
+			"swim": 30
+		},
+		"str": 10,
+		"dex": 18,
+		"con": 13,
+		"int": 2,
+		"wis": 10,
+		"cha": 3,
+		"skill": {
+			"perception": "+2"
+		},
+		"senses": [
+			"blindsight 10 ft."
+		],
+		"passive": 12,
+		"cr": "1/4",
+		"action": [
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage, and the target must make a {@dc 11} Constitution saving throw, taking 10 ({@damage 3d6}) poison damage on a failed save, or half as much damage on a successful one."
+				]
+			}
+		],
+		"senseTags": [
+			"B"
+		],
+		"damageTags": [
+			"I",
+			"P"
+		],
+		"miscTags": [
+			"MW",
+			"RCH"
+		]
+	},
+	{
+		"name": "Animated Staff",
+		"source": "WDMM",
+		"page": 262,
+		"size": [
+			"M"
+		],
+		"type": "construct",
+		"alignment": [
+			"N",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 17,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"special": "40"
+		},
+		"speed": {
+			"walk": 0,
+			"fly": {
+				"number": 30,
+				"condition": "(hover)"
+			},
+			"canHover": true
+		},
+		"str": 12,
+		"dex": 12,
+		"con": 10,
+		"int": 18,
+		"wis": 14,
+		"cha": 10,
+		"senses": [
+			"blindsight 60 ft. (blind beyond this radius)"
+		],
+		"passive": 12,
+		"resist": [
+			"cold"
+		],
+		"immune": [
+			"poison"
+		],
+		"languages": [
+			"Common"
+		],
+		"trait": [
+			{
+				"name": "Wielder Domination",
+				"entries": [
+					"A creature can grab the staff out of the air with a successful grapple check against the staff, and grappling the staff does not reduce the creature's speed. Any creature that successfully grapples the staff must succeed on a {@dc 12} Charisma saving throw or be {@condition charmed} by the staff until the staff is no longer in its grasp. While the creature is {@condition charmed}, the staff can issue commands to it, which the creature does its best to obey. The creature can repeat the saving throw each time it takes damage, ending the effect on itself on a success. A creature that successfully resists the staff's control can't be {@condition charmed} by it for 24 hours.",
+					"A creature holding the staff that isn't {@condition charmed} by it can use an action to attempt to break the staff over a knee or against a solid surface, doing so with a successful {@dc 17} Strength ({@skill Athletics}) check. Breaking the staff in this manner destroys it."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Staff of Frost",
+				"entries": [
+					"The staff has 10 charges. It can expend 1 or more of its charges to cast one of the following spells (save {@dc 12}): {@spell cone of cold} (5 charges), {@spell fog cloud} (1 charge), {@spell ice storm} (4 charges), or {@spell wall of ice} (4 charges). It regains {@dice 1d6 + 4} expended charges daily at dawn. If the staff expends its last charge, roll a {@dice d20}. On a 1, the staff turns to water and is destroyed."
+				]
+			},
+			{
+				"name": "Staff",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d6}) bludgeoning damage plus 1 cold damage."
+				]
+			}
+		],
+		"senseTags": [
+			"B"
+		],
+		"languageTags": [
+			"C"
+		],
+		"damageTags": [
+			"B",
+			"C"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"conditionInflict": [
+			"charmed"
+		],
+		"hasToken": true
+	},
+	{
+		"name": "Animated Statue of Lolth",
+		"source": "WDMM",
+		"page": 142,
+		"size": [
+			"H"
+		],
+		"hp": {
+			"average": 230,
+			"formula": "20d12 + 100"
+		},
+		"languages": [
+			"understands Abyssal but can't speak"
+		],
+		"cr": "11",
+		"traitTags": [
+			"Immutable Form",
+			"Magic Resistance",
+			"Magic Weapons",
+			"Spider Climb"
+		],
+		"languageTags": [
+			"AB",
+			"CS"
+		],
+		"type": "construct",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			{
+				"ac": 17,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"speed": {
+			"walk": 30
+		},
+		"str": 22,
+		"dex": 9,
+		"con": 20,
+		"int": 3,
+		"wis": 11,
+		"cha": 1,
+		"senses": [
+			"darkvision 120 ft."
+		],
+		"passive": 10,
+		"immune": [
+			"poison",
+			"psychic",
+			{
+				"immune": [
+					"bludgeoning",
+					"piercing",
+					"slashing"
+				],
+				"note": "from nonmagical attacks that aren't adamantine",
+				"cond": true
+			}
+		],
+		"conditionImmune": [
+			"charmed",
+			"exhaustion",
+			"frightened",
+			"paralyzed",
+			"petrified",
+			"poisoned"
+		],
+		"trait": [
+			{
+				"name": "Immutable Form",
+				"entries": [
+					"The statue is immune to any spell or effect that would alter its form."
+				]
+			},
+			{
+				"name": "Magic Resistance",
+				"entries": [
+					"The statue has advantage on saving throws against spells and other magical effects."
+				]
+			},
+			{
+				"name": "Magic Weapons",
+				"entries": [
+					"The statue's weapon attacks are magical."
+				]
+			},
+			{
+				"name": "Spider Climb",
+				"entries": [
+					"The statue can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The statue makes two slam attacks."
+				]
+			},
+			{
+				"name": "Slam",
+				"entries": [
+					"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}19 ({@damage 3d8 + 6}) bludgeoning damage."
+				]
+			},
+			{
+				"name": "Slow {@recharge 5}",
+				"entries": [
+					"The statue targets one or more creatures it can see within 10 feet of it. Each target must make a {@dc 17} Wisdom saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+				]
+			}
+		],
+		"senseTags": [
+			"SD"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"damageTags": [
+			"B"
+		],
+		"miscTags": [
+			"MW"
+		]
+	},
+	{
+		"name": "Animated Stove",
+		"source": "WDMM",
+		"page": 186,
+		"size": [
+			"L"
+		],
+		"type": "construct",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			17
+		],
+		"hp": {
+			"average": 50,
+			"formula": "50d1"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 14,
+		"dex": 10,
+		"con": 10,
+		"int": 3,
+		"wis": 3,
+		"cha": 1,
+		"senses": [
+			"blindsight 30 ft. (blind beyond this radius)"
+		],
+		"passive": 6,
+		"cr": "3",
+		"action": [
+			{
+				"name": "Slam",
+				"entries": [
+					"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d8 + 2}) bludgeoning damage."
+				]
+			},
+			{
+				"name": "Belch Fire {@recharge 4}",
+				"entries": [
+					"The stove belches fire in a 15-foot cone. Each creature in the area must make a {@dc 10} Dexterity saving throw, taking 22 ({@damage 4d10}) fire damage on a failed save, or half as much damage on a successful one."
+				]
+			}
+		],
+		"senseTags": [
+			"B"
+		],
+		"damageTags": [
+			"B",
+			"F"
+		],
+		"miscTags": [
+			"AOE",
+			"MW"
+		],
+		"hasToken": true,
+		"hasFluff": true
+	},
+	{
+		"name": "Animated Wand",
+		"source": "WDMM",
+		"page": 299,
+		"hasToken": true,
+		"size": [
+			"T"
+		],
+		"type": "construct",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			{
+				"ac": 18,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"special": "20"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 4,
+		"dex": 18,
+		"con": 10,
+		"int": 3,
+		"wis": 3,
+		"cha": 1,
+		"senses": [
+			"blindsight 30 ft. (blind beyond this radius)"
+		],
+		"passive": 6,
+		"trait": [
+			{
+				"name": "Animated",
+				"entries": [
+					"If the wand lacks legs or other appendages it can use for locomotion, it instead has a flying speed of 30 feet and can hover. If the wand is securely attached to a surface or larger wand, such as a chain bolted to a wall, its speed is 0.",
+					"When the animated wand drops to 0 hit points, it reverts to its original wand form, and any remaining damage carries over to its original wand form.",
+					"The DM might rule that a specific wands slam attack inflicts slashing or piercing damage based on its form."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Wand of Wonder",
+				"entries": [
+					"The animated wand can expend 1 of its charges and target a random creature with one of its {@item wand of wonder||randomly determined effects}. Any such effect that would target the wand's user targets the wand instead. If reduced to 0 hit points, the wand crumbles into dust and is destroyed."
+				]
+			},
+			{
+				"name": "Slam",
+				"entries": [
+					"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d4 + 4}) bludgeoning damage."
+				]
+			}
+		],
+		"senseTags": [
+			"B"
+		],
+		"damageTags": [
+			"B"
+		],
+		"miscTags": [
+			"MW"
+		]
+	},
+	{
+		"name": "Awakened Brown Bear",
+		"source": "WDMM",
+		"page": 72,
+		"hasToken": true,
+		"size": [
+			"L"
+		],
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			{
+				"ac": 11,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 34,
+			"formula": "4d10 + 12"
+		},
+		"speed": {
+			"walk": 40,
+			"climb": 30
+		},
+		"str": 19,
+		"dex": 10,
+		"con": 16,
+		"int": 10,
+		"wis": 13,
+		"cha": 7,
+		"skill": {
+			"perception": "+3"
+		},
+		"passive": 13,
+		"cr": "1",
+		"trait": [
+			{
+				"name": "Keen Smell",
+				"entries": [
+					"The bear has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The bear makes two attacks: one with its bite and one with its claws."
+				]
+			},
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage."
+				]
+			},
+			{
+				"name": "Claws",
+				"entries": [
+					"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+				]
+			}
+		],
+		"traitTags": [
+			"Keen Senses"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"damageTags": [
+			"P",
+			"S"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"languages": [
+			"one language known by its creator"
+		]
+	},
+	{
+		"name": "Awakened Elk",
+		"source": "WDMM",
+		"page": 72,
+		"hasToken": true,
+		"size": [
+			"L"
+		],
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			10
+		],
+		"hp": {
+			"average": 13,
+			"formula": "2d10 + 2"
+		},
+		"speed": {
+			"walk": 50
+		},
+		"str": 16,
+		"dex": 10,
+		"con": 12,
+		"int": 10,
+		"wis": 10,
+		"cha": 6,
+		"passive": 10,
+		"cr": "1/4",
+		"trait": [
+			{
+				"name": "Charge",
+				"entries": [
+					"If the elk moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 ({@dice 2d6}) damage. If the target is a creature, it must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Ram",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) bludgeoning damage."
+				]
+			},
+			{
+				"name": "Hooves",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one {@condition prone} creature. {@h}8 ({@damage 2d4 + 3}) bludgeoning damage."
+				]
+			}
+		],
+		"traitTags": [
+			"Charge"
+		],
+		"damageTags": [
+			"B"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"conditionInflict": [
+			"prone"
+		],
+		"languages": [
+			"one language known by its creator"
+		]
+	},
+	{
+		"name": "Awakened Giant Wasp",
+		"source": "WDMM",
+		"page": 72,
+		"hasToken": true,
+		"size": [
+			"M"
+		],
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			12
+		],
+		"hp": {
+			"average": 13,
+			"formula": "3d8"
+		},
+		"speed": {
+			"walk": 10,
+			"fly": 50
+		},
+		"str": 10,
+		"dex": 14,
+		"con": 10,
+		"int": 10,
+		"wis": 10,
+		"cha": 3,
+		"passive": 10,
+		"cr": "1/2",
+		"action": [
+			{
+				"name": "Sting",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}5 ({@damage 1d6 + 2}) piercing damage, and the target must make a {@dc 11} Constitution saving throw, taking 10 ({@damage 3d6}) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but {@condition poisoned} for 1 hour, even after regaining hit points, and is {@condition paralyzed} while {@condition poisoned} in this way."
+				]
+			}
+		],
+		"damageTags": [
+			"I",
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"conditionInflict": [
+			"paralyzed",
+			"poisoned"
+		],
+		"languages": [
+			"one language known by its creator"
+		]
+	},
+	{
+		"name": "Big Xorn",
+		"source": "WDMM",
+		"page": 51,
+		"size": [
+			"L"
+		],
+		"hp": {
+			"formula": "9d10 + 54",
+			"average": 103
+		},
+		"str": 20,
+		"cr": "8",
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The xorn makes three claw attacks and one bite attack."
+				]
+			},
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}22 ({@damage 5d6 + 5}) piercing damage."
+				]
+			},
+			{
+				"name": "Claw",
+				"entries": [
+					"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}9 ({@damage 1d8 + 5}) slashing damage."
+				]
+			}
+		],
+		"miscTags": [
+			"MW",
+			"RCH"
+		],
+		"hasToken": true,
+		"type": "elemental",
+		"alignment": [
+			"N"
+		],
+		"ac": [
+			{
+				"ac": 19,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"speed": {
+			"walk": 20,
+			"burrow": 20
+		},
+		"dex": 10,
+		"con": 22,
+		"int": 11,
+		"wis": 10,
+		"cha": 11,
+		"skill": {
+			"perception": "+6",
+			"stealth": "+3"
+		},
+		"senses": [
+			"darkvision 60 ft.",
+			"tremorsense 60 ft."
+		],
+		"passive": 16,
+		"resist": [
+			{
+				"resist": [
+					"piercing",
+					"slashing"
+				],
+				"note": "from nonmagical attacks that aren't adamantine",
+				"cond": true
+			}
+		],
+		"languages": [
+			"Terran"
+		],
+		"trait": [
+			{
+				"name": "Earth Glide",
+				"entries": [
+					"The xorn can burrow through nonmagical, unworked earth and stone. While doing so, the xorn doesn't disturb the material it moves through."
+				]
+			},
+			{
+				"name": "Stone Camouflage",
+				"entries": [
+					"The xorn has advantage on Dexterity (Stealth) checks made to hide in rocky terrain."
+				]
+			},
+			{
+				"name": "Treasure Sense",
+				"entries": [
+					"The xorn can pinpoint, by scent, the location of precious metals and stones, such as coins and gems, within 60 feet of it."
+				]
+			}
+		],
+		"senseTags": [
+			"D",
+			"T"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"T"
+		],
+		"damageTags": [
+			"P",
+			"S"
+		]
+	},
+	{
+		"name": "Bore Worm",
+		"source": "WDMM",
+		"page": 171,
+		"size": [
+			"G"
+		],
+		"type": "construct",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			{
+				"ac": 18,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 247,
+			"formula": "15d20 + 90"
+		},
+		"speed": {
+			"walk": 50,
+			"burrow": 30
+		},
+		"str": 28,
+		"dex": 7,
+		"con": 22,
+		"int": 1,
+		"wis": 8,
+		"cha": 4,
+		"save": {
+			"con": "+11",
+			"wis": "+4"
+		},
+		"senses": [
+			"blindsight 30 ft.",
+			"tremorsense 60 ft."
+		],
+		"passive": 9,
+		"immune": [
+			"fire",
+			"poison",
+			"psychic",
+			{
+				"immune": [
+					"bludgeoning",
+					"piercing",
+					"slashing"
+				],
+				"note": "from nonmagical attacks that aren't adamantine",
+				"cond": true
+			}
+		],
+		"conditionImmune": [
+			"blinded",
+			"charmed",
+			"deafened",
+			"exhaustion",
+			"frightened",
+			"paralyzed",
+			"petrified",
+			"poisoned",
+			"prone"
+		],
+		"cr": "16",
+		"trait": [
+			{
+				"name": "Tunneler",
+				"entries": [
+					"The worm can burrow through solid rock at half its burrow speed and leaves a 10-foot-diameter tunnel in its wake."
+				]
+			},
+			{
+				"name": "Regeneration",
+				"entries": [
+					"The worm regains 10 hit points at the start of each of its turns if it has at least 1 hit point."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The worm makes two attacks: one with its grinding jaws and one with its stinger."
+				]
+			},
+			{
+				"name": "Grinding Jaws",
+				"entries": [
+					"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}22 ({@damage 3d8 + 9}) slashing damage."
+				]
+			},
+			{
+				"name": "Tail Stinger",
+				"entries": [
+					"{@atk mw} {@hit 9} to hit, reach 10 ft., one creature. {@h}19 ({@damage 3d6 + 9}) piercing damage, and the target must make a {@dc 19} Constitution saving throw, taking 42 ({@damage 12d6}) poison damage on a failed save, or half as much damage on a successful one."
+				]
+			}
+		],
+		"traitTags": [
+			"Regeneration"
+		],
+		"senseTags": [
+			"B",
+			"T"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"damageTags": [
+			"I",
+			"P",
+			"S"
+		],
+		"miscTags": [
+			"MW",
+			"RCH"
+		],
+		"hasToken": true,
+		"hasFluff": true
+	},
+	{
+		"name": "Carrion Ogre",
+		"source": "WDMM",
+		"page": 189,
+		"int": 1,
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The creature makes two attacks: one with its tentacles and one with its bite."
+				]
+			},
+			{
+				"name": "Tentacles",
+				"entries": [
+					"{@atk mw} {@hit 8} to hit, reach 10 ft., one creature. {@h}4 ({@damage 1d4 + 2}) poison damage, and the target must succeed on a {@dc 13} Constitution saving throw or be {@condition poisoned} for 1 minute. Until this poison ends, the target is {@condition paralyzed}. The target can repeat the saving throw at the end of each of its turns, ending the poison on itself on a success."
+				]
+			},
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d4 + 2}) piercing damage."
+				]
+			}
+		],
+		"actionTags": [
+			"Multiattack",
+			"Tentacles"
+		],
+		"damageTags": [
+			"I",
+			"P"
+		],
+		"miscTags": [
+			"MW",
+			"RCH"
+		],
+		"conditionInflict": [
+			"paralyzed",
+			"poisoned"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"size": [
+			"L"
+		],
+		"type": "giant",
+		"alignment": [
+			"C",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 11,
+				"from": [
+					"{@item hide armor|phb}"
+				]
+			}
+		],
+		"hp": {
+			"average": 59,
+			"formula": "7d10 + 21"
+		},
+		"speed": {
+			"walk": 40
+		},
+		"str": 19,
+		"dex": 8,
+		"con": 16,
+		"wis": 7,
+		"cha": 7,
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 8,
+		"languages": [
+			"Common",
+			"Giant"
+		],
+		"cr": "2",
+		"senseTags": [
+			"D"
+		],
+		"languageTags": [
+			"C",
+			"GI"
+		],
+		"trait": [
+			{
+				"type": "entries",
+				"name": "Tied Down",
+				"entries": [
+					"While lashed to the floor, the creature is {@condition prone} and {@condition restrained}. It also suffers from two levels of {@condition exhaustion}."
+				]
+			}
+		]
+	},
+	{
+		"name": "Crow",
+		"source": "WDMM",
+		"page": 302,
+		"hasToken": true,
+		"size": [
+			"T"
+		],
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			12
+		],
+		"hp": {
+			"average": 1,
+			"formula": "1d4 - 1"
+		},
+		"speed": {
+			"walk": 10,
+			"fly": 50
+		},
+		"str": 2,
+		"dex": 14,
+		"con": 8,
+		"int": 2,
+		"wis": 12,
+		"cha": 6,
+		"skill": {
+			"perception": "+3"
+		},
+		"passive": 13,
+		"cr": "0",
+		"trait": [
+			{
+				"name": "Mimicry",
+				"entries": [
+					"The crow can mimic simple sounds it has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful {@dc 10} Wisdom (Insight) check."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Beak",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}1 piercing damage."
+				]
+			}
+		],
+		"familiar": true,
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		]
+	},
+	{
+		"name": "Crystal Battleaxe",
+		"source": "WDMM",
+		"page": 89,
+		"action": [
+			{
+				"name": "Battleaxe",
+				"entries": [
+					"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d8 + 1}) slashing damage."
+				]
+			}
+		],
+		"hasToken": true,
+		"group": [
+			"Animated Objects"
+		],
+		"size": [
+			"S"
+		],
+		"type": "construct",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			{
+				"ac": 17,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 17,
+			"formula": "5d6"
+		},
+		"speed": {
+			"walk": 0,
+			"fly": {
+				"number": 50,
+				"condition": "(hover)"
+			},
+			"canHover": true
+		},
+		"str": 12,
+		"dex": 15,
+		"con": 11,
+		"int": 1,
+		"wis": 5,
+		"cha": 1,
+		"save": {
+			"dex": "+4"
+		},
+		"senses": [
+			"blindsight 60 ft. (blind beyond this radius)"
+		],
+		"passive": 7,
+		"immune": [
+			"poison",
+			"psychic"
+		],
+		"conditionImmune": [
+			"blinded",
+			"charmed",
+			"deafened",
+			"frightened",
+			"paralyzed",
+			"petrified",
+			"poisoned"
+		],
+		"cr": "1/4",
+		"trait": [
+			{
+				"name": "Antimagic Susceptibility",
+				"entries": [
+					"The battleaxe is {@condition incapacitated} while in the area of an {@spell antimagic field}. If targeted by {@spell dispel magic}, the battleaxe must succeed on a Constitution saving throw against the caster's spell save DC or fall {@condition unconscious} for 1 minute."
+				]
+			},
+			{
+				"name": "False Appearance",
+				"entries": [
+					"While the battleaxe remains motionless and isn't flying, it is indistinguishable from a normal battleaxe."
+				]
+			}
+		],
+		"traitTags": [
+			"Antimagic Susceptibility",
+			"False Appearance"
+		],
+		"senseTags": [
+			"B"
+		],
+		"damageTags": [
+			"S"
+		],
+		"miscTags": [
+			"MW"
+		]
+	},
+	{
+		"name": "Crystal Golem",
+		"source": "WDMM",
+		"page": 210,
+		"traitTags": [
+			"Illumination",
+			"Immutable Form",
+			"Magic Resistance",
+			"Magic Weapons"
+		],
+		"miscTags": [
+			"AOE",
+			"MW"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"size": [
+			"L"
+		],
+		"type": "construct",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			{
+				"ac": 17,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 178,
+			"formula": "17d10 + 85"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 22,
+		"dex": 9,
+		"con": 20,
+		"int": 3,
+		"wis": 11,
+		"cha": 1,
+		"senses": [
+			"darkvision 120 ft."
+		],
+		"passive": 10,
+		"immune": [
+			"poison",
+			"psychic",
+			{
+				"immune": [
+					"bludgeoning",
+					"piercing",
+					"slashing"
+				],
+				"note": "from nonmagical attacks that aren't adamantine",
+				"cond": true
+			}
+		],
+		"conditionImmune": [
+			"charmed",
+			"exhaustion",
+			"frightened",
+			"paralyzed",
+			"petrified",
+			"poisoned"
+		],
+		"languages": [
+			"understands the languages of its creator but can't speak"
+		],
+		"cr": "10",
+		"trait": [
+			{
+				"name": "Immutable Form",
+				"entries": [
+					"The golem is immune to any spell or effect that would alter its form."
+				]
+			},
+			{
+				"name": "Magic Resistance",
+				"entries": [
+					"The golem has advantage on saving throws against spells and other magical effects."
+				]
+			},
+			{
+				"name": "Magic Weapons",
+				"entries": [
+					"The golem's weapon attacks are magical."
+				]
+			},
+			{
+				"name": "Illumination",
+				"entries": [
+					"The golem magically sheds bright light in a 30-foot radius and dim light for an additional 30 feet. This light goes out when the golem is destroyed."
+				]
+			},
+			{
+				"name": "Light Intensity",
+				"entries": [
+					"Any creature that starts its turn within 10 feet of the illuminated golem and can see the golem must succeed on a DC 17 Wisdom saving throw or be {@condition blinded} until the start of the creature's next turn.",
+					"A creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see the golem until the start of its next turn, when it can avert its eyes again. If the creature looks at the golem in the meantime, it must immediately make the save."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The golem makes two slam attacks."
+				]
+			},
+			{
+				"name": "Slam",
+				"entries": [
+					"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}19 ({@damage 3d8 + 6}) bludgeoning damage."
+				]
+			},
+			{
+				"name": "Slow {@recharge 5}",
+				"entries": [
+					"The golem targets one or more creatures it can see within 10 feet of it. Each target must make a {@dc 17} Wisdom saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+				]
+			}
+		],
+		"senseTags": [
+			"SD"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"CS"
+		],
+		"damageTags": [
+			"B"
+		]
+	},
+	{
+		"name": "Five-Armed Troll",
+		"source": "WDMM",
+		"page": 154,
+		"hasToken": true,
+		"size": [
+			"L"
+		],
+		"type": "giant",
+		"alignment": [
+			"C",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 15,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 84,
+			"formula": "8d10 + 40"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 18,
+		"dex": 13,
+		"con": 20,
+		"int": 7,
+		"wis": 9,
+		"cha": 7,
+		"skill": {
+			"perception": "+2"
+		},
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 12,
+		"languages": [
+			"Giant"
+		],
+		"cr": "5",
+		"trait": [
+			{
+				"name": "Keen Smell",
+				"entries": [
+					"The troll has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+				]
+			},
+			{
+				"name": "Regeneration",
+				"entries": [
+					"The troll regains 10 hit points at the start of its turn. If the troll takes acid or fire damage, this trait doesn't function at the start of the troll's next turn. The troll dies only if it starts its turn with 0 hit points and doesn't regenerate."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The troll makes six attacks: one with its bite and five with its claws."
+				]
+			},
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
+				]
+			},
+			{
+				"name": "Claw",
+				"entries": [
+					"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+				]
+			}
+		],
+		"traitTags": [
+			"Keen Senses",
+			"Regeneration"
+		],
+		"senseTags": [
+			"D"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"GI"
+		],
+		"damageTags": [
+			"P",
+			"S"
+		],
+		"miscTags": [
+			"MW"
+		]
+	},
+	{
+		"name": "Flying Trident",
+		"source": "WDMM",
+		"page": 106,
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true,
+		"group": [
+			"Animated Objects"
+		],
+		"size": [
+			"S"
+		],
+		"type": "construct",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			{
+				"ac": 17,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 17,
+			"formula": "5d6"
+		},
+		"speed": {
+			"walk": 0,
+			"fly": {
+				"number": 50,
+				"condition": "(hover)"
+			},
+			"canHover": true
+		},
+		"str": 12,
+		"dex": 15,
+		"con": 11,
+		"int": 1,
+		"wis": 5,
+		"cha": 1,
+		"save": {
+			"dex": "+4"
+		},
+		"senses": [
+			"blindsight 60 ft. (blind beyond this radius)"
+		],
+		"passive": 7,
+		"immune": [
+			"poison",
+			"psychic"
+		],
+		"conditionImmune": [
+			"blinded",
+			"charmed",
+			"deafened",
+			"frightened",
+			"paralyzed",
+			"petrified",
+			"poisoned"
+		],
+		"cr": "1/4",
+		"trait": [
+			{
+				"name": "Antimagic Susceptibility",
+				"entries": [
+					"The trident is {@condition incapacitated} while in the area of an {@spell antimagic field}. If targeted by {@spell dispel magic}, the trident must succeed on a Constitution saving throw against the caster's spell save DC or fall {@condition unconscious} for 1 minute."
+				]
+			},
+			{
+				"name": "False Appearance",
+				"entries": [
+					"While the trident remains motionless and isn't flying, it is indistinguishable from a normal trident."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Trident",
+				"entries": [
+					"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d8 + 1}) piercing damage."
+				]
+			}
+		],
+		"traitTags": [
+			"Antimagic Susceptibility",
+			"False Appearance"
+		],
+		"senseTags": [
+			"B"
+		]
+	},
+	{
+		"name": "Giant Flying Spider",
+		"source": "WDMM",
+		"page": 150,
+		"speed": {
+			"walk": 30,
+			"climb": 30,
+			"fly": 40
+		},
+		"hasToken": true,
+		"size": [
+			"L"
+		],
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			{
+				"ac": 14,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 26,
+			"formula": "4d10 + 4"
+		},
+		"str": 14,
+		"dex": 16,
+		"con": 12,
+		"int": 2,
+		"wis": 11,
+		"cha": 4,
+		"skill": {
+			"stealth": "+7"
+		},
+		"senses": [
+			"blindsight 10 ft.",
+			"darkvision 60 ft."
+		],
+		"passive": 10,
+		"cr": "1",
+		"trait": [
+			{
+				"name": "Spider Climb",
+				"entries": [
+					"The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+				]
+			},
+			{
+				"name": "Web Sense",
+				"entries": [
+					"While in contact with a web, the spider knows the exact location of any other creature in contact with the same web."
+				]
+			},
+			{
+				"name": "Web Walker",
+				"entries": [
+					"The spider ignores movement restrictions caused by webbing."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}7 ({@damage 1d8 + 3}) piercing damage, and the target must make a {@dc 11} Constitution saving throw, taking 9 ({@damage 2d8}) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but {@condition poisoned} for 1 hour, even after regaining hit points, and is {@condition paralyzed} while {@condition poisoned} in this way."
+				]
+			},
+			{
+				"name": "Web {@recharge 5}",
+				"entries": [
+					"{@atk rw} {@hit 5} to hit, range 30/60 ft., one creature. {@h}The target is {@condition restrained} by webbing. As an action, the {@condition restrained} target can make a {@dc 12} Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage)."
+				]
+			}
+		],
+		"traitTags": [
+			"Spider Climb",
+			"Web Sense",
+			"Web Walker"
+		],
+		"senseTags": [
+			"B",
+			"D"
+		],
+		"damageTags": [
+			"I",
+			"P"
+		],
+		"miscTags": [
+			"MW",
+			"RW"
+		],
+		"conditionInflict": [
+			"paralyzed",
+			"poisoned",
+			"restrained"
+		]
+	},
+	{
+		"name": "Giant Mutated Drow",
+		"source": "WDMM",
+		"page": 143,
+		"type": "giant",
+		"alignment": [
+			"N",
+			"E"
+		],
+		"senses": [
+			"darkvision 120 ft."
+		],
+		"languages": [
+			"Elvish",
+			"Undercommon"
+		],
+		"spellcasting": [
+			{
+				"name": "Innate Spellcasting",
+				"headerEntries": [
+					"The drow's innate spellcasting ability is Charisma (spell save DC 15). The drow can innately cast the following spells, requiring no material components:"
+				],
+				"will": [
+					"{@spell dancing lights}"
+				],
+				"daily": {
+					"1e": [
+						"{@spell darkness}",
+						"{@spell faerie fire}"
+					]
+				},
+				"ability": "cha"
+			}
+		],
+		"traitTags": [
+			"Fey Ancestry",
+			"Keen Senses",
+			"Sunlight Sensitivity"
+		],
+		"senseTags": [
+			"SD"
+		],
+		"languageTags": [
+			"C",
+			"E",
+			"GI"
+		],
+		"hasToken": true,
+		"size": [
+			"H"
+		],
+		"ac": [
+			{
+				"ac": 14,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 200,
+			"formula": "16d12 + 96"
+		},
+		"speed": {
+			"walk": 40
+		},
+		"str": 27,
+		"dex": 10,
+		"con": 22,
+		"int": 12,
+		"wis": 16,
+		"cha": 16,
+		"save": {
+			"con": "+10",
+			"wis": "+7",
+			"cha": "+7"
+		},
+		"skill": {
+			"insight": "+7",
+			"perception": "+7"
+		},
+		"passive": 17,
+		"cr": "9",
+		"trait": [
+			{
+				"name": "Keen Smell",
+				"entries": [
+					"The drow has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+				]
+			},
+			{
+				"name": "Fey Ancestry",
+				"entries": [
+					"The drow has advantage on saving throws against being charmed, and magic can't put the drow to sleep."
+				]
+			},
+			{
+				"name": "Sunlight Sensitivity",
+				"entries": [
+					"While in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The drow makes two morningstar attacks."
+				]
+			},
+			{
+				"name": "Morningstar",
+				"entries": [
+					"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}21 ({@damage 3d8 + 8}) piercing damage."
+				]
+			},
+			{
+				"name": "Rock",
+				"entries": [
+					"{@atk rw} {@hit 12} to hit, range 60/240 ft., one target. {@h}30 ({@damage 4d10 + 8}) bludgeoning damage."
+				]
+			}
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"damageTags": [
+			"B",
+			"P"
+		],
+		"spellcastingTags": [
+			"I"
+		],
+		"miscTags": [
+			"MW",
+			"RCH",
+			"RW"
+		],
+		"conditionInflict": [
+			"prone"
+		],
+		"conditionInflictSpell": [
+			"restrained"
+		]
+	},
+	{
+		"name": "Gorzil's Gang Troglodyte",
+		"source": "WDMM",
+		"page": 150,
+		"ac": [
+			{
+				"ac": 14,
+				"from": [
+					"{@item breastplate|phb}"
+				]
+			}
+		],
+		"languages": [
+			"understands Undercommon but can't speak"
+		],
+		"languageTags": [
+			"CS",
+			"U"
+		],
+		"hasToken": true,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"troglodyte"
+			]
+		},
+		"alignment": [
+			"C",
+			"E"
+		],
+		"hp": {
+			"average": 13,
+			"formula": "2d8 + 4"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 14,
+		"dex": 10,
+		"con": 14,
+		"int": 6,
+		"wis": 10,
+		"cha": 6,
+		"skill": {
+			"stealth": "+2"
+		},
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 10,
+		"cr": "1/4",
+		"trait": [
+			{
+				"name": "Chameleon Skin",
+				"entries": [
+					"The troglodyte has advantage on Dexterity (Stealth) checks made to hide."
+				]
+			},
+			{
+				"name": "Stench",
+				"entries": [
+					"Any creature other than a troglodyte that starts its turn within 5 feet of the troglodyte must succeed on a {@dc 12} Constitution saving throw or be {@condition poisoned} until the start of the creature's next turn. On a successful saving throw, the creature is immune to the stench of all troglodytes for 1 hour."
+				]
+			},
+			{
+				"name": "Sunlight Sensitivity",
+				"entries": [
+					"While in sunlight, the troglodyte has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The troglodyte makes three attacks: one with its bite and two with its longsword."
+				]
+			},
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+				]
+			},
+			{
+				"name": "Longsword",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) slashing damage, or 7 ({@damage 1d10 + 2}) slashing damage if used with two hands."
+				]
+			}
+		],
+		"traitTags": [
+			"Sunlight Sensitivity"
+		],
+		"senseTags": [
+			"D"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"damageTags": [
+			"P",
+			"S"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"conditionInflict": [
+			"poisoned"
+		]
+	},
+	{
+		"name": "Halaster Horror",
+		"source": "WDMM",
+		"page": 129,
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The Halaster horror makes two staff attacks."
+				]
+			},
+			{
+				"name": "Staff",
+				"entries": [
+					"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) bludgeoning damage."
+				]
+			}
+		],
+		"damageTags": [
+			"B"
+		],
+		"hasToken": true,
+		"size": [
+			"M"
+		],
+		"type": "construct",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			{
+				"ac": 20,
+				"from": [
+					"{@item plate armor|phb}",
+					"{@item shield|phb}"
+				]
+			}
+		],
+		"hp": {
+			"average": 60,
+			"formula": "8d8 + 24"
+		},
+		"speed": {
+			"walk": 30,
+			"fly": 30
+		},
+		"str": 18,
+		"dex": 13,
+		"con": 16,
+		"int": 10,
+		"wis": 10,
+		"cha": 10,
+		"skill": {
+			"perception": "+4"
+		},
+		"senses": [
+			"blindsight 60 ft. (blind beyond this radius)"
+		],
+		"passive": 14,
+		"resist": [
+			{
+				"resist": [
+					"bludgeoning",
+					"piercing",
+					"slashing"
+				],
+				"note": "from nonmagical attacks that aren't adamantine",
+				"cond": true
+			}
+		],
+		"immune": [
+			"force",
+			"necrotic",
+			"poison"
+		],
+		"conditionImmune": [
+			"blinded",
+			"charmed",
+			"deafened",
+			"frightened",
+			"paralyzed",
+			"petrified",
+			"poisoned",
+			"stunned"
+		],
+		"languages": [
+			"understands the languages of its creator but can't speak"
+		],
+		"cr": "4",
+		"trait": [
+			{
+				"name": "Magic Resistance",
+				"entries": [
+					"The Halaster horror has advantage on saving throws against spells and other magical effects."
+				]
+			},
+			{
+				"name": "Spell Immunity",
+				"entries": [
+					"The Halaster horror is immune to the {@spell cone of cold}, {@spell disintegrate}, and {@spell fireball} spells."
+				]
+			}
+		],
+		"traitTags": [
+			"Magic Resistance",
+			"Spell Immunity"
+		],
+		"senseTags": [
+			"B"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"CS"
+		],
+		"miscTags": [
+			"MW"
+		]
+	},
+	{
+		"name": "Huge Gray Ooze",
+		"source": "WDMM",
+		"page": 243,
+		"size": [
+			"H"
+		],
+		"hp": {
+			"average": 152,
+			"formula": "16d12 + 48"
+		},
+		"str": 18,
+		"cr": "8",
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"As an action, it can make two attacks with its pseudopods."
+				]
+			},
+			{
+				"name": "Pseudopod",
+				"entries": [
+					"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}21 ({@damage 6d6}) acid damage, or 42 ({@damage 12d6}) acid damage while the ooze is enlarged. If the target is wearing nonmagical metal armor, its armor is partly corroded and takes a permanent and cumulative −1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10."
+				]
+			},
+			{
+				"name": "Enlarge (Recharges after a Short or Long Rest)",
+				"entries": [
+					"For 1 minute, the ooze magically increases in size. While enlarged, the ooze is Gargantuan, doubles its damage dice with its pseudopod attack, and makes Strength checks and Strength saving throws with advantage."
+				]
+			},
+			{
+				"name": "Invisibility (Recharges after a Short or Long Rest)",
+				"entries": [
+					"The ooze magically turns {@condition invisible} for up to 1 hour until it attacks, it uses its Enlarge, or its concentration is broken (as if concentrating on a spell)."
+				]
+			}
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"damageTags": [
+			"A"
+		],
+		"conditionInflict": [
+			"invisible"
+		],
+		"hasToken": true,
+		"type": "ooze",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			8
+		],
+		"speed": {
+			"walk": 10,
+			"climb": 10
+		},
+		"dex": 6,
+		"con": 16,
+		"int": 1,
+		"wis": 6,
+		"cha": 2,
+		"skill": {
+			"stealth": "+2"
+		},
+		"senses": [
+			"blindsight 60 ft. (blind beyond this radius)"
+		],
+		"passive": 8,
+		"resist": [
+			"acid",
+			"cold",
+			"fire"
+		],
+		"conditionImmune": [
+			"blinded",
+			"charmed",
+			"deafened",
+			"exhaustion",
+			"frightened",
+			"prone"
+		],
+		"trait": [
+			{
+				"name": "Amorphous",
+				"entries": [
+					"The ooze can move through a space as narrow as 1 inch wide without squeezing."
+				]
+			},
+			{
+				"name": "Corrode Metal",
+				"entries": [
+					"Any nonmagical weapon made of metal that hits the ooze corrodes. After dealing damage, the weapon takes a permanent and cumulative −1 penalty to damage rolls. If its penalty drops to −5, the weapon is destroyed. Nonmagical ammunition made of metal that hits the ooze is destroyed after dealing damage.",
+					"The ooze can eat through 2-inch-thick, nonmagical metal in 1 round."
+				]
+			},
+			{
+				"name": "False Appearance",
+				"entries": [
+					"While the ooze remains motionless, it is indistinguishable from an oily pool or wet rock."
+				]
+			}
+		],
+		"traitTags": [
+			"Amorphous",
+			"False Appearance"
+		],
+		"senseTags": [
+			"B"
+		],
+		"miscTags": [
+			"MW"
+		]
+	},
+	{
+		"name": "Intelligent Black Pudding",
+		"source": "WDMM",
+		"page": 244,
+		"int": 14,
+		"languages": [
+			"Elvish and Undercommon but can't speak"
+		],
+		"spellcasting": [
+			{
+				"name": "Innate Spellcasting",
+				"headerEntries": [
+					"The pudding's spellcasting ability is Intelligence (spell save {@dc 12}, {@hit 4} to hit with spell attacks). It can cast the following spells, requiring no components:"
+				],
+				"will": [
+					"{@spell dancing lights}",
+					"{@spell mage hand}"
+				],
+				"daily": {
+					"1": [
+						"{@spell Melf's acid arrow}"
+					],
+					"3e": [
+						"{@spell darkness}",
+						"{@spell faerie fire}",
+						"{@spell shield}"
+					]
+				},
+				"ability": "int"
+			}
+		],
+		"languageTags": [
+			"CS",
+			"E",
+			"U"
+		],
+		"spellcastingTags": [
+			"I"
+		],
+		"hasToken": true,
+		"size": [
+			"L"
+		],
+		"type": "ooze",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			7
+		],
+		"hp": {
+			"average": 85,
+			"formula": "10d10 + 30"
+		},
+		"speed": {
+			"walk": 20,
+			"climb": 20
+		},
+		"str": 16,
+		"dex": 5,
+		"con": 16,
+		"wis": 6,
+		"cha": 1,
+		"senses": [
+			"blindsight 60 ft. (blind beyond this radius)"
+		],
+		"passive": 8,
+		"immune": [
+			"acid",
+			"cold",
+			"lightning",
+			"slashing"
+		],
+		"conditionImmune": [
+			"blinded",
+			"charmed",
+			"deafened",
+			"exhaustion",
+			"frightened",
+			"prone"
+		],
+		"cr": "4",
+		"trait": [
+			{
+				"name": "Amorphous",
+				"entries": [
+					"The pudding can move through a space as narrow as 1 inch wide without squeezing."
+				]
+			},
+			{
+				"name": "Corrosive Form",
+				"entries": [
+					"A creature that touches the pudding or hits it with a melee attack while within 5 feet of it takes 4 ({@damage 1d8}) acid damage. Any nonmagical weapon made of metal or wood that hits the pudding corrodes. After dealing damage, the weapon takes a permanent and cumulative −1 penalty to damage rolls. If its penalty drops to −5, the weapon is destroyed. Nonmagical ammunition made of metal or wood that hits the pudding is destroyed after dealing damage. The pudding can eat through 2-inch-thick, nonmagical wood or metal in 1 round."
+				]
+			},
+			{
+				"name": "Spider Climb",
+				"entries": [
+					"The pudding can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Pseudopod",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) bludgeoning damage plus 18 ({@damage 4d8}) acid damage. In addition, nonmagical armor worn by the target is partly dissolved and takes a permanent and cumulative −1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10."
+				]
+			}
+		],
+		"reaction": [
+			{
+				"name": "Split",
+				"entries": [
+					"When a pudding that is Medium or larger is subjected to lightning or slashing damage, it splits into two new puddings if it has at least 10 hit points. Each new pudding has hit points equal to half the original pudding's, rounded down. New puddings are one size smaller than the original pudding."
+				]
+			}
+		],
+		"traitTags": [
+			"Amorphous",
+			"Spider Climb"
+		],
+		"senseTags": [
+			"B"
+		],
+		"damageTags": [
+			"A",
+			"B"
+		],
+		"miscTags": [
+			"MW"
+		]
+	},
+	{
+		"name": "Junior Drow Priestess of Lolth",
+		"source": "WDMM",
+		"page": 149,
+		"alignment": [
+			"N",
+			"E"
+		],
+		"traitTags": [
+			"Fey Ancestry",
+			"Sunlight Sensitivity"
+		],
+		"senseTags": [
+			"SD"
+		],
+		"languageTags": [
+			"E",
+			"X"
+		],
+		"spellcastingTags": [
+			"CC",
+			"I"
+		],
+		"hasToken": true,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"elf"
+			]
+		},
+		"ac": [
+			{
+				"ac": 13,
+				"from": [
+					"{@item chain shirt|phb}"
+				]
+			}
+		],
+		"hp": {
+			"average": 27,
+			"formula": "5d8 + 5"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 10,
+		"dex": 10,
+		"con": 12,
+		"int": 13,
+		"wis": 16,
+		"cha": 13,
+		"skill": {
+			"medicine": "+7",
+			"persuasion": "+3",
+			"religion": "+5",
+			"perception": "+5"
+		},
+		"passive": 13,
+		"languages": [
+			"any two languages",
+			"Elvish"
+		],
+		"cr": "2",
+		"spellcasting": [
+			{
+				"name": "Spellcasting",
+				"headerEntries": [
+					"The priestess is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 13}, {@hit 5} to hit with spell attacks). The priestess has the following cleric spells prepared:"
+				],
+				"spells": {
+					"0": {
+						"spells": [
+							"{@spell light}",
+							"{@spell sacred flame}",
+							"{@spell thaumaturgy}"
+						]
+					},
+					"1": {
+						"slots": 4,
+						"spells": [
+							"{@spell cure wounds}",
+							"{@spell guiding bolt}",
+							"{@spell sanctuary}"
+						]
+					},
+					"2": {
+						"slots": 3,
+						"spells": [
+							"{@spell lesser restoration}",
+							"{@spell spiritual weapon}"
+						]
+					},
+					"3": {
+						"slots": 2,
+						"spells": [
+							"{@spell dispel magic}",
+							"{@spell spirit guardians}"
+						]
+					}
+				},
+				"ability": "wis"
+			},
+			{
+				"name": "Innate Spellcasting",
+				"headerEntries": [
+					"The junior drow priestess of lolth's innate spellcasting ability is Charisma (spell save DC 11). The junior drow priestess of lolth can innately cast the following spells, requiring no material components:"
+				],
+				"will": [
+					"{@spell dancing lights}"
+				],
+				"daily": {
+					"1e": [
+						"{@spell darkness}",
+						"{@spell faerie fire}"
+					]
+				},
+				"ability": "cha"
+			}
+		],
+		"trait": [
+			{
+				"name": "Divine Eminence",
+				"entries": [
+					"As a bonus action, the priestess can expend a spell slot to cause its melee weapon attacks to magically deal an extra 10 ({@damage 3d6}) radiant damage to a target on a hit. This benefit lasts until the end of the turn. If the priestess expends a spell slot of 2nd level or higher, the extra damage increases by {@dice 1d6} for each level above 1st."
+				]
+			},
+			{
+				"name": "Fey Ancestry",
+				"entries": [
+					"The junior drow priestess of lolth has advantage on saving throws against being charmed, and magic can't put the junior drow priestess of lolth to sleep."
+				]
+			},
+			{
+				"name": "Sunlight Sensitivity",
+				"entries": [
+					"While in sunlight, the junior drow priestess of lolth has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Mace",
+				"entries": [
+					"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) bludgeoning damage."
+				]
+			}
+		],
+		"damageTags": [
+			"B",
+			"R"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"senses": [
+			"darkvision 120 ft."
+		]
+	},
+	{
+		"name": "Large Mimic",
+		"source": "WDMM",
+		"page": 76,
+		"size": [
+			"L"
+		],
+		"hp": {
+			"average": 67,
+			"formula": "9d10 + 18"
+		},
+		"hasToken": true,
+		"type": {
+			"type": "monstrosity",
+			"tags": [
+				"shapechanger"
+			]
+		},
+		"alignment": [
+			"N"
+		],
+		"ac": [
+			{
+				"ac": 12,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"speed": {
+			"walk": 15
+		},
+		"str": 17,
+		"dex": 12,
+		"con": 15,
+		"int": 5,
+		"wis": 13,
+		"cha": 8,
+		"skill": {
+			"stealth": "+5"
+		},
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 11,
+		"immune": [
+			"acid"
+		],
+		"conditionImmune": [
+			"prone"
+		],
+		"cr": "2",
+		"trait": [
+			{
+				"name": "Shapechanger",
+				"entries": [
+					"The mimic can use its action to polymorph into an object or back into its true, amorphous form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+				]
+			},
+			{
+				"name": "Adhesive (Object Form Only)",
+				"entries": [
+					"The mimic adheres to anything that touches it. A Huge or smaller creature adhered to the mimic is also {@condition grappled} by it (escape {@dc 13}). Ability checks made to escape this grapple have disadvantage."
+				]
+			},
+			{
+				"name": "False Appearance (Object Form Only)",
+				"entries": [
+					"While the mimic remains motionless, it is indistinguishable from an ordinary object."
+				]
+			},
+			{
+				"name": "Grappler",
+				"entries": [
+					"The mimic has advantage on attack rolls against any creature {@condition grappled} by it."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Pseudopod",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) bludgeoning damage. If the mimic is in object form, the target is subjected to its Adhesive trait."
+				]
+			},
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage plus 4 ({@damage 1d8}) acid damage."
+				]
+			}
+		],
+		"traitTags": [
+			"False Appearance",
+			"Shapechanger"
+		],
+		"senseTags": [
+			"D"
+		],
+		"damageTags": [
+			"A",
+			"B",
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"conditionInflict": [
+			"grappled"
+		]
+	},
+	{
+		"name": "Lava Child",
+		"source": "WDMM",
+		"page": 313,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"lava child"
+			]
+		},
+		"alignment": [
+			"N"
+		],
+		"ac": [
+			11
+		],
+		"hp": {
+			"average": 60,
+			"formula": "8d8 + 24"
+		},
+		"speed": {
+			"walk": 25,
+			"climb": 20
+		},
+		"str": 18,
+		"dex": 13,
+		"con": 16,
+		"int": 11,
+		"wis": 10,
+		"cha": 10,
+		"skill": {
+			"athletics": "+6",
+			"survival": "+2"
+		},
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 10,
+		"immune": [
+			"fire",
+			{
+				"immune": [
+					"bludgeoning",
+					"piercing",
+					"slashing"
+				],
+				"note": "from metal weapons",
+				"cond": true
+			}
+		],
+		"languages": [
+			"Common",
+			"Ignan"
+		],
+		"cr": "3",
+		"trait": [
+			{
+				"name": "Metal Immunity",
+				"entries": [
+					"The lava child can move through metal without hindrance, and it has advantage on attack rolls against any creature wearing metal armor or using a metal shield."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The lava child makes two attacks: one with its bite and one with its claws."
+				]
+			},
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage."
+				]
+			},
+			{
+				"name": "Claws",
+				"entries": [
+					"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) slashing damage."
+				]
+			}
+		],
+		"senseTags": [
+			"D"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"IG"
+		],
+		"damageTags": [
+			"P",
+			"S"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true
+	},
+	{
+		"name": "Living Unseen Servant",
+		"source": "WDMM",
+		"page": 313,
+		"size": [
+			"M"
+		],
+		"type": "construct",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			10
+		],
+		"hp": {
+			"average": 4,
+			"formula": "1d8"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 2,
+		"dex": 10,
+		"con": 11,
+		"int": 1,
+		"wis": 10,
+		"cha": 1,
+		"skill": {
+			"perception": "+2",
+			"stealth": "+4"
+		},
+		"senses": [
+			"blindsight 60 ft. (blind beyond this radius)"
+		],
+		"passive": 12,
+		"immune": [
+			"poison"
+		],
+		"conditionImmune": [
+			"exhaustion",
+			"paralyzed",
+			"petrified",
+			"poisoned",
+			"unconscious"
+		],
+		"languages": [
+			"understands one language (usually Common) but can't speak"
+		],
+		"cr": "0",
+		"trait": [
+			{
+				"name": "Invisibility",
+				"entries": [
+					"The unseen servant is {@condition invisible}."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Slam",
+				"entries": [
+					"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}1 bludgeoning damage."
+				]
+			}
+		],
+		"senseTags": [
+			"B"
+		],
+		"languageTags": [
+			"C",
+			"CS"
+		],
+		"damageTags": [
+			"B"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"conditionInflict": [
+			"invisible"
+		],
+		"hasToken": true,
+		"hasFluff": true
+	},
+	{
+		"name": "Mad Golem",
+		"source": "WDMM",
+		"page": 254,
+		"size": [
+			"H"
+		],
+		"hp": {
+			"average": 264,
+			"formula": "23d12 + 115"
+		},
+		"int": 9,
+		"cha": 9,
+		"languages": [
+			"understands Abyssal",
+			"Celestial",
+			"Common",
+			"Draconic",
+			"Dwarvish",
+			"Elvish",
+			"Infernal",
+			"and Undercommon but can't speak"
+		],
+		"cr": "12",
+		"languageTags": [
+			"AB",
+			"C",
+			"CE",
+			"CS",
+			"D",
+			"DR",
+			"E",
+			"I",
+			"U"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"type": "construct",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			{
+				"ac": 17,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"speed": {
+			"walk": 30
+		},
+		"str": 22,
+		"dex": 9,
+		"con": 20,
+		"wis": 11,
+		"senses": [
+			"darkvision 120 ft."
+		],
+		"passive": 10,
+		"immune": [
+			"poison",
+			"psychic",
+			{
+				"immune": [
+					"bludgeoning",
+					"piercing",
+					"slashing"
+				],
+				"note": "from nonmagical attacks that aren't adamantine",
+				"cond": true
+			}
+		],
+		"conditionImmune": [
+			"charmed",
+			"exhaustion",
+			"frightened",
+			"paralyzed",
+			"petrified",
+			"poisoned"
+		],
+		"trait": [
+			{
+				"name": "Immutable Form",
+				"entries": [
+					"The golem is immune to any spell or effect that would alter its form."
+				]
+			},
+			{
+				"name": "Magic Resistance",
+				"entries": [
+					"The golem has advantage on saving throws against spells and other magical effects."
+				]
+			},
+			{
+				"name": "Magic Weapons",
+				"entries": [
+					"The golem's weapon attacks are magical."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The golem makes two slam attacks."
+				]
+			},
+			{
+				"name": "Slam",
+				"entries": [
+					"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}24 ({@damage 4d8 + 6}) bludgeoning damage."
+				]
+			},
+			{
+				"name": "Slow {@recharge 5}",
+				"entries": [
+					"The golem targets one or more creatures it can see within 10 feet of it. Each target must make a {@dc 17} Wisdom saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+				]
+			}
+		],
+		"traitTags": [
+			"Immutable Form",
+			"Magic Resistance",
+			"Magic Weapons"
+		],
+		"senseTags": [
+			"SD"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"damageTags": [
+			"B"
+		],
+		"miscTags": [
+			"MW"
+		]
+	},
+	{
+		"name": "Metal Wasp",
+		"source": "WDMM",
+		"page": 174,
+		"type": "construct",
+		"ac": [
+			{
+				"ac": 16,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"immune": [
+			"poison",
+			"psychic"
+		],
+		"conditionImmune": [
+			"charmed",
+			"frightened",
+			"paralyzed",
+			"petrified",
+			"poisoned"
+		],
+		"senseTags": [
+			"D"
+		],
+		"hasToken": true,
+		"size": [
+			"M"
+		],
+		"alignment": [
+			"U"
+		],
+		"hp": {
+			"average": 13,
+			"formula": "3d8"
+		},
+		"speed": {
+			"walk": 10,
+			"fly": 50
+		},
+		"str": 10,
+		"dex": 14,
+		"con": 10,
+		"int": 1,
+		"wis": 10,
+		"cha": 3,
+		"passive": 10,
+		"cr": "1/2",
+		"action": [
+			{
+				"name": "Sting",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}5 ({@damage 1d6 + 2}) piercing damage, and the target must make a {@dc 11} Constitution saving throw, taking 10 ({@damage 3d6}) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but {@condition poisoned} for 1 hour, even after regaining hit points, and is {@condition paralyzed} while {@condition poisoned} in this way."
+				]
+			}
+		],
+		"damageTags": [
+			"I",
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"conditionInflict": [
+			"paralyzed",
+			"poisoned"
+		]
+	},
+	{
+		"name": "Old Troglodyte",
+		"source": "WDMM",
+		"page": 155,
+		"cr": "1/8",
+		"damageTags": [
+			"S"
+		],
+		"hasToken": true,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"troglodyte"
+			]
+		},
+		"alignment": [
+			"C",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 11,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 13,
+			"formula": "2d8 + 4"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 14,
+		"dex": 10,
+		"con": 14,
+		"int": 6,
+		"wis": 10,
+		"cha": 6,
+		"skill": {
+			"stealth": "+2"
+		},
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 10,
+		"languages": [
+			"Troglodyte"
+		],
+		"trait": [
+			{
+				"name": "Chameleon Skin",
+				"entries": [
+					"The troglodyte has advantage on Dexterity (Stealth) checks made to hide."
+				]
+			},
+			{
+				"name": "Stench",
+				"entries": [
+					"Any creature other than a troglodyte that starts its turn within 5 feet of the troglodyte must succeed on a {@dc 12} Constitution saving throw or be {@condition poisoned} until the start of the creature's next turn. On a successful saving throw, the creature is immune to the stench of all troglodytes for 1 hour."
+				]
+			},
+			{
+				"name": "Sunlight Sensitivity",
+				"entries": [
+					"While in sunlight, the troglodyte has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The troglodyte makes two claw attacks."
+				]
+			},
+			{
+				"name": "Claw",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) slashing damage."
+				]
+			}
+		],
+		"traitTags": [
+			"Sunlight Sensitivity"
+		],
+		"senseTags": [
+			"D"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"OTH"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"conditionInflict": [
+			"poisoned"
+		]
+	},
+	{
+		"name": "Poison Weird",
+		"source": "WDMM",
+		"page": 127,
+		"cr": "4",
+		"trait": [
+			{
+				"name": "Invisible in Water",
+				"entries": [
+					"The weird is {@condition invisible} while fully immersed in toxic brew."
+				]
+			},
+			{
+				"name": "Brew Bound",
+				"entries": [
+					"The weird dies if forced to leave the basin of toxic brew it inhabits, or if a {@spell purify food and drink} spell is cast on the brew."
+				]
+			},
+			{
+				"name": "Poisonous Body",
+				"entries": [
+					"A creature takes 10 ({@damage 3d6}) poison damage at the start of each of its turns while {@condition grappled} by a poison weird."
+				]
+			}
+		],
+		"damageTags": [
+			"B",
+			"I"
+		],
+		"conditionInflict": [
+			"invisible"
+		],
+		"hasToken": true,
+		"size": [
+			"L"
+		],
+		"type": "elemental",
+		"alignment": [
+			"N"
+		],
+		"ac": [
+			13
+		],
+		"hp": {
+			"average": 58,
+			"formula": "9d10 + 9"
+		},
+		"speed": {
+			"walk": 0,
+			"swim": 60
+		},
+		"str": 17,
+		"dex": 16,
+		"con": 13,
+		"int": 11,
+		"wis": 10,
+		"cha": 10,
+		"senses": [
+			"blindsight 30 ft."
+		],
+		"passive": 10,
+		"resist": [
+			"fire",
+			{
+				"resist": [
+					"bludgeoning",
+					"piercing",
+					"slashing"
+				],
+				"note": "from nonmagical attacks",
+				"cond": true
+			}
+		],
+		"immune": [
+			"poison"
+		],
+		"conditionImmune": [
+			"exhaustion",
+			"grappled",
+			"paralyzed",
+			"poisoned",
+			"restrained",
+			"prone",
+			"unconscious"
+		],
+		"languages": [
+			"understands Aquan but doesn't speak"
+		],
+		"action": [
+			{
+				"name": "Constrict",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 10 ft., one creature. {@h}13 ({@damage 3d6 + 3}) bludgeoning damage. If the target is Medium or smaller, it is {@condition grappled} (escape {@dc 13}) and pulled 5 feet toward the poison weird. Until this grapple ends, the target is {@condition restrained}, the poison weird tries to drown it, and the poison weird can't constrict another target."
+				]
+			}
+		],
+		"senseTags": [
+			"B"
+		],
+		"languageTags": [
+			"AQ"
+		],
+		"miscTags": [
+			"MW",
+			"RCH"
+		]
+	},
+	{
+		"name": "Rowboat Mimic",
+		"source": "WDMM",
+		"page": 76,
+		"size": [
+			"L"
+		],
+		"hp": {
+			"average": 67,
+			"formula": "9d10 + 18"
+		},
+		"hasToken": true,
+		"type": {
+			"type": "monstrosity",
+			"tags": [
+				"shapechanger"
+			]
+		},
+		"alignment": [
+			"N"
+		],
+		"ac": [
+			{
+				"ac": 12,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"speed": {
+			"walk": 15
+		},
+		"str": 17,
+		"dex": 12,
+		"con": 15,
+		"int": 5,
+		"wis": 13,
+		"cha": 8,
+		"skill": {
+			"stealth": "+5"
+		},
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 11,
+		"immune": [
+			"acid"
+		],
+		"conditionImmune": [
+			"prone"
+		],
+		"cr": "2",
+		"trait": [
+			{
+				"name": "Shapechanger",
+				"entries": [
+					"The mimic can use its action to polymorph into an object or back into its true, amorphous form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+				]
+			},
+			{
+				"name": "Adhesive (Object Form Only)",
+				"entries": [
+					"The mimic adheres to anything that touches it. A Huge or smaller creature adhered to the mimic is also {@condition grappled} by it (escape {@dc 13}). Ability checks made to escape this grapple have disadvantage."
+				]
+			},
+			{
+				"name": "False Appearance (Object Form Only)",
+				"entries": [
+					"While the mimic remains motionless, it is indistinguishable from an ordinary object."
+				]
+			},
+			{
+				"name": "Grappler",
+				"entries": [
+					"The mimic has advantage on attack rolls against any creature {@condition grappled} by it."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Pseudopod",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) bludgeoning damage. If the mimic is in object form, the target is subjected to its Adhesive trait."
+				]
+			},
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage plus 4 ({@damage 1d8}) acid damage."
+				]
+			}
+		],
+		"traitTags": [
+			"False Appearance",
+			"Shapechanger"
+		],
+		"senseTags": [
+			"D"
+		],
+		"damageTags": [
+			"A",
+			"B",
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"conditionInflict": [
+			"grappled"
+		]
+	},
+	{
+		"name": "Runed Behir",
+		"source": "WDMM",
+		"page": 158,
+		"legendary": [
+			{
+				"name": "Lesser Magic",
+				"entries": [
+					"The behir casts {@spell color spray} or {@spell sleep}, requiring no components."
+				]
+			},
+			{
+				"name": "Greater Magic (Costs 2 Actions)",
+				"entries": [
+					"The behir casts {@spell invisibility} or {@spell misty step}, requiring no components."
+				]
+			}
+		],
+		"hasToken": true,
+		"size": [
+			"H"
+		],
+		"type": "monstrosity",
+		"alignment": [
+			"N",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 17,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 168,
+			"formula": "16d12 + 64"
+		},
+		"speed": {
+			"walk": 50,
+			"climb": 40
+		},
+		"str": 23,
+		"dex": 16,
+		"con": 18,
+		"int": 7,
+		"wis": 14,
+		"cha": 12,
+		"skill": {
+			"perception": "+6",
+			"stealth": "+7"
+		},
+		"senses": [
+			"darkvision 90 ft."
+		],
+		"passive": 16,
+		"immune": [
+			"lightning"
+		],
+		"languages": [
+			"Draconic"
+		],
+		"cr": "11",
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The behir makes two attacks: one with its bite and one to constrict."
+				]
+			},
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}22 ({@damage 3d10 + 6}) piercing damage."
+				]
+			},
+			{
+				"name": "Constrict",
+				"entries": [
+					"{@atk mw} {@hit 10} to hit, reach 5 ft., one Large or smaller creature. {@h}17 ({@damage 2d10 + 6}) bludgeoning damage plus 17 ({@damage 2d10 + 6}) slashing damage. The target is {@condition grappled} (escape {@dc 16}) if the behir isn't already constricting a creature, and the target is {@condition restrained} until this grapple ends."
+				]
+			},
+			{
+				"name": "Lightning Breath {@recharge 5}",
+				"entries": [
+					"The behir exhales a line of lightning that is 20 feet long and 5 feet wide. Each creature in that line must make a {@dc 16} Dexterity saving throw, taking 66 ({@damage 12d10}) lightning damage on a failed save, or half as much damage on a successful one."
+				]
+			},
+			{
+				"name": "Swallow",
+				"entries": [
+					"The behir makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is also swallowed, and the grapple ends. While swallowed, the target is {@condition blinded} and {@condition restrained}, it has total cover against attacks and other effects outside the behir, and it takes 21 ({@damage 6d6}) acid damage at the start of each of the behir's turns. A behir can have only one creature swallowed at a time.",
+					"If the behir takes 30 damage or more on a single turn from the swallowed creature, the behir must succeed on a {@dc 14} Constitution saving throw at the end of that turn or regurgitate the creature, which falls {@condition prone} in a space within 10 feet of the behir. If the behir dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse by using 15 feet of movement, exiting {@condition prone}."
+				]
+			}
+		],
+		"senseTags": [
+			"D"
+		],
+		"actionTags": [
+			"Breath Weapon",
+			"Multiattack",
+			"Swallow"
+		],
+		"languageTags": [
+			"DR"
+		],
+		"damageTags": [
+			"A",
+			"B",
+			"L",
+			"P",
+			"S"
+		],
+		"miscTags": [
+			"MW",
+			"RCH"
+		],
+		"conditionInflict": [
+			"blinded",
+			"grappled",
+			"restrained"
+		]
+	},
+	{
+		"name": "Scaladar",
+		"source": "WDMM",
+		"page": 315,
+		"size": [
+			"H"
+		],
+		"type": "construct",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			{
+				"ac": 19,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 94,
+			"formula": "7d12 + 49"
+		},
+		"speed": {
+			"walk": 30,
+			"climb": 20
+		},
+		"str": 19,
+		"dex": 10,
+		"con": 25,
+		"int": 1,
+		"wis": 12,
+		"cha": 1,
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 11,
+		"resist": [
+			"fire",
+			{
+				"resist": [
+					"bludgeoning",
+					"piercing",
+					"slashing"
+				],
+				"note": "from nonmagical attacks",
+				"cond": true
+			}
+		],
+		"immune": [
+			"force",
+			"lightning",
+			"poison"
+		],
+		"conditionImmune": [
+			"charmed",
+			"paralyzed",
+			"poisoned"
+		],
+		"cr": "8",
+		"trait": [
+			{
+				"name": "Lightning Absorption",
+				"entries": [
+					"Whenever the scaladar is subjected to lightning damage, it takes no damage, and its sting deals an extra 11 ({@damage 2d10}) lightning damage until the end of its next turn."
+				]
+			},
+			{
+				"name": "Scaladar Link",
+				"entries": [
+					"The scaladar knows the location of other scaladar within 100 feet of it, and it can sense when any of them take damage."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The scaladar makes three attacks: two with its claws and one with its sting."
+				]
+			},
+			{
+				"name": "Claw",
+				"entries": [
+					"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}10 ({@damage 1d12 + 4}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 15}). The scaladar has two claws, each of which can grapple one target."
+				]
+			},
+			{
+				"name": "Sting",
+				"entries": [
+					"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}9 ({@damage 1d10 + 4}) piercing damage plus 11 ({@damage 2d10}) lightning damage."
+				]
+			}
+		],
+		"traitTags": [
+			"Damage Absorption"
+		],
+		"senseTags": [
+			"D"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"damageTags": [
+			"B",
+			"L",
+			"P"
+		],
+		"miscTags": [
+			"MW",
+			"RCH"
+		],
+		"conditionInflict": [
+			"grappled"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true
+	},
+	{
+		"name": "Shadow Assassin",
+		"source": "WDMM",
+		"page": 316,
+		"size": [
+			"M"
+		],
+		"type": "undead",
+		"alignment": [
+			"C",
+			"E"
+		],
+		"ac": [
+			14
+		],
+		"hp": {
+			"average": 78,
+			"formula": "12d8 + 24"
+		},
+		"speed": {
+			"walk": 40
+		},
+		"str": 6,
+		"dex": 19,
+		"con": 14,
+		"int": 13,
+		"wis": 12,
+		"cha": 14,
+		"save": {
+			"dex": "+8",
+			"int": "+5"
+		},
+		"skill": {
+			"perception": "+9",
+			"stealth": "+12"
+		},
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 19,
+		"resist": [
+			"acid",
+			"cold",
+			"fire",
+			"lightning",
+			"thunder",
+			{
+				"resist": [
+					"bludgeoning",
+					"piercing",
+					"slashing"
+				],
+				"note": "from nonmagical attacks",
+				"cond": true
+			}
+		],
+		"immune": [
+			"necrotic",
+			"poison"
+		],
+		"vulnerable": [
+			"radiant"
+		],
+		"conditionImmune": [
+			"exhaustion",
+			"frightened",
+			"grappled",
+			"paralyzed",
+			"petrified",
+			"poisoned",
+			"prone",
+			"restrained"
+		],
+		"languages": [
+			"understands the languages it knew in life but can't speak"
+		],
+		"cr": "9",
+		"trait": [
+			{
+				"name": "Amorphous",
+				"entries": [
+					"The assassin can move through a space as narrow as 1 inch wide without squeezing."
+				]
+			},
+			{
+				"name": "Shadow Stealth",
+				"entries": [
+					"While in dim light or darkness, the assassin can take the Hide action as a bonus action."
+				]
+			},
+			{
+				"name": "Sunlight Weakness",
+				"entries": [
+					"While in sunlight, the assassin has disadvantage on attack rolls, ability checks, and saving throws."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The assassin makes two Shadow Blade attacks."
+				]
+			},
+			{
+				"name": "Shadow Blade",
+				"entries": [
+					"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage plus 10 ({@damage 3d6}) necrotic damage. Unless the target is immune to necrotic damage, the target's Strength score is reduced by {@dice 1d4} each time it is hit by this attack. The target dies if its Strength is reduced to 0. The reduction lasts until the target finishes a short or long rest. If a non-evil humanoid dies from this attack, a shadow (see the Monster Manual) rises from the corpse {@dice 1d4} hours later."
+				]
+			}
+		],
+		"traitTags": [
+			"Amorphous"
+		],
+		"senseTags": [
+			"D"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"CS",
+			"LF"
+		],
+		"damageTags": [
+			"N",
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true,
+		"hasFluff": true
+	},
+	{
+		"name": "Shapechanged Roper",
+		"source": "WDMM",
+		"page": 106,
+		"traitTags": [
+			"False Appearance",
+			"Shapechanger",
+			"Spider Climb"
+		],
+		"hasToken": true,
+		"size": [
+			"L"
+		],
+		"type": "monstrosity",
+		"alignment": [
+			"N",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 20,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 93,
+			"formula": "11d10 + 33"
+		},
+		"speed": {
+			"walk": 10,
+			"climb": 10
+		},
+		"str": 18,
+		"dex": 8,
+		"con": 17,
+		"int": 7,
+		"wis": 16,
+		"cha": 6,
+		"skill": {
+			"perception": "+6",
+			"stealth": "+5"
+		},
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 16,
+		"cr": "5",
+		"trait": [
+			{
+				"name": "False Appearance",
+				"entries": [
+					"While the roper remains motionless, it is indistinguishable from a normal cave formation, such as a stalagmite."
+				]
+			},
+			{
+				"name": "Grasping Tendrils",
+				"entries": [
+					"The roper can have up to six tendrils at a time. Each tendril can be attacked (AC 20; 10 hit points; immunity to poison and psychic damage). Destroying a tendril deals no damage to the roper, which can extrude a replacement tendril on its next turn. A tendril can also be broken if a creature takes an action and succeeds on a {@dc 15} Strength check against it."
+				]
+			},
+			{
+				"name": "Spider Climb",
+				"entries": [
+					"The roper can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+				]
+			},
+			{
+				"name": "Shapechanger",
+				"entries": [
+					"The roper can use its action to polymorph into a stone object or back to its true form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The roper makes four attacks with its tendrils, uses Reel, and makes one attack with its bite."
+				]
+			},
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}22 ({@damage 4d8 + 4}) piercing damage."
+				]
+			},
+			{
+				"name": "Tendril",
+				"entries": [
+					"{@atk mw} {@hit 7} to hit, reach 50 ft., one creature. {@h}The target is {@condition grappled} (escape {@dc 15}). Until the grapple ends, the target is {@condition restrained} and has disadvantage on Strength checks and Strength saving throws, and the roper can't use the same tendril on another target."
+				]
+			},
+			{
+				"name": "Reel",
+				"entries": [
+					"The roper pulls each creature {@condition grappled} by it up to 25 feet straight toward it."
+				]
+			}
+		],
+		"senseTags": [
+			"D"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MW",
+			"RCH"
+		],
+		"conditionInflict": [
+			"grappled",
+			"restrained"
+		]
+	},
+	{
+		"name": "Space Hamster",
+		"source": "WDMM",
+		"page": 251,
+		"damageTags": [],
+		"miscTags": [],
+		"hasToken": true,
+		"size": [
+			"T"
+		],
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			10
+		],
+		"hp": {
+			"average": 1,
+			"formula": "1d4 - 1"
+		},
+		"speed": {
+			"walk": 20
+		},
+		"str": 2,
+		"dex": 11,
+		"con": 9,
+		"int": 2,
+		"wis": 10,
+		"cha": 4,
+		"senses": [
+			"darkvision 30 ft."
+		],
+		"passive": 10,
+		"cr": "0",
+		"trait": [
+			{
+				"name": "Keen Smell",
+				"entries": [
+					"the hamster has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+				]
+			}
+		],
+		"familiar": true,
+		"traitTags": [
+			"Keen Senses"
+		],
+		"senseTags": [
+			"D"
+		]
+	},
+	{
+		"name": "Statue of Vergadain",
+		"source": "WDMM",
+		"page": 202,
+		"hasToken": true,
+		"size": [
+			"L"
+		],
+		"type": "construct",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			{
+				"ac": 17,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 178,
+			"formula": "17d10 + 85"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 22,
+		"dex": 9,
+		"con": 20,
+		"int": 3,
+		"wis": 11,
+		"cha": 1,
+		"senses": [
+			"darkvision 120 ft."
+		],
+		"passive": 10,
+		"immune": [
+			"poison",
+			"psychic",
+			{
+				"immune": [
+					"bludgeoning",
+					"piercing",
+					"slashing"
+				],
+				"note": "from nonmagical attacks that aren't adamantine",
+				"cond": true
+			}
+		],
+		"conditionImmune": [
+			"charmed",
+			"exhaustion",
+			"frightened",
+			"paralyzed",
+			"petrified",
+			"poisoned"
+		],
+		"languages": [
+			"understands the languages of its creator but can't speak"
+		],
+		"cr": "10",
+		"trait": [
+			{
+				"name": "Immutable Form",
+				"entries": [
+					"The statue is immune to any spell or effect that would alter its form."
+				]
+			},
+			{
+				"name": "Magic Resistance",
+				"entries": [
+					"The statue has advantage on saving throws against spells and other magical effects."
+				]
+			},
+			{
+				"name": "Magic Weapons",
+				"entries": [
+					"The statue's weapon attacks are magical."
+				]
+			},
+			{
+				"name": "Magic Theft",
+				"entries": [
+					"As a bonus action, the golem targets one creature it can see within 30 feet of it. The target must succeed on a DC 17 Charisma saving throw, or all magic items in its possession are teleported to the bottom of the pit in {@adventure area 31|WDMM|15|31. Hall of Embers}."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The statue makes two slam attacks."
+				]
+			},
+			{
+				"name": "Slam",
+				"entries": [
+					"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}19 ({@damage 3d8 + 6}) bludgeoning damage."
+				]
+			},
+			{
+				"name": "Slow {@recharge 5}",
+				"entries": [
+					"The statue targets one or more creatures it can see within 10 feet of it. Each target must make a {@dc 17} Wisdom saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+				]
+			}
+		],
+		"traitTags": [
+			"Immutable Form",
+			"Magic Resistance",
+			"Magic Weapons"
+		],
+		"senseTags": [
+			"SD"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"CS"
+		],
+		"damageTags": [
+			"B"
+		],
+		"miscTags": [
+			"MW"
+		]
+	},
+	{
+		"name": "Stonecloak",
+		"source": "WDMM",
+		"page": 253,
+		"int": 9,
+		"cha": 9,
+		"languages": [
+			"understands Abyssal",
+			"Celestial",
+			"Common",
+			"Draconic",
+			"Dwarvish",
+			"Elvish",
+			"Infernal",
+			"and Undercommon but can't speak"
+		],
+		"languageTags": [
+			"AB",
+			"C",
+			"CE",
+			"CS",
+			"D",
+			"DR",
+			"E",
+			"I",
+			"U"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"size": [
+			"L"
+		],
+		"type": "construct",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			{
+				"ac": 17,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 178,
+			"formula": "17d10 + 85"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 22,
+		"dex": 9,
+		"con": 20,
+		"wis": 11,
+		"senses": [
+			"darkvision 120 ft."
+		],
+		"passive": 10,
+		"immune": [
+			"poison",
+			"psychic",
+			{
+				"immune": [
+					"bludgeoning",
+					"piercing",
+					"slashing"
+				],
+				"note": "from nonmagical attacks that aren't adamantine",
+				"cond": true
+			}
+		],
+		"conditionImmune": [
+			"charmed",
+			"exhaustion",
+			"frightened",
+			"paralyzed",
+			"petrified",
+			"poisoned"
+		],
+		"cr": "10",
+		"trait": [
+			{
+				"name": "Immutable Form",
+				"entries": [
+					"The stonecloak is immune to any spell or effect that would alter its form."
+				]
+			},
+			{
+				"name": "Magic Resistance",
+				"entries": [
+					"The stonecloak has advantage on saving throws against spells and other magical effects."
+				]
+			},
+			{
+				"name": "Magic Weapons",
+				"entries": [
+					"The stonecloak's weapon attacks are magical."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The stonecloak makes two slam attacks."
+				]
+			},
+			{
+				"name": "Slam",
+				"entries": [
+					"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}19 ({@damage 3d8 + 6}) bludgeoning damage."
+				]
+			},
+			{
+				"name": "Slow {@recharge 5}",
+				"entries": [
+					"The stonecloak targets one or more creatures it can see within 10 feet of it. Each target must make a {@dc 17} Wisdom saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+				]
+			}
+		],
+		"traitTags": [
+			"Immutable Form",
+			"Magic Resistance",
+			"Magic Weapons"
+		],
+		"senseTags": [
+			"SD"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"damageTags": [
+			"B"
+		],
+		"miscTags": [
+			"MW"
+		]
+	},
+	{
+		"name": "Undead Bulette",
+		"source": "WDMM",
+		"page": 90,
+		"type": "undead",
+		"hp": {
+			"average": 125,
+			"formula": "9d10 + 45"
+		},
+		"resist": [
+			"necrotic"
+		],
+		"immune": [
+			"poison"
+		],
+		"vulnerable": [
+			"radiant"
+		],
+		"conditionImmune": [
+			"poisoned"
+		],
+		"hasToken": true,
+		"size": [
+			"L"
+		],
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			{
+				"ac": 17,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"speed": {
+			"walk": 40,
+			"burrow": 40
+		},
+		"str": 19,
+		"dex": 11,
+		"con": 21,
+		"int": 2,
+		"wis": 10,
+		"cha": 5,
+		"skill": {
+			"perception": "+6"
+		},
+		"senses": [
+			"darkvision 60 ft.",
+			"tremorsense 60 ft."
+		],
+		"passive": 16,
+		"cr": "5",
+		"trait": [
+			{
+				"name": "Standing Leap",
+				"entries": [
+					"The bulette's long jump is up to 30 feet and its high jump is up to 15 feet, with or without a running start."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}30 ({@damage 4d12 + 4}) piercing damage."
+				]
+			},
+			{
+				"name": "Deadly Leap",
+				"entries": [
+					"If the bulette jumps at least 15 feet as part of its movement, it can then use this action to land on its feet in a space that contains one or more other creatures. Each of those creatures must succeed on a {@dc 16} Strength or Dexterity saving throw (target's choice) or be knocked {@condition prone} and take 14 ({@damage 3d6 + 4}) bludgeoning damage plus 14 ({@damage 3d6 + 4}) slashing damage. On a successful save, the creature takes only half the damage, isn't knocked {@condition prone}, and is pushed 5 feet out of the bulette's space into an unoccupied space of the creature's choice. If no unoccupied space is within range, the creature instead falls {@condition prone} in the bulette's space."
+				]
+			}
+		],
+		"senseTags": [
+			"D",
+			"T"
+		],
+		"damageTags": [
+			"B",
+			"P",
+			"S"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"conditionInflict": [
+			"prone"
+		]
+	},
+	{
+		"name": "Undead Shambling Mound",
+		"source": "WDMM",
+		"page": 142,
+		"type": "undead",
+		"immune": [
+			"necrotic",
+			"poison"
+		],
+		"conditionImmune": [
+			"blinded",
+			"deafened",
+			"exhaustion",
+			"poisoned"
+		],
+		"trait": [
+			{
+				"name": "Necrotic Absorption",
+				"entries": [
+					"Whenever the shambling mound is subjected to necrotic damage, it takes no damage and regains a number of hit points equal to the necrotic damage dealt."
+				]
+			}
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"size": [
+			"L"
+		],
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			{
+				"ac": 15,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 136,
+			"formula": "16d10 + 48"
+		},
+		"speed": {
+			"walk": 20,
+			"swim": 20
+		},
+		"str": 18,
+		"dex": 8,
+		"con": 16,
+		"int": 5,
+		"wis": 10,
+		"cha": 5,
+		"skill": {
+			"stealth": "+2"
+		},
+		"senses": [
+			"blindsight 60 ft. (blind beyond this radius)"
+		],
+		"passive": 10,
+		"resist": [
+			"cold",
+			"fire"
+		],
+		"cr": "5",
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The shambling mound makes two slam attacks. If both attacks hit a Medium or smaller target, the target is {@condition grappled} (escape {@dc 14}), and the shambling mound uses its Engulf on it."
+				]
+			},
+			{
+				"name": "Slam",
+				"entries": [
+					"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage."
+				]
+			},
+			{
+				"name": "Engulf",
+				"entries": [
+					"The shambling mound engulfs a Medium or smaller creature {@condition grappled} by it. The engulfed target is {@condition blinded}, {@condition restrained}, and unable to breathe, and it must succeed on a {@dc 14} Constitution saving throw at the start of each of the mound's turns or take 13 ({@damage 2d8 + 4}) bludgeoning damage. If the mound moves, the engulfed target moves with it. The mound can have only one creature engulfed at a time."
+				]
+			}
+		],
+		"traitTags": [
+			"Damage Absorption"
+		],
+		"senseTags": [
+			"B"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"damageTags": [
+			"B"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"conditionInflict": [
+			"blinded",
+			"grappled",
+			"restrained"
+		]
+	},
+	{
+		"name": "Werebat",
+		"group": [
+			"Lycanthropes"
+		],
+		"source": "WDMM",
+		"page": 317,
+		"size": [
+			"S"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"goblinoid",
+				"shapechanger"
+			]
+		},
+		"alignment": [
+			"L",
+			"E"
+		],
+		"ac": [
+			13
+		],
+		"hp": {
+			"average": 24,
+			"formula": "7d6"
+		},
+		"speed": {
+			"walk": {
+				"number": 30,
+				"condition": "(climb 30 ft. fly 60 ft. in bat or hybrid form)"
+			}
+		},
+		"str": 8,
+		"dex": 17,
+		"con": 10,
+		"int": 10,
+		"wis": 12,
+		"cha": 8,
+		"skill": {
+			"perception": "+3",
+			"stealth": "+5"
+		},
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 13,
+		"immune": [
+			{
+				"immune": [
+					"bludgeoning",
+					"piercing",
+					"slashing"
+				],
+				"note": "from nonmagical attacks that aren't silvered",
+				"cond": true
+			}
+		],
+		"languages": [
+			"Goblin (can't speak in bat form)"
+		],
+		"cr": "2",
+		"trait": [
+			{
+				"name": "Shapechanger",
+				"entries": [
+					"The werebat can use its action to polymorph into a Medium bat-humanoid hybrid, or into a Large giant bat, or back into its true form, which is humanoid. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+				]
+			},
+			{
+				"name": "Echolocation (Bat or Hybrid Form Only)",
+				"entries": [
+					"The werebat has blindsight out to a range of 60 feet as long as it's not {@condition deafened}."
+				]
+			},
+			{
+				"name": "Keen Hearing",
+				"entries": [
+					"The werebat has advantage on Wisdom (Perception) checks that rely on hearing."
+				]
+			},
+			{
+				"name": "Nimble Escape (Humanoid Form Only)",
+				"entries": [
+					"The werebat can take the Disengage or Hide action as a bonus action on each of its turns."
+				]
+			},
+			{
+				"name": "Sunlight Sensitivity",
+				"entries": [
+					"While in sunlight, the werebat has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack (Humanoid or Hybrid Form Only)",
+				"entries": [
+					"In humanoid form, the werebat makes two scimitar attacks or two shortbow attacks. In hybrid form, it can make one bite attack and one scimitar attack."
+				]
+			},
+			{
+				"name": "Bite (Bat or Hybrid Form Only)",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}6 ({@damage 1d6 + 3}) piercing damage, and the werebat gains temporary hit points equal to the damage dealt. If the target is a humanoid, it must succeed on a {@dc 10} Constitution saving throw or be cursed with werebat lycanthropy."
+				]
+			},
+			{
+				"name": "Scimitar (Humanoid or Hybrid Form Only)",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
+				]
+			},
+			{
+				"name": "Shortbow (Humanoid or Hybrid Form Only)",
+				"entries": [
+					"{@atk rw} {@hit 5} to hit, range 80/320 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+				]
+			}
+		],
+		"traitTags": [
+			"Keen Senses",
+			"Shapechanger",
+			"Sunlight Sensitivity"
+		],
+		"senseTags": [
+			"D"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"CS",
+			"GO"
+		],
+		"damageTags": [
+			"P",
+			"S"
+		],
+		"miscTags": [
+			"MW",
+			"RNG",
+			"RW"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true
+	},
+	{
+		"name": "Wooden Donkey",
+		"source": "WDMM",
+		"page": 84,
+		"type": "construct",
+		"senses": [
+			"blindsight 30 ft. (blind beyond this radius)"
+		],
+		"immune": [
+			"poison"
+		],
+		"conditionImmune": [
+			"blinded",
+			"charmed",
+			"frightened",
+			"paralyzed",
+			"petrified",
+			"poisoned"
+		],
+		"senseTags": [
+			"B"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"size": [
+			"M"
+		],
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			10
+		],
+		"hp": {
+			"average": 11,
+			"formula": "2d8 + 2"
+		},
+		"speed": {
+			"walk": 40
+		},
+		"str": 14,
+		"dex": 10,
+		"con": 13,
+		"int": 2,
+		"wis": 10,
+		"cha": 5,
+		"passive": 10,
+		"cr": "1/8",
+		"trait": [
+			{
+				"name": "Beast of Burden",
+				"entries": [
+					"The donkey is considered to be a Large animal for the purpose of determining its carrying capacity."
+				]
+			},
+			{
+				"name": "Sure-Footed",
+				"entries": [
+					"The donkey has advantage on Strength and Dexterity saving throws made against effects that would knock it {@condition prone}."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Hooves",
+				"entries": [
+					"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) bludgeoning damage."
+				]
+			}
+		],
+		"damageTags": [
+			"B"
+		],
+		"miscTags": [
+			"MW"
+		]
+	}
+]

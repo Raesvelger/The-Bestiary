@@ -1,0 +1,1689 @@
+[
+	{
+		"name": "Awakened Rat",
+		"source": "WDH",
+		"page": 102,
+		"size": [
+			"T"
+		],
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			10
+		],
+		"hp": {
+			"average": 1,
+			"formula": "1d4 - 1"
+		},
+		"speed": {
+			"walk": 20
+		},
+		"str": 2,
+		"dex": 11,
+		"con": 9,
+		"int": 10,
+		"wis": 10,
+		"cha": 4,
+		"senses": [
+			"darkvision 30 ft."
+		],
+		"passive": 10,
+		"languages": [
+			"Common"
+		],
+		"cr": "0",
+		"trait": [
+			{
+				"name": "Keen Smell",
+				"entries": [
+					"The rat has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 0} to hit, reach 5 ft., one target. {@h}1 piercing damage."
+				]
+			}
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/rat.mp3"
+		},
+		"traitTags": [
+			"Keen Senses"
+		],
+		"senseTags": [
+			"D"
+		],
+		"languageTags": [
+			"C"
+		],
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true
+	},
+	{
+		"name": "Diatryma",
+		"source": "WDH",
+		"page": 191,
+		"action": [
+			{
+				"name": "Beak",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+				]
+			}
+		],
+		"damageTags": [
+			"P"
+		],
+		"hasToken": true,
+		"size": [
+			"L"
+		],
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			11
+		],
+		"hp": {
+			"average": 19,
+			"formula": "3d10 + 3"
+		},
+		"speed": {
+			"walk": 50
+		},
+		"str": 14,
+		"dex": 12,
+		"con": 12,
+		"int": 2,
+		"wis": 10,
+		"cha": 5,
+		"passive": 10,
+		"cr": "1/4",
+		"miscTags": [
+			"MW"
+		]
+	},
+	{
+		"name": "Dining Table Mimic",
+		"source": "WDH",
+		"page": 122,
+		"size": [
+			"L"
+		],
+		"type": {
+			"type": "monstrosity",
+			"tags": [
+				"shapechanger"
+			]
+		},
+		"alignment": [
+			"N"
+		],
+		"ac": [
+			{
+				"ac": 12,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 75,
+			"formula": "10d10 + 20"
+		},
+		"speed": {
+			"walk": 15
+		},
+		"str": 17,
+		"dex": 12,
+		"con": 15,
+		"int": 5,
+		"wis": 13,
+		"cha": 8,
+		"skill": {
+			"stealth": "+5"
+		},
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 11,
+		"immune": [
+			"acid"
+		],
+		"conditionImmune": [
+			"prone"
+		],
+		"cr": "3",
+		"trait": [
+			{
+				"name": "Shapechanger",
+				"entries": [
+					"The mimic can use its action to polymorph into an object or back into its true, amorphous form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+				]
+			},
+			{
+				"name": "Adhesive (Object Form Only)",
+				"entries": [
+					"The mimic adheres to anything that touches it. A Huge or smaller creature adhered to the mimic is also {@condition grappled} by it (escape {@dc 13}). Ability checks made to escape this grapple have disadvantage."
+				]
+			},
+			{
+				"name": "False Appearance (Object Form Only)",
+				"entries": [
+					"While the mimic remains motionless, it is indistinguishable from an ordinary object."
+				]
+			},
+			{
+				"name": "Grappler",
+				"entries": [
+					"The mimic has advantage on attack rolls against any creature {@condition grappled} by it."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The mimic can make three attacks; two with its pseudopods and one with its bite"
+				]
+			},
+			{
+				"name": "Pseudopod",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) bludgeoning damage. If the mimic is in object form, the target is subjected to its Adhesive trait."
+				]
+			},
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage plus 4 ({@damage 1d8}) acid damage."
+				]
+			}
+		],
+		"traitTags": [
+			"False Appearance",
+			"Shapechanger"
+		],
+		"senseTags": [
+			"D"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"damageTags": [
+			"A",
+			"B",
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"conditionInflict": [
+			"grappled"
+		],
+		"hasToken": true
+	},
+	{
+		"name": "Drow Gunslinger",
+		"source": "WDH",
+		"page": 201,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"elf"
+			]
+		},
+		"alignment": [
+			"A"
+		],
+		"ac": [
+			{
+				"ac": 18,
+				"from": [
+					"{@item studded leather armor|phb}",
+					"{@item shield|phb}"
+				]
+			}
+		],
+		"hp": {
+			"average": 84,
+			"formula": "13d8 + 26"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 13,
+		"dex": 18,
+		"con": 14,
+		"int": 11,
+		"wis": 13,
+		"cha": 14,
+		"save": {
+			"dex": "+6",
+			"con": "+4",
+			"wis": "+3"
+		},
+		"skill": {
+			"perception": "+3",
+			"stealth": "+8"
+		},
+		"senses": [
+			"darkvision 120 ft."
+		],
+		"passive": 13,
+		"languages": [
+			"Elvish",
+			"Undercommon"
+		],
+		"cr": "4",
+		"spellcasting": [
+			{
+				"name": "Innate Spellcasting",
+				"headerEntries": [
+					"The drow's spellcasting ability is Charisma (spell save {@dc 12}) It can innately cast the following spells, requiring no material components:"
+				],
+				"will": [
+					"{@spell dancing lights}"
+				],
+				"daily": {
+					"1e": [
+						"{@spell darkness}",
+						"{@spell faerie fire}",
+						"{@spell levitate} (self only)"
+					]
+				},
+				"ability": "cha"
+			}
+		],
+		"trait": [
+			{
+				"name": "Fey Ancestry",
+				"entries": [
+					"The drow has advantage on saving throws against being {@condition charmed}, and magic can't put the drow to sleep."
+				]
+			},
+			{
+				"name": "Gunslinger",
+				"entries": [
+					"Being within 5 feet of a hostile creature or attacking at long range doesn't impose disadvantage on the drow's ranged attack rolls with a pistol. In addition, the drow ignores half cover and three-quarters cover when making ranged attacks with a pistol."
+				]
+			},
+			{
+				"name": "Sunlight Sensitivity",
+				"entries": [
+					"While in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The drow makes two shortsword attacks."
+				]
+			},
+			{
+				"name": "Shortsword",
+				"entries": [
+					"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
+				]
+			},
+			{
+				"name": "Poisonous Pistol",
+				"entries": [
+					"{@atk rw} {@hit 6} to hit, range 30/90 ft., one target. {@h}9 ({@damage 1d10 + 4}) piercing damage plus 11 ({@damage 2d10}) poison damage."
+				]
+			}
+		],
+		"traitTags": [
+			"Fey Ancestry",
+			"Sunlight Sensitivity"
+		],
+		"senseTags": [
+			"SD"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"E",
+			"U"
+		],
+		"damageTags": [
+			"I",
+			"P"
+		],
+		"spellcastingTags": [
+			"I"
+		],
+		"miscTags": [
+			"MW",
+			"RW"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true
+	},
+	{
+		"name": "Engineer",
+		"source": "WDH",
+		"page": 141,
+		"size": [
+			"S"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				{
+					"tag": "gnome",
+					"prefix": "Rock"
+				}
+			]
+		},
+		"alignment": [
+			"N",
+			"G"
+		],
+		"ac": [
+			10
+		],
+		"hp": {
+			"average": 7,
+			"formula": "2d6"
+		},
+		"speed": {
+			"walk": 25
+		},
+		"str": 10,
+		"dex": 10,
+		"con": 10,
+		"int": 14,
+		"wis": 10,
+		"cha": 11,
+		"skill": {
+			"arcana": "+4",
+			"history": "+4"
+		},
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 10,
+		"languages": [
+			"Common",
+			"Gnomish"
+		],
+		"cr": "1/4",
+		"spellcasting": [
+			{
+				"name": "Spellcasting",
+				"headerEntries": [
+					"The gnome is a 1st-level spellcaster. Its spellcasting ability is Intelligence. It has the following wizard spells prepared:"
+				],
+				"spells": {
+					"0": {
+						"spells": [
+							"{@spell fire bolt}",
+							"{@spell mending}",
+							"{@spell prestidigitation}"
+						]
+					},
+					"1": {
+						"slots": 2,
+						"spells": [
+							"{@spell burning hands}",
+							"{@spell disguise self}",
+							"{@spell shield}"
+						]
+					}
+				},
+				"ability": "int"
+			}
+		],
+		"trait": [
+			{
+				"name": "Gnome Cunning",
+				"entries": [
+					"The gnome has advantage on all Intelligence, Wisdom and Charisma saving throws against magic."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Dagger",
+				"entries": [
+					"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) piercing damage. Or Ranged Weapon Attack: {@hit 2} to hit, range 20/60 ft., one target. {@h}2 ({@damage 1d4}) piercing damage."
+				]
+			}
+		],
+		"senseTags": [
+			"D"
+		],
+		"languageTags": [
+			"C",
+			"G"
+		],
+		"damageTags": [
+			"P"
+		],
+		"spellcastingTags": [
+			"CW"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true,
+		"hasFluff": true
+	},
+	{
+		"name": "Falcon",
+		"source": "WDH",
+		"page": 53,
+		"hasToken": true,
+		"size": [
+			"T"
+		],
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			13
+		],
+		"hp": {
+			"average": 1,
+			"formula": "1d4 - 1"
+		},
+		"speed": {
+			"walk": 10,
+			"fly": 60
+		},
+		"str": 5,
+		"dex": 16,
+		"con": 8,
+		"int": 2,
+		"wis": 14,
+		"cha": 6,
+		"skill": {
+			"perception": "+4"
+		},
+		"passive": 14,
+		"cr": "0",
+		"trait": [
+			{
+				"name": "Keen Sight",
+				"entries": [
+					"The falcon has advantage on Wisdom ({@skill Perception}) checks that rely on sight."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Talons",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}1 slashing damage."
+				]
+			}
+		],
+		"familiar": true,
+		"traitTags": [
+			"Keen Senses"
+		],
+		"damageTags": [
+			"S"
+		],
+		"miscTags": [
+			"MW"
+		]
+	},
+	{
+		"name": "Flying Staff",
+		"group": [
+			"Animated Objects"
+		],
+		"source": "WDH",
+		"page": 152,
+		"size": [
+			"S"
+		],
+		"type": "construct",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			{
+				"ac": 17,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 17,
+			"formula": "5d6"
+		},
+		"speed": {
+			"walk": 0,
+			"fly": {
+				"number": 50,
+				"condition": "(hover)"
+			},
+			"canHover": true
+		},
+		"str": 12,
+		"dex": 15,
+		"con": 11,
+		"int": 1,
+		"wis": 5,
+		"cha": 1,
+		"save": {
+			"dex": "+4"
+		},
+		"senses": [
+			"blindsight 60 ft. (blind beyond this radius)"
+		],
+		"passive": 7,
+		"immune": [
+			"poison",
+			"psychic"
+		],
+		"conditionImmune": [
+			"blinded",
+			"charmed",
+			"deafened",
+			"frightened",
+			"paralyzed",
+			"petrified",
+			"poisoned"
+		],
+		"cr": "1/4",
+		"trait": [
+			{
+				"name": "Antimagic Susceptibility",
+				"entries": [
+					"The staff is {@condition incapacitated} while in the area of an {@spell antimagic field}. If targeted by {@spell dispel magic}, the staff must succeed on a Constitution saving throw against the caster's spell save DC or fall {@condition unconscious} for 1 minute."
+				]
+			},
+			{
+				"name": "False Appearance",
+				"entries": [
+					"While the staff remains motionless and isn't flying, it is indistinguishable from a normal staff."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Knife",
+				"entries": [
+					"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) bludgeoning damage."
+				]
+			}
+		],
+		"traitTags": [
+			"Antimagic Susceptibility",
+			"False Appearance"
+		],
+		"senseTags": [
+			"B"
+		],
+		"damageTags": [
+			"B"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true
+	},
+	{
+		"name": "Griffon Cavalry Rider",
+		"source": "WDH",
+		"page": 197,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"any race"
+			]
+		},
+		"alignment": [
+			"A"
+		],
+		"ac": [
+			{
+				"ac": 17,
+				"from": [
+					"{@item half plate armor|phb}"
+				]
+			}
+		],
+		"hp": {
+			"average": 58,
+			"formula": "9d8 + 18"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 14,
+		"dex": 15,
+		"con": 14,
+		"int": 10,
+		"wis": 12,
+		"cha": 10,
+		"skill": {
+			"animal handling": "+3",
+			"athletics": "+4",
+			"perception": "+3"
+		},
+		"passive": 13,
+		"languages": [
+			"any one language (usually Common)"
+		],
+		"cr": "2",
+		"action": [
+			{
+				"name": "Lance",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit (with disadvantage against a target within 5 ft.), reach 10 ft., one target. {@h}8 ({@damage 1d12 + 2}) piercing damage, or 11 ({@damage 1d12 + 5}) piercing damage while mounted."
+				]
+			},
+			{
+				"name": "Dagger",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage. Or Ranged Weapon Attack: {@hit 4} to hit, range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+				]
+			},
+			{
+				"name": "Feather Fall",
+				"entries": [
+					"The rider wears a magic ring with which it can cast the {@spell feather fall} spell on itself once as a reaction to falling. After the spell is cast, the ring becomes nonmagical."
+				]
+			}
+		],
+		"languageTags": [
+			"C",
+			"X"
+		],
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MW",
+			"RCH"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true
+	},
+	{
+		"name": "Mechanical Bird",
+		"source": "WDH",
+		"page": 46,
+		"size": [
+			"T"
+		],
+		"type": "construct",
+		"alignment": [
+			"N"
+		],
+		"ac": [
+			15
+		],
+		"hp": {
+			"special": "1"
+		},
+		"speed": {
+			"fly": 60
+		},
+		"str": 10,
+		"dex": 10,
+		"con": 10,
+		"int": 10,
+		"wis": 10,
+		"cha": 10,
+		"passive": 10,
+		"immune": [
+			"poison"
+		],
+		"conditionImmune": [
+			"poisoned"
+		],
+		"cr": "Unknown",
+		"action": [
+			{
+				"name": "Slam",
+				"entries": [
+					"{@atk mw} {@hit 0} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d3}) piercing damage, and the bird is destroyed by the impact."
+				]
+			}
+		],
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true
+	},
+	{
+		"name": "Nimblewright",
+		"source": "WDH",
+		"page": 212,
+		"size": [
+			"M"
+		],
+		"type": "construct",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			{
+				"ac": 18,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 45,
+			"formula": "6d8 + 18"
+		},
+		"speed": {
+			"walk": 60
+		},
+		"str": 12,
+		"dex": 18,
+		"con": 17,
+		"int": 8,
+		"wis": 10,
+		"cha": 6,
+		"save": {
+			"dex": "+6"
+		},
+		"skill": {
+			"acrobatics": "+8",
+			"perception": "+2"
+		},
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 12,
+		"resist": [
+			{
+				"resist": [
+					"bludgeoning",
+					"piercing",
+					"slashing"
+				],
+				"note": "from nonmagical attacks",
+				"cond": true
+			}
+		],
+		"conditionImmune": [
+			"exhaustion",
+			"frightened",
+			"petrified",
+			"poisoned"
+		],
+		"languages": [
+			"understands one language known to its creator but can't speak"
+		],
+		"cr": "4",
+		"trait": [
+			{
+				"name": "Magic Resistance",
+				"entries": [
+					"The nimblewright has advantage on saving throws against spells and other magical effects."
+				]
+			},
+			{
+				"name": "Magic Weapons",
+				"entries": [
+					"The nimblewright's weapon attacks are magical."
+				]
+			},
+			{
+				"name": "Repairable",
+				"entries": [
+					"As long as it has at least 1 hit point remaining, the nimblewright regains 1 hit point when a {@spell mending} spell is cast on it."
+				]
+			},
+			{
+				"name": "Sure-Footed",
+				"entries": [
+					"The nimblewright has advantage on Strength and Dexterity saving throws made against effects that would knock it {@condition prone}."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The nimblewright makes three attacks: two with its rapier and one with its dagger."
+				]
+			},
+			{
+				"name": "Rapier",
+				"entries": [
+					"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage."
+				]
+			},
+			{
+				"name": "Dagger",
+				"entries": [
+					"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage. Or Ranged Weapon Attack: {@hit 6} to hit, range 20/60 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage."
+				]
+			}
+		],
+		"reaction": [
+			{
+				"name": "Parry",
+				"entries": [
+					"The nimblewright adds 2 to its AC against one melee attack that would hit it. To do so, the nimblewright must see the attacker and be wielding a melee weapon."
+				]
+			}
+		],
+		"traitTags": [
+			"Magic Resistance",
+			"Magic Weapons"
+		],
+		"senseTags": [
+			"D"
+		],
+		"actionTags": [
+			"Multiattack",
+			"Parry"
+		],
+		"languageTags": [
+			"CS"
+		],
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true
+	},
+	{
+		"name": "Panopticus Wizard",
+		"source": "WDH",
+		"page": 106,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"dwarf"
+			]
+		},
+		"alignment": [
+			"N"
+		],
+		"ac": [
+			10
+		],
+		"hp": {
+			"average": 9,
+			"formula": "2d8"
+		},
+		"speed": {
+			"walk": 25
+		},
+		"str": 10,
+		"dex": 10,
+		"con": 10,
+		"int": 14,
+		"wis": 10,
+		"cha": 11,
+		"skill": {
+			"arcana": "+4",
+			"history": "+4"
+		},
+		"passive": 10,
+		"resist": [
+			"poison"
+		],
+		"languages": [
+			"Common",
+			"Dwarvish"
+		],
+		"cr": "1/4",
+		"spellcasting": [
+			{
+				"name": "Spellcasting",
+				"headerEntries": [
+					"The Dwarf is a 1st-level spellcaster. Its spellcasting ability is Intelligence. It has the following wizard spells prepared:"
+				],
+				"spells": {
+					"0": {
+						"spells": [
+							"{@spell fire bolt}",
+							"{@spell mending}",
+							"{@spell prestidigitation}"
+						]
+					},
+					"1": {
+						"slots": 2,
+						"spells": [
+							"{@spell burning hands}",
+							"{@spell disguise self}",
+							"{@spell shield}"
+						]
+					}
+				},
+				"ability": "int"
+			}
+		],
+		"trait": [
+			{
+				"name": "Dwarven Resilience",
+				"entries": [
+					"The dwarf has advantage on saving throws against poison and resistance to poison damage."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Dagger",
+				"entries": [
+					"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) piercing damage. Or Ranged Weapon Attack: {@hit 2} to hit, range 20/60 ft., one target. {@h}2 ({@damage 1d4}) piercing damage."
+				]
+			}
+		],
+		"languageTags": [
+			"C",
+			"D"
+		],
+		"damageTags": [
+			"P"
+		],
+		"spellcastingTags": [
+			"CW"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true,
+		"hasFluff": true
+	},
+	{
+		"name": "Sergeant",
+		"source": "WDH",
+		"page": 197,
+		"hasToken": true,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"any race"
+			]
+		},
+		"alignment": [
+			"A"
+		],
+		"ac": [
+			{
+				"ac": 16,
+				"from": [
+					"{@item chain shirt|phb}",
+					"{@item shield|phb}"
+				]
+			}
+		],
+		"hp": {
+			"average": 11,
+			"formula": "2d8 + 2"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 13,
+		"dex": 12,
+		"con": 12,
+		"int": 10,
+		"wis": 11,
+		"cha": 10,
+		"skill": {
+			"perception": "+2"
+		},
+		"passive": 12,
+		"languages": [
+			"any one language (usually Common)"
+		],
+		"cr": "1/8",
+		"action": [
+			{
+				"name": "Spear",
+				"entries": [
+					"{@atk mw,rw} {@hit 3} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage, or 5 ({@damage 1d8 + 1}) piercing damage if used with two hands to make a melee attack."
+				]
+			}
+		],
+		"languageTags": [
+			"C",
+			"X"
+		],
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MW",
+			"RW",
+			"THW"
+		]
+	},
+	{
+		"name": "Shard Shunner",
+		"source": "WDH",
+		"page": 42,
+		"size": [
+			"S"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"halfling",
+				"shapechanger"
+			]
+		},
+		"alignment": [
+			"L",
+			"E"
+		],
+		"ac": [
+			12
+		],
+		"hp": {
+			"average": 27,
+			"formula": "6d6 + 6"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 10,
+		"dex": 15,
+		"con": 12,
+		"int": 11,
+		"wis": 10,
+		"cha": 8,
+		"skill": {
+			"perception": "+2",
+			"stealth": "+4"
+		},
+		"senses": [
+			"darkvision 60 ft. (rat form only)"
+		],
+		"passive": 12,
+		"immune": [
+			{
+				"immune": [
+					"bludgeoning",
+					"piercing",
+					"slashing"
+				],
+				"note": "from nonmagical attacks that aren't silvered",
+				"cond": true
+			}
+		],
+		"languages": [
+			"Common",
+			"Halfling",
+			"Thieves' cant"
+		],
+		"cr": "2",
+		"trait": [
+			{
+				"name": "Shapechanger",
+				"entries": [
+					"The Shard Shunner can use their action to polymorph into a rat-humanoid hybrid or into a giant rat, or back into their true form, which is humanoid. Their statistics, other than their size, are the same in each form. Any equipment they are wearing or carrying isn't transformed. They revert to their true form if they die."
+				]
+			},
+			{
+				"name": "Keen Smell",
+				"entries": [
+					"The Shard Shunner has advantage on Wisdom (Perception) checks that rely on smell."
+				]
+			},
+			{
+				"name": "Halfling Nimbleness",
+				"entries": [
+					"The Shard Shunner can move through the space of creatures that is of a size larger than them."
+				]
+			},
+			{
+				"name": "Brave",
+				"entries": [
+					"The Shard Shunner has advantage on saving throws against being {@condition frightened}."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack (Humanoid or Hybrid Form Only)",
+				"entries": [
+					"The Shard Shunner makes two attacks, only one of which can be a bite."
+				]
+			},
+			{
+				"name": "Bite (Rat or Hybrid Form Only)",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage. If the target is a humanoid, it must succeed on a {@dc 11} Constitution saving throw or be cursed with wererat lycanthropy."
+				]
+			},
+			{
+				"name": "Shortsword (Humanoid or Hybrid Form Only)",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+				]
+			},
+			{
+				"name": "Hand Crossbow (Humanoid or Hybrid Form Only)",
+				"entries": [
+					"{@atk rw} {@hit 4} to hit, range 30/120 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+				]
+			}
+		],
+		"traitTags": [
+			"Keen Senses",
+			"Shapechanger"
+		],
+		"senseTags": [
+			"D"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"H",
+			"TC"
+		],
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MW",
+			"RNG",
+			"RW"
+		],
+		"hasToken": true,
+		"hasFluff": true
+	},
+	{
+		"name": "Swarm of Books",
+		"source": "WDH",
+		"page": 156,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "construct",
+			"swarmSize": "T"
+		},
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			12
+		],
+		"hp": {
+			"average": 22,
+			"formula": "5d8"
+		},
+		"speed": {
+			"walk": 0,
+			"fly": 30
+		},
+		"str": 5,
+		"dex": 15,
+		"con": 10,
+		"int": 2,
+		"wis": 12,
+		"cha": 4,
+		"senses": [
+			"blindsight 60 ft."
+		],
+		"passive": 11,
+		"resist": [
+			"bludgeoning",
+			"piercing",
+			"slashing"
+		],
+		"conditionImmune": [
+			"charmed",
+			"frightened",
+			"paralyzed",
+			"petrified",
+			"prone",
+			"restrained",
+			"stunned",
+			"grappled"
+		],
+		"cr": "1/4",
+		"trait": [
+			{
+				"name": "Swarm",
+				"entries": [
+					"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny book. The swarm can't regain hit points or gain temporary hit points."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Slam",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit, reach 0 ft., one creature in the swarm's space. {@h}5 ({@damage 2d4}) bludgeoning damage, or 2 ({@damage 1d4}) bludgeoning damage if the swarm has half of its hit points or fewer."
+				]
+			}
+		],
+		"senseTags": [
+			"B"
+		],
+		"damageTags": [
+			"B"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true,
+		"hasFluff": true
+	},
+	{
+		"name": "Swarm of Mechanical Spiders",
+		"source": "WDH",
+		"page": 143,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "construct",
+			"swarmSize": "T"
+		},
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			{
+				"ac": 12,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 22,
+			"formula": "5d8"
+		},
+		"speed": {
+			"walk": 20,
+			"climb": 20
+		},
+		"str": 3,
+		"dex": 13,
+		"con": 10,
+		"int": 1,
+		"wis": 7,
+		"cha": 1,
+		"senses": [
+			"blindsight 10 ft."
+		],
+		"passive": 8,
+		"resist": [
+			"bludgeoning",
+			"piercing",
+			"slashing"
+		],
+		"vulnerable": [
+			"lightning"
+		],
+		"conditionImmune": [
+			"exhaustion",
+			"charmed",
+			"frightened",
+			"grappled",
+			"paralyzed",
+			"petrified",
+			"prone",
+			"restrained",
+			"stunned",
+			"poisoned"
+		],
+		"cr": "1/2",
+		"trait": [
+			{
+				"name": "Constructed Nature",
+				"entries": [
+					"The swarm doesn't require air, food, drink, or sleep."
+				]
+			},
+			{
+				"name": "Swarm",
+				"entries": [
+					"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny insect. The swarm can't regain hit points or gain temporary hit points."
+				]
+			},
+			{
+				"name": "Spider Climb",
+				"entries": [
+					"The swarm can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+				]
+			},
+			{
+				"name": "Web Sense",
+				"entries": [
+					"While in contact with a web, the swarm knows the exact location of any other creature in contact with the same web."
+				]
+			},
+			{
+				"name": "Web Walker",
+				"entries": [
+					"The swarm ignores movement restrictions caused by webbing."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Bites",
+				"entries": [
+					"{@atk mw} {@hit 3} to hit, reach 0 ft., one target in the swarm's space. {@h}10 ({@damage 4d4}) piercing damage, or 5 ({@damage 2d4}) piercing damage if the swarm has half of its hit points or fewer."
+				]
+			}
+		],
+		"traitTags": [
+			"Spider Climb",
+			"Web Sense",
+			"Web Walker"
+		],
+		"senseTags": [
+			"B"
+		],
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true,
+		"hasFluff": true
+	},
+	{
+		"name": "Walking Statue of Waterdeep",
+		"source": "WDH",
+		"page": 219,
+		"size": [
+			"G"
+		],
+		"type": "construct",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			{
+				"ac": 17,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 314,
+			"formula": "17d20 + 136"
+		},
+		"speed": {
+			"walk": 60
+		},
+		"str": 30,
+		"dex": 8,
+		"con": 27,
+		"int": 1,
+		"wis": 10,
+		"cha": 1,
+		"save": {
+			"con": "+14"
+		},
+		"senses": [
+			"truesight 120 ft."
+		],
+		"passive": 10,
+		"immune": [
+			"cold",
+			"fire",
+			"poison",
+			"psychic",
+			{
+				"immune": [
+					"bludgeoning",
+					"piercing",
+					"slashing"
+				],
+				"note": "from nonmagical attacks not made with adamantine weapons",
+				"cond": true
+			}
+		],
+		"conditionImmune": [
+			"charmed",
+			"exhaustion",
+			"frightened",
+			"paralyzed",
+			"petrified",
+			"poisoned",
+			"stunned"
+		],
+		"cr": "18",
+		"trait": [
+			{
+				"name": "Crumbling Colossus",
+				"entries": [
+					"When the statue drops to 0 hit points, it crumbles and is destroyed. Any creature on the ground within 30 feet of the crumbling statue must make a {@dc 22} Dexterity saving throw, taking 22 ({@damage 4d10}) bludgeoning damage on a failed save, or half as much damage on a successful one."
+				]
+			},
+			{
+				"name": "Immutable Form",
+				"entries": [
+					"The statue is immune to any spell or effect that would alter its form."
+				]
+			},
+			{
+				"name": "Magic Resistance",
+				"entries": [
+					"The statue has advantage on saving throws against spells and other magical effects."
+				]
+			},
+			{
+				"name": "Siege Monster",
+				"entries": [
+					"The statue deals double damage to objects and structures."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The statue makes two melee attacks."
+				]
+			},
+			{
+				"name": "Slam",
+				"entries": [
+					"{@atk mw} {@hit 16} to hit, reach 5 ft., one target. {@h}29 ({@damage 3d12 + 10}) bludgeoning damage."
+				]
+			},
+			{
+				"name": "Hurled Stone",
+				"entries": [
+					"{@atk rw} {@hit 16} to hit, range 200/800 ft., one target. {@h}43 ({@damage 6d10 + 10}) bludgeoning damage."
+				]
+			}
+		],
+		"traitTags": [
+			"Immutable Form",
+			"Magic Resistance",
+			"Siege Monster"
+		],
+		"senseTags": [
+			"U"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"damageTags": [
+			"B"
+		],
+		"miscTags": [
+			"MW",
+			"RW"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true
+	},
+	{
+		"name": "Zhent Martial Arts Adept",
+		"source": "WDH",
+		"page": 160,
+		"size": [
+			"S"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				{
+					"tag": "halfling",
+					"prefix": "Lightfoot"
+				}
+			]
+		},
+		"alignment": [
+			"L",
+			"E"
+		],
+		"ac": [
+			16
+		],
+		"hp": {
+			"average": 49,
+			"formula": "11d6 + 11"
+		},
+		"speed": {
+			"walk": 25
+		},
+		"str": 11,
+		"dex": 17,
+		"con": 13,
+		"int": 11,
+		"wis": 16,
+		"cha": 10,
+		"skill": {
+			"acrobatics": "+5",
+			"insight": "+5",
+			"stealth": "+5"
+		},
+		"passive": 13,
+		"languages": [
+			"Common",
+			"Halfling"
+		],
+		"cr": "3",
+		"trait": [
+			{
+				"name": "Halfling Nimbleness",
+				"entries": [
+					"The adept can move through the space of a medium of larger creature."
+				]
+			},
+			{
+				"name": "Brave",
+				"entries": [
+					"The adept has advantage on any saving throws against being {@condition frightened}."
+				]
+			},
+			{
+				"name": "Unarmored Defense",
+				"entries": [
+					"While the adept is wearing no armor and wielding no shield, their AC includes their Wisdom modifier."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The adept makes three unarmed strikes or three dart attacks."
+				]
+			},
+			{
+				"name": "Unarmed Strike",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) bludgeoning damage. If the target is a creature, the adept can choose one of the following additional effects:",
+					{
+						"type": "list",
+						"items": [
+							"The target must succeed on a {@dc 13} Strength saving throw or drop one item it is holding (adept's choice).",
+							"The target must succeed on a {@dc 13} Dexterity saving throw or be knocked {@condition prone}.",
+							"The target must succeed on a {@dc 13} Constitution saving throw or be {@condition stunned} until the end of the adept's next turn."
+						]
+					}
+				]
+			},
+			{
+				"name": "Dart",
+				"entries": [
+					"{@atk rw} {@hit 5} to hit, range 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage."
+				]
+			}
+		],
+		"reaction": [
+			{
+				"name": "Deflect Missile",
+				"entries": [
+					"In response to being hit by a ranged weapon attack, the adept deflects the missile. The damage it takes from the attack is reduced by {@dice 1d10 + 3}. If the damage is reduced to 0, the adept catches the missile if it's small enough to hold in one hand and the adept has a hand free."
+				]
+			}
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"H"
+		],
+		"damageTags": [
+			"B",
+			"P"
+		],
+		"miscTags": [
+			"MW",
+			"RW",
+			"THW"
+		],
+		"conditionInflict": [
+			"prone",
+			"stunned"
+		],
+		"hasToken": true,
+		"hasFluff": true
+	}
+]

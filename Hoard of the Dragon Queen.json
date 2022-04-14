@@ -1,0 +1,391 @@
+[
+	{
+		"name": "Ambush Drake",
+		"source": "HotDQ",
+		"page": 88,
+		"size": [
+			"M"
+		],
+		"type": "dragon",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			{
+				"ac": 13,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 22,
+			"formula": "4d6 + 8"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 13,
+		"dex": 15,
+		"con": 14,
+		"int": 4,
+		"wis": 11,
+		"cha": 6,
+		"skill": {
+			"perception": "+4",
+			"stealth": "+4"
+		},
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 14,
+		"resist": [
+			"poison"
+		],
+		"languages": [
+			"understands Draconic but can't speak it"
+		],
+		"cr": "1/2",
+		"trait": [
+			{
+				"name": "Pack Tactics",
+				"entries": [
+					"The drake has advantage on an attack roll against a creature if at least one of the drake's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+				]
+			},
+			{
+				"name": "Surprise Attack",
+				"entries": [
+					"If the drake surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 7 ({@dice 2d6}) damage from the attack."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage."
+				]
+			}
+		],
+		"traitTags": [
+			"Pack Tactics"
+		],
+		"senseTags": [
+			"D"
+		],
+		"languageTags": [
+			"CS",
+			"DR"
+		],
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true,
+		"hasFluffImages": true
+	},
+	{
+		"name": "Dragonclaw",
+		"source": "HotDQ",
+		"page": 89,
+		"otherSources": [
+			{
+				"source": "RoT",
+				"page": 89
+			}
+		],
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"human"
+			]
+		},
+		"alignment": [
+			"L",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 14,
+				"from": [
+					"{@item leather armor|phb}"
+				]
+			}
+		],
+		"hp": {
+			"average": 16,
+			"formula": "3d8 + 3"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 9,
+		"dex": 16,
+		"con": 13,
+		"int": 11,
+		"wis": 10,
+		"cha": 12,
+		"save": {
+			"wis": "+2"
+		},
+		"skill": {
+			"deception": "+3",
+			"stealth": "+5"
+		},
+		"passive": 10,
+		"languages": [
+			"Common",
+			"Draconic"
+		],
+		"cr": "1",
+		"trait": [
+			{
+				"name": "Dragon Fanatic",
+				"entries": [
+					"The dragonclaw has advantage on saving throws against being {@condition charmed} or {@condition frightened}. While the dragonclaw can see a dragon or higher-ranking Cult of the Dragon cultist friendly to it, the dragonclaw ignores the effects of being {@condition charmed} or {@condition frightened}."
+				]
+			},
+			{
+				"name": "Fanatic Advantage",
+				"entries": [
+					"Once per turn, if the dragonclaw makes a weapon attack with advantage on the attack roll and hits, it deals an extra 7 ({@dice 2d6}) damage."
+				]
+			},
+			{
+				"name": "Pack Tactics",
+				"entries": [
+					"The dragonclaw has advantage on an attack roll against a creature if at least one of the dragonclaw's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The dragonclaw attacks twice with its scimitar."
+				]
+			},
+			{
+				"name": "Scimitar",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
+				]
+			}
+		],
+		"traitTags": [
+			"Pack Tactics"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"DR"
+		],
+		"damageTags": [
+			"S"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true
+	},
+	{
+		"name": "Dragonwing",
+		"source": "HotDQ",
+		"page": 90,
+		"otherSources": [
+			{
+				"source": "RoT",
+				"page": 89
+			}
+		],
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"human"
+			]
+		},
+		"alignment": [
+			"L",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 14,
+				"from": [
+					"{@item leather armor|phb}"
+				]
+			}
+		],
+		"hp": {
+			"average": 33,
+			"formula": "6d8 + 6"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 11,
+		"dex": 16,
+		"con": 13,
+		"int": 11,
+		"wis": 11,
+		"cha": 13,
+		"save": {
+			"wis": "+2"
+		},
+		"skill": {
+			"deception": "+3",
+			"stealth": "+5"
+		},
+		"passive": 10,
+		"resist": [
+			{
+				"resist": [
+					"acid",
+					"cold",
+					"fire",
+					"lightning",
+					"poison"
+				],
+				"preNote": "one of the following:"
+			}
+		],
+		"languages": [
+			"Common",
+			"Draconic"
+		],
+		"cr": "2",
+		"trait": [
+			{
+				"name": "Dragon Fanatic",
+				"entries": [
+					"The dragonwing has advantage on saving throws against being {@condition charmed} or {@condition frightened}. While the dragonwing can see a dragon or higher-ranking Cult of the Dragon cultist friendly to it, the dragonwing ignores the effects of being {@condition charmed} or {@condition frightened}."
+				]
+			},
+			{
+				"name": "Fanatic Advantage",
+				"entries": [
+					"Once per turn, if the dragonwing makes a weapon attack with advantage on the attack roll and hits, the target takes an extra 7 ({@dice 2d6}) damage."
+				]
+			},
+			{
+				"name": "Limited Flight",
+				"entries": [
+					"The dragonwing can use a bonus action to gain a flying speed of 30 feet until the end of its turn."
+				]
+			},
+			{
+				"name": "Pack Tactics",
+				"entries": [
+					"The dragonwing has advantage on an attack roll against a creature if at least one of the dragonwing's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The dragonwing attacks twice with its scimitar."
+				]
+			},
+			{
+				"name": "Scimitar",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage plus 3 ({@dice 1d6}) damage of the type to which the cultist has resistance."
+				]
+			}
+		],
+		"traitTags": [
+			"Pack Tactics"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"DR"
+		],
+		"damageTags": [
+			"S"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true
+	},
+	{
+		"name": "Golden Stag",
+		"source": "HotDQ",
+		"page": 35,
+		"hasToken": true,
+		"size": [
+			"L"
+		],
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			10
+		],
+		"hp": {
+			"average": 13,
+			"formula": "2d10 + 2"
+		},
+		"speed": {
+			"walk": 50
+		},
+		"str": 16,
+		"dex": 10,
+		"con": 12,
+		"int": 2,
+		"wis": 10,
+		"cha": 6,
+		"passive": 10,
+		"cr": "1/4",
+		"trait": [
+			{
+				"name": "Charge",
+				"entries": [
+					"If the elk moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 ({@dice 2d6}) damage. If the target is a creature, it must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Ram",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) bludgeoning damage."
+				]
+			},
+			{
+				"name": "Hooves",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one {@condition prone} creature. {@h}8 ({@damage 2d4 + 3}) bludgeoning damage."
+				]
+			}
+		],
+		"traitTags": [
+			"Charge"
+		],
+		"damageTags": [
+			"B"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"conditionInflict": [
+			"prone"
+		]
+	}
+]
